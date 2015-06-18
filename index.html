@@ -1,10 +1,23 @@
-<!-- This is just temp. I will migrate all the content as soon as possible! -->
+---
+layout: default
+---
 
-<style type="text/css">
-html, body {
-  height: 100%;
-  overflow: auto;
-}
-</style>
+<div class="home">
 
-<iframe style="border: 0; position:fixed; top:0; left:0; right:0; bottom:0; width:100%; height:100%" src="http://vncz.azurewebsites.net"></iframe>
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
