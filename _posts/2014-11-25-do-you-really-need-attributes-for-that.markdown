@@ -14,8 +14,8 @@ Based on this claims, do you think you're using attributes in the **right way**?
 
 Let's consider this piece of code:
 
-```csharp
-public class SequenceAttribute : Attribute
+
+    public class SequenceAttribute : Attribute
     {
         public SequenceAttribute(string sequenceName)
         {
@@ -27,7 +27,7 @@ public class SequenceAttribute : Attribute
             ReferenceDatePropertyName = dateReferencePropertyName;
         }
 	}
-```
+
 
 And let's see its usage here:
 

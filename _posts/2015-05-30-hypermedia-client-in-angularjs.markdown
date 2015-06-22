@@ -28,57 +28,52 @@ Hypermedia API's accomplish this by responding to requests with both the request
 
 This means, basically, that a typical API response will be something like this
 
-```json
-  "entities": [
-    { 
-      "class": [ "items", "collection" ], 
-      "rel": [ "http://x.io/rels/order-items" ], 
-      "href": "http://api.x.io/orders/42/items"
-    },
-    {
-      "class": [ "info", "customer" ],
-      "rel": [ "http://x.io/rels/customer" ], 
-      "properties": { 
-        "customerId": "pj123",
-        "name": "Peter Joseph"
+
+    "entities": [
+      { 
+        "class": [ "items", "collection" ], 
+        "rel": [ "http://x.io/rels/order-items" ], 
+        "href": "http://api.x.io/orders/42/items"
       },
-      "links": [
-        { "rel": [ "self" ], "href": "http://api.x.io/customers/pj123" }
-      ]
-    }
-  ],
-  "actions": [
-    {
-      "name": "add-item",
-      "title": "Add Item",
-      "method": "POST",
-      "href": "http://api.x.io/orders/42/items",
-      "type": "application/x-www-form-urlencoded",
-      "fields": [
-        { "name": "orderNumber", "type": "hidden", "value": "42" },
-        { "name": "productCode", "type": "text" },
-        { "name": "quantity", "type": "number" }
-      ]
-    }
-  ],
-  "links": [
-    { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
-    { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
-    { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
-  ]
-}
-```
+      {
+        "class": [ "info", "customer" ],
+        "rel": [ "http://x.io/rels/customer" ], 
+        "properties": { 
+          "customerId": "pj123",
+          "name": "Peter Joseph"
+        },
+        "links": [
+          { "rel": [ "self" ], "href": "http://api.x.io/customers/pj123" }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "add-item",
+        "title": "Add Item",
+        "method": "POST",
+        "href": "http://api.x.io/orders/42/items",
+        "type": "application/x-www-form-urlencoded",
+        "fields": [
+          { "name": "orderNumber", "type": "hidden", "value": "42" },
+          { "name": "productCode", "type": "text" },
+          { "name": "quantity", "type": "number" }
+        ]
+      }
+    ],
+    "links": [
+      { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
+      { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
+      { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+    ]
 
 Our response has got different **links**, that are pointing us somewhere. What does that link do is defined into the *rel* section. 
 
-```json
-  "links": [
-    { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
-    { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
-    { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
-  ]
-
-```
+    "links": [
+      { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
+      { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
+      { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+    ]
 
 This stuff, for example, let us navigate throught the orders.
 

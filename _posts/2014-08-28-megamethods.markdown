@@ -10,7 +10,7 @@ A megamethod (name is my invention) is the typical _antipattern_ where you have 
 Sad to say, _Microsoft_ is giving us just an [example](http://referencesource.microsoft.com/#System.Web/xsp/system/Web/IHttpHandler.cs) of this kind of interface.
 
 
-	 public interface IHttpHandler 
+    public interface IHttpHandler 
     {
         void ProcessRequest(HttpContext context);   
         bool IsReusable { get; }

@@ -5,19 +5,19 @@ date: 2015-02-03 09:48:54.000000000 +01:00
 ---
 Just some days ago, while working on CoffeeScript test files, I noticed that generated Javascript was not honestly the one I was expecting
 
-```coffeescript
-describe 'Assertion tests', ->
-  describe 'Template tests', ->
-    for uri in fixtures.testUris
-      describe "Testing #{uri.uriTemplate}", ->
-        res = validations.validateUriTemplate uri.uriTemplate
-        it "Result validation should be #{uri.expectedResult}", ->
-          console.log "if #{uri.expectedResult} is true"
-          if uri.expectedResult is true
-            assert.isTrue res
-          else
-            assert.typeOf res, 'string'
-```
+
+    describe 'Assertion tests', ->
+      describe 'Template tests', ->
+        for uri in fixtures.testUris
+          describe "Testing #{uri.uriTemplate}", ->
+            res = validations.validateUriTemplate uri.uriTemplate
+            it "Result validation should be #{uri.expectedResult}", ->
+              console.log "if #{uri.expectedResult} is true"
+              if uri.expectedResult is true
+                assert.isTrue res
+              else
+                assert.typeOf res, 'string'
+
 
 And this is the generated Javascript, that you can also verify by yourself on [CoffeeScript website](http://coffeescript.org)
 
