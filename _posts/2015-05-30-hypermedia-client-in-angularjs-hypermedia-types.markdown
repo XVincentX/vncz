@@ -3,6 +3,12 @@ layout: post
 title: Hypermedia client in AngularJS - hypermedia types
 date: 2015-05-30 20:51:06.000000000 +02:00
 ---
+This is a serie about developing a simple Hypermedia Client in AngularJS.
+
+1. [Hypermedia introduction](/2015/05/30/hypermedia-client-in-angularjs.html)
+2. [Hypermedia formats](/2015/05/30/hypermedia-client-in-angularjs-hypermedia-types.html)
+
+
 As said in the previous post, hypermedia does not come into your applications for free.
 
 Apart from technical issues, that we will try to describe in the next post, the first problem is the representation of the new data.
