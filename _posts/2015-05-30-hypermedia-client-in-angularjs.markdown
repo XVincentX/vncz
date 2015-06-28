@@ -18,7 +18,7 @@ If you already know everything, you may just directly to the [next post]().
 
 Given that, let's have a look to hypermedia API from my ignorant point of view.
 
-####TL;DR. What is an Hypermedia API?
+#### TL;DR. What is an Hypermedia API?
 
 Fundamentally, people do two things on the internet:
 
@@ -92,7 +92,7 @@ What are advantages of having this kind of data representation?
 
 4. A system like this can be used as an authorization system. You can simply not output links and actions that current user cannot see/fill/navigate.
 
-####Why do I need all this stuff?
+#### Why do I need all this stuff?
 
 As a first use case, imagine a mobile client, where usually the validation time is up to 5-7 working days: it can evolve and respond to API changes without being redeloyed (and neither recompiled, to be precise).
 
@@ -100,7 +100,8 @@ Imagine also a web application developed from a third-party company: an hypermed
 
 
 > This is just amazing. My next API will be hypermedia driven.
->######Everybody when reading the first time about hypermedia APIs._
+
+Everybody when reading the first time about hypermedia APIs.
 
 Hold your horses. Is it free of charge? Absolutely not. There is a very strong dispute if it is worth or not to write an Hypermedia API (because basically writing hypermedia clients is not easy at all), but I will not share links or considerations (yet), because we're going to build a client on our own, and hopefully make sense of the disavantages during the "journey" 
 
