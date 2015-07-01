@@ -1,18 +1,60 @@
-# Site settings
-title: Vncz's blog
-email: vincenz.chianese@yahoo.it
-description: > # this means to ignore newlines until "baseurl:"
-  Home of Vincenzo Chianese.
-  Let's talk about programming.
-  Thoughts, stories and ideas of a (failed) developer
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://vncz.js.org" # the base hostname & protocol for your site
-twitter_username: d3dvincent
-github_username:  XVincentX
+# Site wide configuration
 
-# Build settings
-markdown: kramdown
+title:            "Vncz's Blog"
+locale:           en_US
+url:              
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Vincenzo Chianese
+  avatar: https://avatars1.githubusercontent.com/u/1416224?v=3&s=460
+  bio: "Let's talk about programming. Thoughts, stories and ideas of a (failed) developer."
+  email: vincenz.chianese@yahoo.it
+  disqus-shortname: XVincentX
+  twitter: D3DVincent
+  facebook: D3DVincent
+  google:
+    plus: #username
+    analytics: UA-64721010-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: XVincentX
+  stackoverflow: 1044264/vincenzo
+  linkedin: d3dvincent
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
