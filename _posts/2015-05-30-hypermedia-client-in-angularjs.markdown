@@ -5,10 +5,11 @@ date: 2015-05-30 19:59:13.000000000 +02:00
 ---
 This is a serie about developing a simple Hypermedia Client in AngularJS.
 
-1. [Hypermedia introduction](/2015/05/30/hypermedia-client-in-angularjs.html)
-2. [Hypermedia formats](/2015/05/30/hypermedia-client-in-angularjs-hypermedia-types.html)
+1. [Hypermedia introduction](/hypermedia-client-in-angularjs/)
+2. [Hypermedia formats](/hypermedia-client-in-angularjs-hypermedia-types/)
 3. [Hypermedia client]() -> Coming soon!
-4. [Considerations](/2015/06/28/hypermedia-client-considerations.html)
+4. [Considerations](/hypermedia-client-considerations/)
+
 
 If you are in web/mobile development you have certainly heard about Hypermedia APIs and HATEOAS acronym. Those two words/concepts, even thought are quite **old** (the first blog posts started to come out during 2012), are actually riding high on twitter, blogs, stackoverflow questions and so on.
 
