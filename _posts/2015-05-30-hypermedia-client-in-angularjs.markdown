@@ -17,7 +17,7 @@ If you're new in the hypermedia environment, I definitely suggest to watch this 
 
 If you never cared about your API design, then you should watch this [presentation](https://www.youtube.com/watch?v=sdlQvTWVQ_M) from Honza Javorek as well.
 
-If you already know everything, you may just directly to the [next post]().
+If you already know everything, you may just directly to the [next post](/hypermedia-client-in-angularjs-hypermedia-types/).
 
 Given that, let's have a look to hypermedia API from my ignorant point of view.
 
