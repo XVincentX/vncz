@@ -1,25 +1,22 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
+title: About Vincenzo Chianese
 modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Hello!
 
-## Minimal Mistakes is all about:
+My name is Vincenzo Chianese, I come from Napoli (Italy) and since Dicember 2015 I've relocated in Prague, Czech Republic.
+Currently working as (front|back) developer at [Apiary](http://apiary.io). I put bugs in the code, making sure that my coworkers have always something to fix.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+I am tooking undergraduate degree at the Department of Engineering in Naples University. I feel ashamed because I am getting old and I do not have my title yet; Relocating in Prague is not helping at all.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+Historically I've always been a .NET developer, and I am still. But actually I use javascript with nodejs on daily basis.
+
+In my working hours I spend time trying solving problems using the appropriate technologies based on the projects' requirements. During my spare time, I try to develop [open source software](https://github.com/XVincentX), writing articles on topics I'm interested in, working out and partying hard.
+
+I play the classic guitar since I was 15 years old, and, like [Fernando Sor](https://en.wikipedia.org/wiki/Fernando_Sor) and [Francisco Tarrega](https://en.wikipedia.org/wiki/Francisco_T%C3%A1rrega), I do not have nails on right hand. That brong me a lot of problems with my teachers while studying at National Conservatory, but I was always able to win the battle.
+
+I love Spanish language. One time I was in Spain and I liked so much that language that decided to buy a book for babies entirely in Spanish: [El Principito](https://es.wikipedia.org/wiki/El_principito). When I felt that was enough proficient in Spanish, I started to stop persons on the street when I was able to detect that they were talking in Spanish, and asked for small conversation. Furthermore, in order to became even more fluent, I decided to move in an shared house with 3 Spanish girls, that is where I actually live. On the other side, I consider my English terrible (orroroso, por ser preciso).
+
+You can contact me at: **vincenz dot chianese at yahoo dot it**
