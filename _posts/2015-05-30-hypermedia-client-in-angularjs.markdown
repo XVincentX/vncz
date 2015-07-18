@@ -9,7 +9,7 @@ This is a serie about developing a simple Hypermedia Client in AngularJS.
 2. [Hypermedia formats](/hypermedia-client-in-angularjs-hypermedia-types/)
 3. [Hypermedia client]() -> Coming soon!
 4. [Considerations](/hypermedia-client-considerations/)
-
+5. [Hypermedia does not replace your semantic model](/hypermedia-does-not-replace-your-semantic-model/)
 
 If you are in web/mobile development you have certainly heard about Hypermedia APIs and HATEOAS acronym. Those two words/concepts, even thought are quite **old** (the first blog posts started to come out during 2012), are actually riding high on twitter, blogs, stackoverflow questions and so on.
 
