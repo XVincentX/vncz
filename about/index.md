@@ -9,7 +9,7 @@ Hello!
 My name is Vincenzo Chianese, I come from Napoli (Italy) and since Dicember 2015 I've relocated in Prague, Czech Republic.
 Currently working as (front|back) developer at [Apiary](http://apiary.io). I put bugs in the code, making sure that my coworkers have always something to fix.
 
-I am tooking undergraduate degree at the Department of Engineering in Naples University. I feel ashamed because I am getting old and I do not have my title yet; Relocating in Prague is not helping at all.
+I am tooking undergraduate degree at the Department of Engineering in Naples University. I feel ashamed because I am getting old and I do not have my title yet; Relocating in Prague is not helping at all. My father thinks I am a good-for-nothing (and perhaps he is totally right)
 
 Historically I've always been a .NET developer, and I am still. But actually I use javascript with nodejs on daily basis.
 
