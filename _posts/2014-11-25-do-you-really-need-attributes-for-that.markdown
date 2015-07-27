@@ -41,37 +41,32 @@ I consider this kind of code an antipattern: we're defining some kind of **contr
 Let's refactor this code extracting an interface for that:
 
 
-```csharp
-public interface IEntityWithBusinessSequence
-{
-	public string ReferenceDate { get; }
-    public string Key { get; set; }
-}
-```
+    public interface IEntityWithBusinessSequence
+    {
+        public string ReferenceDate { get; }
+        public string Key { get; set; }
+    }
 
 And then, instead of this
 
-```csharp
-public class File
-{
-	[BusinessSequence("FileDate")]
-	public int FileCode {get; set;}
-    
-	public DateTime FileDate { get; set; }
-}
-```
+    public class File
+    {
+        [BusinessSequence("FileDate")]
+        public int FileCode {get; set;}
 
-```csharp
-public class File : IEntityWithBusinessSequence
-{
-	public int FileCode {get; set;}   
-	public DateTime FileDate { get; set; }
-    
-    
-    public string ReferenceDate { get { return FileDate; } }
-	public string Key { get { return FileCode; } set { FileCode = value; } }
-}
-```
+        public DateTime FileDate { get; set; }
+    }
+
+
+    public class File : IEntityWithBusinessSequence
+    {
+        public int FileCode {get; set;}   
+        public DateTime FileDate { get; set; }
+
+
+        public string ReferenceDate { get { return FileDate; } }
+        public string Key { get { return FileCode; } set { FileCode = value; } }
+    }
 
 This simple example show us how it is possible, in the most part of cases, replace attributes with a **REAL** contract, that is an interface. We infact have
 
