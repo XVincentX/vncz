@@ -7,7 +7,7 @@ This is a serie about developing a simple Hypermedia Client in AngularJS.
 
 1. [Hypermedia introduction](/hypermedia-client-in-angularjs/)
 2. [Hypermedia formats](/hypermedia-client-in-angularjs-hypermedia-types/)
-3. [Hypermedia client](/hypermedia-client-details/)
+3. [Hypermedia client](/hypermedia-client-build-details/)
 4. [Considerations](/hypermedia-client-considerations/)
 5. [Hypermedia does not replace your semantic model](/hypermedia-does-not-replace-your-semantic-model/)
 
