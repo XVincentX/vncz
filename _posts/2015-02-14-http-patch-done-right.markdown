@@ -21,10 +21,12 @@ The interesting thing is that they have got a [.NET library](https://github.com/
 
 Add the mediatype formatter into your WebApi configuration:
 
-    public static void ConfigureApis(HttpConfiguration config)
-    {
-        config.Formatters.Add(new JsonPatchFormatter());
-    }
+{% highlight csharp %}
+public static void ConfigureApis(HttpConfiguration config)
+{
+  config.Formatters.Add(new JsonPatchFormatter());
+}
+{% endhighlight %}    
 
 Declare your Api method claiming you're going to receive a **JsonPatchDocument** class instance
 
