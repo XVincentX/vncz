@@ -36,24 +36,28 @@ After a first (and disastrous) start with [somee](https://somee.com/FreeAspNetHo
 AppHarbor is just amazing: Git repository as application storage, integrated build and test execution environment, very nice dashboard, a lot of free addons, and a free ssl endpoint too. Just what I was looking for.
 
 The code on server side is relatively simple. It is just one WebApi2 controller with a single main action: GetData
-
+{% highlight csharp %}
 	public async Task<IHttpActionResult> GetData([FromBody]Q_X d1, [FromUri]Q_X d2)
     {
     
     }
-    
+{% endhighlight %}    
 The presence of same parameters, one **FromBody** and one **FromUri** is due to compatibility. First client versions used to send data over queryString, the subsequent ones in body. So the two arguments are merged to get a real data.
 
+{% highlight csharp %}
 	Q_X data = d1 ?? d2;
-    
+{% endhighlight %}    
+
 The controller is very very simple. It saves some data into a SqlDatabase and calls a method from an injected (inferred from query string) interface:
 
+{% highlight csharp %}
     public interface ICreditInfoRetr : ICloneable
     {
         Task<CreditInfo> Get(string username, string type, Guid dev_id);
         string Type { get; }
     }
-    
+{% endhighlight %}
+
 Since the querystring is a runtime parameter and I hate to expose my container into actions, I used a [delegate factory](https://github.com/autofac/Autofac/wiki/Delegate-Factories) to construct object implementation.
 
 Initially I had got a single implementation, today I can praise to support
