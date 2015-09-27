@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a FlipSwitch in Css
-date: 2015-09-23 20:51:06.000000000 +02:00
+date: 2015-09-29 20:51:06.000000000 +02:00
 ---
 
 As frontend developer, I usually write a lot of stuff that runs in the browser. Anyway, most of the time, I write back-frontend code. It means that usually I do not fight with implementing UI components from *scratch*, and my CSS skills are usually limited to small modification.
