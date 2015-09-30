@@ -14,7 +14,7 @@ Based on this claims, do you think you're using attributes in the **right way**?
 
 Let's consider this piece of code:
 
-
+{% highlight csharp %}
     public class SequenceAttribute : Attribute
     {
         public SequenceAttribute(string sequenceName)
@@ -27,28 +27,29 @@ Let's consider this piece of code:
             ReferenceDatePropertyName = dateReferencePropertyName;
         }
 	}
-
+{% endhighlight %}
 
 And let's see its usage here:
 
-```csharp
+{% highlight csharp %}
 DateTime? referenceDate = String.IsNullOrEmpty(bsAttrib.ReferenceDatePropertyName) ? null : (DateTime?)instance.GetType().GetProperty(bsAttrib.ReferenceDatePropertyName).GetValue(instance, null);
-```
+{% endhighlight %}
 
 Do not focus too much on code, but on the _intention_: we're getting back metadata from attributes throught reflection. In particular case, the metadata is telling me what property value should I get and continue my computations.
 
 I consider this kind of code an antipattern: we're defining some kind of **contract** with our classes throught an attribute, while the leading way to define a contract/protocol/rules/_WhatYouWant_ is an **interface**!
 Let's refactor this code extracting an interface for that:
 
-
+{% highlight csharp %}
     public interface IEntityWithBusinessSequence
     {
         public string ReferenceDate { get; }
         public string Key { get; set; }
     }
+{% endhighlight%}
 
 And then, instead of this
-
+{% highlight csharp %}
     public class File
     {
         [BusinessSequence("FileDate")]
@@ -67,7 +68,7 @@ And then, instead of this
         public string ReferenceDate { get { return FileDate; } }
         public string Key { get { return FileCode; } set { FileCode = value; } }
     }
-
+{% endhighlight %}
 This simple example show us how it is possible, in the most part of cases, replace attributes with a **REAL** contract, that is an interface. We infact have
 
 1. Removed attribute usage

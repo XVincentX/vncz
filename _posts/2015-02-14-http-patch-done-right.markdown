@@ -29,13 +29,14 @@ public static void ConfigureApis(HttpConfiguration config)
 {% endhighlight %}    
 
 Declare your Api method claiming you're going to receive a **JsonPatchDocument** class instance
-
+{% highlight csharp %}
     public void Patch(Guid id, JsonPatchDocument<SomeDto> patchData)
     {
         var objectToUpdate = repository.GetById(id);
         patchData.ApplyUpdatesTo(objectToUpdate);
         repository.Save(objectToUpdate);
     }
+{% endhighlight%}
 
 Update your data, and you're done.
 Thanks to WebApi modularity, this repetitive code can be easily moved one level up (a DelegatingHandler, for example), thus receiving directly modified objects (or throwing an exception if their validator is failing).
