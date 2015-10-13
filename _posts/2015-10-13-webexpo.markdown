@@ -1,0 +1,19 @@
+---
+layout: post
+title: From callback to promises
+date: 2015-10-13 20:51:06.000000000 +02:00
+---
+
+On 24-25 September I spoke at [WebExpo](http://webexpo.net/prague2015/) conference, about callbacks and promises. Here is the video!
+
+<script type="text/javascript" src="//slideslive.com/embed_presentation.js"></script>
+
+<script type="text/javascript" id="sle81767">
+slidesLive = createSlidesLiveBox();
+slidesLive.bgColor="transparent";
+slidesLive.embedPresentation(38894521);
+</script>
+
+Furthermore, I'll be in London for [FullStack conference](https://skillsmatter.com/conferences/6612-fullstack#program), talking about better API Design with [API Blueprint](https://apiblueprint.org).
+
+Cheers!
