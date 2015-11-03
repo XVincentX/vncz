@@ -20,3 +20,13 @@ I play the classic guitar since I was 15 years old, and, like [Fernando Sor](htt
 I love Spanish language. One time I was in Spain and I liked so much that language that decided to buy a book for babies entirely in Spanish: [El Principito](https://es.wikipedia.org/wiki/El_principito). When I felt that was enough proficient in Spanish, I started to stop persons on the street when I was able to detect that they were talking in Spanish, and asked for small conversation. Furthermore, in order to became even more fluent, I decided to move in an shared house with 3 Spanish girls, that is where I actually live. On the other side, I consider my English terrible (orroroso, por ser preciso).
 
 You can contact me at: **vincenz dot chianese at yahoo dot it**
+
+## Speaking
+
+Whenever is possible, I love to talk at conferences about interesting topics I've worked/working on. Here is the current list:
+
+1. [mDevCamp 2015 - Resilient API clients](http://slideslive.com/38894088/building-resilient-api-client)
+2. [WebExpo 2015 - From callback to Promises](http://slideslive.com/38894521/from-callbacks-to-promises)
+3. [PragueJs - Webpack introduction](https://twitter.com/Jsconfcz/status/647106973679374336)
+4. [Fullstack 2015 - API Blueprint for API Design Lifecycle]()
+
