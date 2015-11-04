@@ -4,7 +4,11 @@ title: From callback to promises
 date: 2015-10-13 20:51:06.000000000 +02:00
 ---
 
-On 24-25 September I spoke at [WebExpo](http://webexpo.net/prague2015/) conference, about callbacks and promises. Here is the video!
+On 24-25 September I spoke at [WebExpo](http://webexpo.net/prague2015/) conference, about callbacks and promises.
+
+Handling asynchronous code with callbacks forces us to build an unmanageable stacks of function calls, often leaving us buried beneath them. Is there a better way to handle this? Yes, with Promises. ES6 promises give us an elegant way to handle asynchronous code. We will dive into core of promises, as well how to break apart common Callback Hell scenarios into beautiful method chains.
+
+Here is the video!
 
 <script type="text/javascript" src="//slideslive.com/embed_presentation.js"></script>
 
