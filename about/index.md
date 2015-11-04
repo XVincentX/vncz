@@ -28,5 +28,5 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 1. [mDevCamp 2015 - Resilient API clients](http://slideslive.com/38894088/building-resilient-api-client)
 2. [WebExpo 2015 - From callback to Promises](http://slideslive.com/38894521/from-callbacks-to-promises)
 3. [PragueJs - Webpack introduction](https://twitter.com/Jsconfcz/status/647106973679374336)
-4. [Fullstack 2015 - API Blueprint for API Design Lifecycle]()
+4. [Fullstack 2015 - API Blueprint for API Design Lifecycle](https://skillsmatter.com/skillscasts/6774-api-blueprint-for-api-design-lifecycle)
 
