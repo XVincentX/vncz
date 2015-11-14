@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a own password hiding
+title: Creating a password hiding animation
 date: 2015-11-10 20:51:06.000000000 +02:00
 ---
 
@@ -10,7 +10,7 @@ I found the thing very funny (and genial, to be honest). The most interesting th
 
 # Let's create our own owl!
 
-## Html
+## Basic shapes
 
 First of all, let's place some HTML that we will style.
 
@@ -25,7 +25,7 @@ First of all, let's place some HTML that we will style.
 </div>
 {% endhighlight %}
 
-The structure is quite simple: inside the own div we have placed 2 hands and two arms. 
+The structure is quite simple: inside the own div we have placed 2 hands and two arms (we will see later why). 
 
 {% highlight css %}
 .owl
@@ -35,7 +35,7 @@ The structure is quite simple: inside the own div we have placed 2 hands and two
   position relative
 {% endhighlight %}
 
-The `owl` class is really simple: setting the background image, dimensions and `position:relative`. We need to explicity se this because we will use the `absolute` positioning inside.
+Let's explore the `owl` class: we're setting the background image (kindly stolen from the guys of Readme), dimensions and `position:relative`. We need this explicity because we will use the `absolute` positioning inside. While, normally, I disagree with `absolute` positioning, it may have sense for complex image manipulations, as long it stays pent into a `relative` container.
 
 Now, let's style the hands:
 
@@ -62,9 +62,76 @@ So far, the result should be something like this:
 
 ![owl](/images/owl1.png)
 
+Well, with less then 25 lines of css we have done more than 50% of our job.
+
+## Placing the arms
+
+The fun comes here. Let's see how to position the arms:
+
+{% highlight css %}
+  .arms
+    position absolute
+    top 58px
+    height 41px
+    width 100%
+    overflow hidden
+  
+    .arm
+      width 40px
+      height 65px
+      background-image url('https://dash.readme.io/img/owl-login-arm.png')
+      position absolute
+      left 20px
+      top 40px
+      transition 0.3s ease-out
+
+      &.arm-r
+        left 158px
+        transform scaleX(-1)
+
+{% endhighlight %}
+
+Beside the usual `absolute` positioning, the clever trick is in setting the `top` property equal to the real image height.
+
+This means that we are in this situation:
+
+![owlarms](/images/owl2.png)
+
+The image shows clearly that, while the `arms` div is positioned at eyes level, the arms are moved (using `top` property) below the div heigth. And, give that we've set `overflow:hidden` property, they won't be shown unless they are in the visible area. Amazing trick, to be honest.
+
+## Animating
+
+Well, last part is just matter of translating the arms and animate them using the `animate` property:
+
+{% highlight css %}
+.arm
+  width 40px
+  height 65px
+  background-image url('https://dash.readme.io/img/owl-login-arm.png')
+  position absolute
+  left 20px
+  top 40px
+  transition 0.3s ease-out
+  
+  &.password
+    transform translateX(40px) translateY(-40px)
+
+
+  &.arm-r
+    left 158px
+    transform scaleX(-1)
+    
+    &.password 
+      transform translateX(-40px) translateY(-40px) scaleX(-1)
+{% endhighlight %}
+
 ## Result
+
+Done. Funny and easy, still great visual effect.
 
 The final result can be seen here:
 
 <p data-height="268" data-theme-id="0" data-slug-hash="avRqep" data-default-tab="result" data-user="XVincentX" class='codepen'>See the Pen <a href='http://codepen.io/XVincentX/pen/avRqep/'>Owl replica from readme.io</a> by Vincenzo Chianese (<a href='http://codepen.io/XVincentX'>@XVincentX</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+The codepen has been enriched with a simple form to demonstrate the final result. However, the owl can be easily moved wherever you need.
