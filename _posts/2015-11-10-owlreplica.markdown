@@ -6,7 +6,7 @@ date: 2015-11-10 20:51:06.000000000 +02:00
 
 Last week, while I was surfing the web, I find out [Readme.io](http://readme.io) has a very interesting effect. If you go to their [login page](https://dash.readme.io/login) and place your mouse on the password field, the owl will hide its eyes, since it does not want to see your password.
 
-I found the thing very funny (and genial, to be honest). The most interesting this is that replicating the effect is not so hard as it may look like at the beginning...so
+I found the thing very funny (and genial, to be honest). The most interesting thing is that replicating the effect is not so hard as it may look like at the beginning...so
 
 # Let's create our own owl!
 
