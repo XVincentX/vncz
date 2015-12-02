@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: 
+modified: 2014-08-08T20:53:07.573882-04:00
+---
 # Vincenzo Chianese
 
 ### (Back)Front-End & Back-End Developer
