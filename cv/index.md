@@ -26,9 +26,9 @@ My long-term interest include project management (especially of small teams), pr
 #### API Design Stack
 ##### Software developer - **Dec 2014 - Present**
 
-1. Full stack software engineer (with strong attitude in FrontEnd), part of the Core Application Team, delivering features to 170k+ users.
+1. Full stack software engineer (with strong attitude in FrontEnd), part of the Core Application Team, delivering features to 170k+ users, ranging from Payments infrastructure, Documentation rendering and so on.
 2. Active in several open source projects
-3. Crafting [Attributes Kit](http://github.com/apiaryio/attributes-kit), a [MSON](https://github.com/apiaryio/MSON) renderer
+3. Crafted [Attributes Kit](http://github.com/apiaryio/attributes-kit), a [MSON](https://github.com/apiaryio/MSON) renderer
 4. Local Windows expert
 
 ### Nettuno Solutions
