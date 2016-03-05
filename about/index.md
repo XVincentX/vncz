@@ -17,15 +17,15 @@ In my working hours I spend time trying solving problems using the appropriate t
 
 Despite that, I did not work always on a chair and with a laptop. In my career I've also worked on construction yards, where we were basically testing the control software for differend kind of machines, such as photovoltaic/wind plants.
 
-![](https://scontent-mxp1-1.xx.fbcdn.net/hphotos-prn2/v/l/t1.0-9/11148_10151791212031040_564541539_n.jpg?oh=96dca5fa1dc12c0548dc24a4d2c8c857&oe=56D5A655)
+![](http://i.imgur.com/VrgtcKE.jpg)
 
-![](https://scontent-mxp1-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/577354_10151791212491040_1240719229_n.jpg?oh=76e0c699ff77af9b2bd2a15ccdf3e640&oe=56D51715)
+![](http://i.imgur.com/BmGT3uE.jpg)
 
 I play the classic guitar since I was 15 years old and, like [Fernando Sor](https://en.wikipedia.org/wiki/Fernando_Sor) and [Francisco Tarrega](https://en.wikipedia.org/wiki/Francisco_T%C3%A1rrega), I do not have nails on right hand. That brought me a lot of problems with my teachers while studying at National Conservatory, but I was always able to win the battle.
 
 I own a great Bernabé M-10, built in 2006
 
-![](https://scontent-mxp1-1.xx.fbcdn.net/hphotos-frc3/t31.0-8/1072359_10152106459121040_1415227068_o.jpg)
+![](http://i.imgur.com/JAyjOTu.jpg)
 
 I love Spanish language. One time I was in Spain and I liked so much that language that decided to buy a book for babies entirely in Spanish: [El Principito](https://es.wikipedia.org/wiki/El_principito). When I felt that was enough proficient in Spanish, I started to stop persons on the street when I was able to detect that they were talking in Spanish, and asked for small conversation. Furthermore, in order to became even more fluent, I decided to move in an shared house with 1 Spanish girl, 1 Spanish Guy, a Mexican girl and a Cuban boy, that is where I actually live. On the other side, I consider my English terrible (orroroso, por ser preciso).
 
