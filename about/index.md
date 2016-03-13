@@ -45,4 +45,6 @@ Here is the current list:
 2. [WebExpo 2015 - From callback to Promises](http://slideslive.com/38894521/from-callbacks-to-promises)
 3. [PragueJs - Webpack introduction](https://twitter.com/Jsconfcz/status/647106973679374336)
 4. [Fullstack 2015 - API Blueprint for API Design Lifecycle](https://skillsmatter.com/skillscasts/6774-api-blueprint-for-api-design-lifecycle)
+5. FerraraJS 2016 (Apr 2016)
+6. DDD Scotland 2016 (May 2016)
 
