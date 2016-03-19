@@ -46,5 +46,5 @@ Here is the current list:
 3. [PragueJs - Webpack introduction](https://twitter.com/Jsconfcz/status/647106973679374336)
 4. [Fullstack 2015 - API Blueprint for API Design Lifecycle](https://skillsmatter.com/skillscasts/6774-api-blueprint-for-api-design-lifecycle)
 5. [FerraraJS 2016 - Callback, promises and beyond](https://twitter.com/universaljsday/status/709309432967122944)
-6. DDD Scotland 2016 (May 2016)
+6. Fullstack 2016
 
