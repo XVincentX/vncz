@@ -212,3 +212,11 @@ And replace the `right` expression in the checked state with something like
 {% endhighlight %}
 
 The switch will behave correctly for each `width`
+
+*News:*
+
+People from [WebEducator](https://www.webucator.com/webdesign/css.cfm) found my blog post and they thought it was be a good idea to create a video from that. So, they made it, and I published it. You might be interested to their courses!
+
+<iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/AKK3wulnpNo"
+  frameborder="0"/>
