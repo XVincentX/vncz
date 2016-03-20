@@ -16,7 +16,7 @@ After some consultations with the manteiner, I am quite happy to announce [angul
 To be honest, it is nothing really great. The current source code is a simple map function using lodash:
 
 
-{% highlight javascript linenos %}
+```javascript
 import _ from 'lodash'
 
 export default function mapSirenToFormly(fields) {
@@ -31,6 +31,6 @@ export default function mapSirenToFormly(fields) {
     }
   }).value()
 }
-{% endhighlight %}
+```
 
 Still, it is great to contribute back to some project, even if in just a small way.

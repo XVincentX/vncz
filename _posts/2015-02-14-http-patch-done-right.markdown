@@ -21,22 +21,22 @@ The interesting thing is that they have got a [.NET library](https://github.com/
 
 Add the mediatype formatter into your WebApi configuration:
 
-{% highlight csharp %}
+```csharp
 public static void ConfigureApis(HttpConfiguration config)
 {
   config.Formatters.Add(new JsonPatchFormatter());
 }
-{% endhighlight %}    
+```
 
 Declare your Api method claiming you're going to receive a **JsonPatchDocument** class instance
-{% highlight csharp %}
+```csharp
     public void Patch(Guid id, JsonPatchDocument<SomeDto> patchData)
     {
         var objectToUpdate = repository.GetById(id);
         patchData.ApplyUpdatesTo(objectToUpdate);
         repository.Save(objectToUpdate);
     }
-{% endhighlight%}
+```
 
 Update your data, and you're done.
 Thanks to WebApi modularity, this repetitive code can be easily moved one level up (a DelegatingHandler, for example), thus receiving directly modified objects (or throwing an exception if their validator is failing).

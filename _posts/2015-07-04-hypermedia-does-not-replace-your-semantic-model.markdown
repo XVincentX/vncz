@@ -12,7 +12,7 @@ This is a serie about developing a simple Hypermedia Client in AngularJS.
 5. [Hypermedia does not replace your semantic model](/hypermedia-does-not-replace-your-semantic-model/)
 
 Last week I've been speaking at [mDevCamp](http://mdevcamp.cz) conference in Prague about _Building Resilient API clients_.
-Of course, it is not possible to dig enough into Hypermedia in just 25 minutes. Thous, I explicitly declared that the intent of the presentation was more about raise awareness than trying pretend to be a precise explanation. You can have a look to the [video](http://slideslive.com/38894088/building-resilient-api-client) and to the if interested. I really apologize for 
+Of course, it is not possible to dig enough into Hypermedia in just 25 minutes. Thous, I explicitly declared that the intent of the presentation was more about raise awareness than trying pretend to be a precise explanation. You can have a look to the [video](http://slideslive.com/38894088/building-resilient-api-client) and to the if interested. I really apologize for
 the hair style and my general appareance, but it was Saturday and had got a crazy Friday (as usual).
 
 <script type="text/javascript" src="//slideslive.com/embed_presentation.js"></script>
@@ -48,18 +48,18 @@ As you can see, our [reference implementation](https://github.com/apiaryio/polls
 
 In order to write the most generic client possible, we may try to arrange the button bar on bottom with this code
 
-{% highlight html %}
+```html
     <a  class="btn"
         href
-        ng-repeat="link in ctrl.polls.links track by link.rel[0]" 
-        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>   
-{% endhighlight %}
+        ng-repeat="link in ctrl.polls.links track by link.rel[0]"
+        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
+```
 
 Simple, easy. Thous, the result will be something like this:
 
 Too simple, perhaps. Let's try to personalize the buttons with some fancy css:
 
-{% highlight css %}
+```stylus
     .pollsList a:last-of-type:after
     {
        content: '  \00bb'
@@ -69,7 +69,7 @@ Too simple, perhaps. Let's try to personalize the buttons with some fancy css:
     {
        content: '\00ab  '
     }
-{% endhighlight %}
+```
 
 This simple css snippet will add a **<<** on the first button, and a **>>** to the last one. The plan is quite simple: First and Last button should have got an arrow after their name.
 
@@ -83,22 +83,22 @@ We can find a lot of troubles like that. For example, it would be enough to chan
 
 We definitely need a more robust approach to handle this thing, and the only way is to apply some kind of styles only when some particular actions are avaiable; this means, in term of code:
 
-{% highlight html %}
+```html
     <a  ng-class="[btn, {first: link.name === 'first', last: link.name ==='last'}]"
         href
-        ng-repeat="link in ctrl.polls.links track by link.rel[0]" 
-        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>   
-{% endhighlight %}        
+        ng-repeat="link in ctrl.polls.links track by link.rel[0]"
+        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
+```
 
 And, of course, our css must be modified to have new ´first ´ and ´last´ classes, to handle those exceptions.
 
 Another way to handle it, is to avoit the `ng-repeat` directive and output the buttons by yourself directly.
 
-{% highlight html %}
+```html
     <a class = "btn first" ng-show="ctrl.hasLink('first')"
         href
-        ng-click="ctrl.followLink('first')"> << First </a>   
-{% endhighlight %}        
+        ng-click="ctrl.followLink('first')"> << First </a>
+```
 
 ...and so on for next, last, prev
 

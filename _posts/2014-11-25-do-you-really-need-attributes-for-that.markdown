@@ -5,7 +5,7 @@ date: 2014-11-25 20:44:14.000000000 +01:00
 ---
 Attributes provide a powerful method of associating declarative information with C# code, that can be queried using reflection.
 
-Example usage of attributes includes: 
+Example usage of attributes includes:
 
 + Associating help documentation with program entities (through a Help attribute).
 + Associating value editors to a specific type in a GUI framework (through a **ValueEditor** attribute).
@@ -14,7 +14,7 @@ Based on this claims, do you think you're using attributes in the **right way**?
 
 Let's consider this piece of code:
 
-{% highlight csharp %}
+```csharp
     public class SequenceAttribute : Attribute
     {
         public SequenceAttribute(string sequenceName)
@@ -27,29 +27,29 @@ Let's consider this piece of code:
             ReferenceDatePropertyName = dateReferencePropertyName;
         }
 	}
-{% endhighlight %}
+```
 
 And let's see its usage here:
 
-{% highlight csharp %}
+```csharp
 DateTime? referenceDate = String.IsNullOrEmpty(bsAttrib.ReferenceDatePropertyName) ? null : (DateTime?)instance.GetType().GetProperty(bsAttrib.ReferenceDatePropertyName).GetValue(instance, null);
-{% endhighlight %}
+```
 
 Do not focus too much on code, but on the _intention_: we're getting back metadata from attributes throught reflection. In particular case, the metadata is telling me what property value should I get and continue my computations.
 
 I consider this kind of code an antipattern: we're defining some kind of **contract** with our classes throught an attribute, while the leading way to define a contract/protocol/rules/_WhatYouWant_ is an **interface**!
 Let's refactor this code extracting an interface for that:
 
-{% highlight csharp %}
+```csharp
     public interface IEntityWithBusinessSequence
     {
         public string ReferenceDate { get; }
         public string Key { get; set; }
     }
-{% endhighlight%}
+```
 
 And then, instead of this
-{% highlight csharp %}
+```csharp
     public class File
     {
         [BusinessSequence("FileDate")]
@@ -61,14 +61,14 @@ And then, instead of this
 
     public class File : IEntityWithBusinessSequence
     {
-        public int FileCode {get; set;}   
+        public int FileCode {get; set;}
         public DateTime FileDate { get; set; }
 
 
         public string ReferenceDate { get { return FileDate; } }
         public string Key { get { return FileCode; } set { FileCode = value; } }
     }
-{% endhighlight %}
+```
 This simple example show us how it is possible, in the most part of cases, replace attributes with a **REAL** contract, that is an interface. We infact have
 
 1. Removed attribute usage
@@ -84,7 +84,7 @@ Beside the [EntityTypeConfiguration class](http://msdn.microsoft.com/en-us/libra
 Given that, in my opinion, this is a wrong approach (you're really polluting your DomainModel with Ef specific attributes), it can be mitigated using [MetadataTypeAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.metadatatypeattribute(v=vs.110).aspx) that acts as a _proxy_ to read your metadata.
 If you really ~~want~~ have to use attributes on EntityFramework, please use them on a proxy class.
 
-Based on these simple examples, please reconsider your attribute usage and start make questions to yourself if: 
+Based on these simple examples, please reconsider your attribute usage and start make questions to yourself if:
 
 1. You're not using attributes for metadata purposes.
 2. Yous metadata are consumed by your application, and not by your (or external) tools.

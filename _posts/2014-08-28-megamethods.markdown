@@ -9,13 +9,13 @@ A megamethod (name is my invention) is the typical _antipattern_ where you have 
 
 Sad to say, _Microsoft_ is giving us just an [example](http://referencesource.microsoft.com/#System.Web/xsp/system/Web/IHttpHandler.cs) of this kind of interface.
 
-{% highlight csharp %}
-    public interface IHttpHandler 
+```csharp
+    public interface IHttpHandler
     {
-        void ProcessRequest(HttpContext context);   
+        void ProcessRequest(HttpContext context);
         bool IsReusable { get; }
     }
-{% endhighlight %}
+```
 
 As you can see, apart of *IsReusable* member, all the Http handler logic should be placed into a single method using a Context, that contains all the necessary informations to complete the current Request sent to the server.
 

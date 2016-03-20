@@ -25,9 +25,9 @@ We will make one slightly different than the one proposed, but the general conce
 
 If we think well, a *FlipSwitch* is no more than a well-styled checkbox, so it is going to be our starting point.
 
-{% highlight html %}
+```html
 <input type="checkbox"/>
-{% endhighlight %}
+```
 
 That will render something like this:
 
@@ -35,7 +35,7 @@ That will render something like this:
 
 Ok, now let's make the things nicer. At first we will need some additional HTML code. At first we will wrap the checkbox itself into a div and add some stuff that we will use later.
 
-{% highlight html %}
+```html
 <div class="switch">
     <input type="checkbox" class="switch-checkbox" id="switch"/>
     <label class="switch-label" for="switch">
@@ -43,19 +43,19 @@ Ok, now let's make the things nicer. At first we will need some additional HTML 
         <span class="switch-switch"></span>
     </label>
 </div>
-{% endhighlight %}
+```
 
 So, given that we're going to replace the checkbox with our implementation, the first thing is to hide the current one, so:
 
-{% highlight css %}
+```stylus
 .switch
     .switch-checkbox
         display none
-{% endhighlight %}
+```
 
 Now, let's give to the switch some basic styles to understand what is going on.
 
-{% highlight css %}
+```stylus
 .switch
   display inline-block
   background-color #49B7FF
@@ -64,7 +64,7 @@ Now, let's give to the switch some basic styles to understand what is going on.
   
   .switch-checkbox
     display none
-{% endhighlight %}
+```
 
 That should give us something like this.
 
@@ -76,7 +76,7 @@ FUCKING IMAGE
 
 Now let's go further and let's style the `switch-switch` element, that is going to be our clickable button.
 
-{% highlight css %}
+```stylus
 .switch-switch
   display block
   background #FFFFFF
@@ -84,14 +84,14 @@ Now let's go further and let's style the `switch-switch` element, that is going 
   height 28px
   border 1px solid #FFFFFF
   border-radius 40px
-{% endhighlight %}
+```
 
 This will make our switch to appear with a circle, that is going to be the part in movement for our component.
 
 ### The hard part
 Now the hard part comes. Our aim is now to move the circle on left and right based on checkbox state, and the best way is to act directly using `right` or `left` properties, that work only when the position is `fixed` or `absolute`, Usually, using the `position: absolute` is a bad practice but, given that we are in an isolated container with fixed width and height, we can safely rely that our element will always stay in a well defined container (if the container is decorated with `position: relative`) without damaging the rest of the page. Given that, let's switch to an absolute position method, specifying the top and left properties:
 
-{% highlight css %}
+```stylus
 .switch
   position relative
   display inline-block
@@ -109,7 +109,7 @@ Now the hard part comes. Our aim is now to move the circle on left and right bas
   height 28px
   border 1px solid #FFFFFF
   border-radius 40px
-{% endhighlight %}
+```
 
 And then we will have the element fixed on the left.
 
@@ -117,12 +117,12 @@ Now, we want to move the circle when we change the checkbox. At first, thanks to
 
 Given that, we want to move the circle about a certain number of pixels, and we can do that using the `left` property. In order to do that, we're going to use a bit odd css selector:
 
-{% highlight css %}
+```stylus
 .switch-checkbox:checked 
   &+ .switch-label 
      .switch-switch
         left 38px
-{% endhighlight %}
+```
 
 That, literally, means: Hey, take the `switch-switch` element contained into a `switch-label` element, which must be next to a checked `switch-checkbox` and move the `left` property in accord.
 
@@ -132,7 +132,7 @@ So, we now have got a moving button and it is setting the checked value in the r
 
 Ok, now let's go into the hardest part.
 
-{% highlight css %}
+```stylus
 .switch-inner
   display block
   width 200%
@@ -170,7 +170,7 @@ Ok, now let's go into the hardest part.
          .switch-inner
             margin-left 0        
 
-{% endhighlight %}
+```
 
 Ok, at the first lines, we're telling that `swith-inner` element will have the double of parent's width (and so it will overflow). Given that, we're equally distributing the width between the `before` and `after` part, and then we set up two different background colors. This will basically give us the two background colors that will slide between right and left, depending on the state. We're then setting the content to 'On' and 'Off'.
 
@@ -178,38 +178,38 @@ Futhermore, as you can see, we're using the `margin-left` as moving property.
 
 Next step: let's hide the overflowing part in order to display one part per time.
 
-{% highlight css %}
+```stylus
 .switch-label
   display block
   overflow hidden
   cursor pointer
-{% endhighlight %}
+```
 
 ### Closing the loop
 The switch is now done, but it's ugly. Let's add some fanciness to the thing.
 At first, let's add some animation for the properties we're moving when clicking the checkbox: `margin` and `left`.
 
-{% highlight css %}
+```stylus
 .switch-inner
   transition margin 0.2s ease-in 0s
 
 .switch-switch
   transition all 0.2s ease-in 0s
-{% endhighlight %}
+```
 
 ### Using styl variables
 You will surely notice that, if we change the `width` of our flipswitch, the toy brokes. For example, the inner circle will stay in a totally wrong place. This is because we decided to use absolute positioning withing the switch. A partial solution to this is to use stylus variables. It turns out that if we don't hard code some width
 
-{% highlight css %}
+```stylus
 $switchWidth = 100px
 $circleWidth = 28px
-{% endhighlight %}
+```
 
 And replace the `right` expression in the checked state with something like
-{% highlight css %}
+```stylus
 .switch-switch
   right $switchWidth - $circleWidth - 4px
-{% endhighlight %}
+```
 
 The switch will behave correctly for each `width`
 

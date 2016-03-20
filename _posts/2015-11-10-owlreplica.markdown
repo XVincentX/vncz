@@ -14,7 +14,7 @@ I found the thing very funny (and genial, to be honest). The most interesting th
 
 First of all, let's place some HTML that we will style.
 
-{% highlight html %}
+```html
 <div class="owl">
   <div class="hand"></div>
   <div class="hand hand-r"></div>
@@ -23,23 +23,23 @@ First of all, let's place some HTML that we will style.
     <div class="arm arm-r"></div>
   </div>
 </div>
-{% endhighlight %}
+```
 
-The structure is quite simple: inside the own div we have placed 2 hands and two arms (we will see later why). 
+The structure is quite simple: inside the own div we have placed 2 hands and two arms (we will see later why).
 
-{% highlight css %}
+```stylus
 .owl
   width 211px
   height 108px
   background-image url('https://dash.readme.io/img/owl-login.png')
   position relative
-{% endhighlight %}
+```
 
 Let's explore the `owl` class: we're setting the background image (kindly stolen from the guys of Readme), dimensions and `position:relative`. We need this explicity because we will use the `absolute` positioning inside. While, normally, I disagree with `absolute` positioning, it may have sense for complex image manipulations, as long it stays pent into a `relative` container.
 
 Now, let's style the hands:
 
-{% highlight css %}
+```stylus
 .hand
     width 34px
     height 34px
@@ -54,7 +54,7 @@ Now, let's style the hands:
     &.hand-r
         left 170px
 
-{% endhighlight %}
+```
 
 Nothing of really serious is happening here: dimensions are set and thanks to `position:absolute`, we can set `top/left` properties (and override them for the right hand). The `border-radius` and `scaleY` properties allow us to create an ellipse and place it where we need.
 
@@ -68,14 +68,14 @@ Well, with less then 25 lines of css we have done more than 50% of our job.
 
 The fun comes here. Let's see how to position the arms:
 
-{% highlight css %}
+```stylus
   .arms
     position absolute
     top 58px
     height 41px
     width 100%
     overflow hidden
-  
+
     .arm
       width 40px
       height 65px
@@ -89,7 +89,7 @@ The fun comes here. Let's see how to position the arms:
         left 158px
         transform scaleX(-1)
 
-{% endhighlight %}
+```
 
 Beside the usual `absolute` positioning, the clever trick is in setting the `top` property equal to the real image height.
 
@@ -103,7 +103,7 @@ The image shows clearly that, while the `arms` div is positioned at eyes level, 
 
 Well, last part is just matter of translating the arms and animate them using the `animate` property:
 
-{% highlight css %}
+```stylus
 .arm
   width 40px
   height 65px
@@ -112,7 +112,7 @@ Well, last part is just matter of translating the arms and animate them using th
   left 20px
   top 40px
   transition 0.3s ease-out
-  
+
   &.password
     transform translateX(40px) translateY(-40px)
 
@@ -120,10 +120,10 @@ Well, last part is just matter of translating the arms and animate them using th
   &.arm-r
     left 158px
     transform scaleX(-1)
-    
-    &.password 
+
+    &.password
       transform translateX(-40px) translateY(-40px) scaleX(-1)
-{% endhighlight %}
+```
 
 ## Result
 
