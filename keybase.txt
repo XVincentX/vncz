@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/xvincentx
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://vncz.js.org
+  * I am xvincentx (https://keybase.io/xvincentx) on keybase.
+  * I have a public key with fingerprint E376 EF24 E763 791F AFD4  95CC D618 C95B D28F 3AE0
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101dd347cf9b6f387e498cdf08441f4ffa2523a8997a5c138b46650848a62d0d2eb0a",
+            "fingerprint": "e376ef24e763791fafd495ccd618c95bd28f3ae0",
+            "host": "keybase.io",
+            "key_id": "d618c95bd28f3ae0",
+            "kid": "0101dd347cf9b6f387e498cdf08441f4ffa2523a8997a5c138b46650848a62d0d2eb0a",
+            "uid": "63120a987f4905ee9d79f29d31cf8519",
+            "username": "xvincentx"
+        },
+        "service": {
+            "hostname": "vncz.js.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458569865,
+    "expire_in": 157680000,
+    "prev": "b0eb29fa90ea80c8b913247b25a4e0b2856d07838acf7f978fcc491566a630d6",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owGtkn9MVWUYxy8/CwxRUC6KYp2NiYC38/uc95KWuAU1gQlBN354d3687+UAnnu5
+93CFEHFLWMBVoJWMNWVaIkK2ojJqOJrNCQUzTUTaIpH8FbEwaMxA6Rxm//Vn7z/v
+3uf5fj/v8zx7msMCTKF+16MH8682WW/6fX9fNOXO+DdVYaJTrsSsVVgJXL5gqQw9
+mr1EkTErhhM4IcsUzUkIiCyieA7SgJdkhPM0TSAaIYFkSErgAeAERiIoXqRZltGz
+vMCSMi6TUMQFLAlDiuqAbpdbUTUdCymOhYikIcdSHCCQgGQaMJIkswQvAUaUSR5R
+AsR1Y5HTYzj04kTBAy2KU4/pD/tyef+h/5/rLl/GsRRB4gLgOUQDnIEQyBxAJJAp
+QkI8QwBD6IFuVdgLdXWFV1ElqGoVWHUSpoe9igSNyRqtPJF4VelNS7HH4nQ7dK/L
+7dSckrNUTxRpmstq+LRKlyHcB0X7E4RdVFRZH6Nu8EK3R3GqmJXQlZKmGEyCZniG
+BTzLJGGwwqW4oV0xFAzH8rh+jG+gV0eKOBRJgITXAQ4FHpd4ERAUSXMiyQg0xEVS
+x8g4x1O8ICEOAY5HkkQDgmFZgaVwmcWMrspUJ2al9DoFh870KA5V0MrdEKsOrfff
+EGjyCzUFB/kbC2YKDVn179Z1xYQ/ZpOXQsz9PTUWtHboj7HE5maSuhUzO/8BtXv7
+y9aO/aO9qD9P+mqxrc/MtX9YaX5uuHroPjXY1ZH56nlfdkRrzh1x9sbYdMHFjZbs
+395oyBUu5M6uf+vkmpZ3t55ZXVco9nQmcJnWnqCQCtfqXin1zvWk2M8Ktnr3v3cp
+rS7w2pqPd8ePMM+Qb6cEDOXXb+w+pR2ow+8F1JbGbRvxZf3lIv7MMcemFXuf73hp
+T2e9sBBS/0NyVhLIvrQquGFiR+OKpzupSEdL6GM1h/tkJDk2u/nIi4faRun0b6c1
+X8qBnX2Zo5OLibEnGr9oqTo9Gp9q+b1t0D18sNzsfOHgZE34l3dTbgXkn5qpUnpa
+fQO2I+jsiM1zdNfKo2Gtve833MVTxsf7zk2Vra0F/VvyEjZdvJI1/Chi5dR8Y/jp
+C76T+5bOzR3+el1q/zpyx99Dcx/5Yueb28lrxX1nwqYdu37BtsU/9WmZo3BgdE9C
+Jki/B9jUJfK1vLHZ9YfionwPE3/95thh5vjtiaibNkxu/fFR9JYrXZFhxz+fc03N
+xMVMPWwqXTz2nTx5+1n+ho1JVn6OGr4ccz5xaq67yBZZU5t2dcWCa6DA3IorE+3l
+kdvhTj/B1EGMl7Q1vnNirxa1OX1z6uwrHZaxDb6I4J+6L89YMgIL6+xlFRkP5s5i
+g/PRiTklQRnhC7YH/wA=
+=2m+8
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xvincentx
+
+==================================================================
