@@ -45,6 +45,6 @@ Here is the current list:
 2. [WebExpo 2015 - From callback to Promises](http://slideslive.com/38894521/from-callbacks-to-promises)
 3. [PragueJs - Webpack introduction](https://twitter.com/Jsconfcz/status/647106973679374336)
 4. [Fullstack 2015 - API Blueprint for API Design Lifecycle](https://skillsmatter.com/skillscasts/6774-api-blueprint-for-api-design-lifecycle)
-5. [FerraraJS 2016 - Callback, promises and beyond](https://twitter.com/universaljsday/status/709309432967122944)
+5. [FerraraJS 2016 - Callback, promises and beyond](https://twitter.com/universaljsday/status/721279119925907456)
 6. [Fullstack 2016 - Cogenerators and async style](https://skillsmatter.com/conferences/7278-fullstack-2016-the-conference-on-javascript-node-and-internet-of-things#program)
 
