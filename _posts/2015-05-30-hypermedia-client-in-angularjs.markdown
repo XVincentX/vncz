@@ -34,52 +34,55 @@ Hypermedia API's accomplish this by responding to requests with both the request
 
 This means, basically, that a typical API response will be something like this
 
-
-    "entities": [
-      { 
-        "class": [ "items", "collection" ], 
-        "rel": [ "http://x.io/rels/order-items" ], 
-        "href": "http://api.x.io/orders/42/items"
-      },
-      {
-        "class": [ "info", "customer" ],
-        "rel": [ "http://x.io/rels/customer" ], 
-        "properties": { 
-          "customerId": "pj123",
-          "name": "Peter Joseph"
-        },
-        "links": [
-          { "rel": [ "self" ], "href": "http://api.x.io/customers/pj123" }
-        ]
-      }
-    ],
-    "actions": [
-      {
-        "name": "add-item",
-        "title": "Add Item",
-        "method": "POST",
-        "href": "http://api.x.io/orders/42/items",
-        "type": "application/x-www-form-urlencoded",
-        "fields": [
-          { "name": "orderNumber", "type": "hidden", "value": "42" },
-          { "name": "productCode", "type": "text" },
-          { "name": "quantity", "type": "number" }
-        ]
-      }
-    ],
+```json
+"entities": [
+  {
+    "class": [ "items", "collection" ],
+    "rel": [ "http://x.io/rels/order-items" ],
+    "href": "http://api.x.io/orders/42/items"
+  },
+  {
+    "class": [ "info", "customer" ],
+    "rel": [ "http://x.io/rels/customer" ],
+    "properties": {
+      "customerId": "pj123",
+      "name": "Peter Joseph"
+    },
     "links": [
-      { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
-      { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
-      { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+      { "rel": [ "self" ], "href": "http://api.x.io/customers/pj123" }
     ]
-
-Our response has got different **links**, that are pointing us somewhere. What does that link do is defined into the *rel* section. 
-
-    "links": [
-      { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
-      { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
-      { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+  }
+],
+"actions": [
+  {
+    "name": "add-item",
+    "title": "Add Item",
+    "method": "POST",
+    "href": "http://api.x.io/orders/42/items",
+    "type": "application/x-www-form-urlencoded",
+    "fields": [
+      { "name": "orderNumber", "type": "hidden", "value": "42" },
+      { "name": "productCode", "type": "text" },
+      { "name": "quantity", "type": "number" }
     ]
+  }
+],
+"links": [
+  { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
+  { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
+  { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+]
+```
+
+Our response has got different **links**, that are pointing us somewhere. What does that link do is defined into the *rel* section.
+
+```json
+"links": [
+  { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
+  { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
+  { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }
+]
+```
 
 This stuff, for example, let us navigate throught the orders.
 
@@ -106,6 +109,6 @@ Imagine also a web application developed from a third-party company: an hypermed
 
 Everybody when reading the first time about hypermedia APIs.
 
-Hold your horses. Is it free of charge? Absolutely not. There is a very strong dispute if it is worth or not to write an Hypermedia API (because basically writing hypermedia clients is not easy at all), but I will not share links or considerations (yet), because we're going to build a client on our own, and hopefully make sense of the disavantages during the "journey" 
+Hold your horses. Is it free of charge? Absolutely not. There is a very strong dispute if it is worth or not to write an Hypermedia API (because basically writing hypermedia clients is not easy at all), but I will not share links or considerations (yet), because we're going to build a client on our own, and hopefully make sense of the disavantages during the "journey"
 
 But this will be started in the next blog post.
