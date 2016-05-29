@@ -6,7 +6,7 @@ date: 2016-01-20 20:51:06.000000000 +02:00
 
 Today I would like to talk (and, hopefully, help you to solve) one of the problem that every frontend developer will (perhaps) deal with: **closing on outside click**
 
-Let's say you have a drop down menu which will show its internal items when you click on it, and it has to be opened until an outside click has been detected. For a sample of this, check out [https://www.apiary.io] application header:
+Let's say you have a drop down menu which will show its internal items when you click on it, and it has to be opened until an outside click has been detected. For a sample of this, check out [https://www.apiary.io](https://www.apiary.io) application header:
 
 ![applicationHeader](/images/applicationHeaderApiary.gif)
 
