@@ -23,7 +23,9 @@ My long-term interest include project management (especially of small teams), pr
 ## Work Experience
 
 ### [Apiary.io](http://apiary.io)
+
 #### API Design Stack
+
 ##### Software developer - **Dec 2014 - Present**
 
 1. Full stack software engineer (with strong attitude in FrontEnd), part of the Core Application Team, delivering features to 170k+ users, ranging from Payments infrastructure, Documentation rendering and so on.
