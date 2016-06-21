@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: An updated CV
 modified: 2014-08-08T20:53:07.573882-04:00
 ---
 # Vincenzo Chianese
@@ -92,21 +92,29 @@ substation and offering a simple gateway to get real time data.
 ### FreeTech
 #### Printer Cartridge Manufacturer
 ##### Software developer - **Apr 2010 - Sept 2012**
+
 - Full legacy database (more than 200 tables) reverse engineering (Sql Server 2005)
+
 - Dozen of programs to extend and improve current business procedures (intra-company documents,lists of bulk inserts, graphs and summaries generation)
+
 - Intranet Web applications to allow unlicensed and remote workstations to work directly on legacy database
+
 - Full featured Ecommerce website completely integrated with legacy backbone structure
+
 - Web Applcation for thirdy party special customers (single page application on MVC3)
-
-
 
 ### Webspaces SRL
 #### Software development, Internet Service Provider and Voip Telephony
 ##### Cofounder - **Gen 2007 - Feb 2010**
+
 - In charge of Heus, feature complete Accountancy software licensed to 50+ customers
+
 - General purpose Php Ecommerce software
+
 - System administrator (Windows 2003-2008)
+
 - Voip PBX extensions (through Asterisk)
+
 - C++ Win32 services
 
 ### Activities
@@ -115,7 +123,7 @@ substation and offering a simple gateway to get real time data.
 - Team member for **Mystyle** project, First world server emulator of Rose Online game. It was used as reference for ALL forks and current emulators.
 - [JsAction](https://github.com/XVincentX/JsAction) Project, an open source route handler for Asp.NET MVC
 - [Open103](https://github.com/XVincentX/Open103/) project, an open source reference implementation of [IEC 870-5-103](http://en.wikipedia.org/wiki/IEC_60870-5) protocol
-- Creator of [SimInfo](https://github.com/XVincentX/SimInfo), a free Windows Phone 8 App to manage credit informations by carrier operators. It has been killed due to Italians carriers coalition against me, and then I open sourced it. [Some notes are here](http://vncz.js.org/building-siminfo/)
+- Creator of [SimInfo](https://github.com/XVincentX/SimInfo), a free Windows Phone 8 App to manage credit informations by carrier operators. It has been killed due to Italians carriers coalition against me, and then I open sourced it. [Some builind notes are here](http://vncz.js.org/building-siminfo/)
 - [TextCompress](https://github.com/XVincentX/TextCompress), compression alghoritm suited for plain text compression
 
 
