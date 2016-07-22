@@ -6,7 +6,7 @@ date: 2016-07-20 20:51:06.000000000 +02:00
 
 I'm really happy to announce today the first release of **vscode-apielements**, a [Visual Studio Code](https://code.visualstudio.com) extension whose aim is to make your life easier when working with [API Blueprint](https://apiblueprint.org) and [Swagger](https://swagger.io) documents.
 
-![Image](https://cdn.rawgit.com/XVincentX/vscode-apielements/XVincentX/goToSymbol/screenshot.png)
+![Image](https://github.com/XVincentX/vscode-apielements/raw/master/screenshot.png)
 
 I have been developing this extension for fun during my spare time in order to understand the model behind Visual Studio Code.
 
