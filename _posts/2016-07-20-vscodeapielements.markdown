@@ -1,6 +1,6 @@
 ---
 layout: post
-title: APIElements for Visual Studio Code
+title: API Elements for Visual Studio Code
 date: 2016-07-20 20:51:06.000000000 +02:00
 ---
 
