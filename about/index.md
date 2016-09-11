@@ -50,6 +50,6 @@ Here is the current list:
 ## 2016
 1. [FerraraJS - Callback, promises and beyond](https://twitter.com/universaljsday/status/721279119925907456)
 2. [Fullstack - Cogenerators and async style](https://skillsmatter.com/skillscasts/7904-from-callback-to-promises-and-beyond)
-3. [Full stack fest - Taming the async problem with CSP](https://2016.fullstackfest.com/speakers/#speaker/vincenzo)
+3. [Full stack fest - Taming the async problem with CSP](https://www.youtube.com/watch?v=SyeTI2cmUGI&t=5040s)
 4. [O Reilly - Software Architecture Conference](http://conferences.oreilly.com/software-architecture/engineering-business-eu/public/schedule/detail/52634)
 5. [IM World 2016](http://imworld.ro/)
