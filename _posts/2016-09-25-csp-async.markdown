@@ -1,0 +1,67 @@
+---
+layout: post
+title: Communicating Sequential Processes - async.parallel
+date: 2016-09-25 20:51:06.000000000 +02:00
+---
+
+This is a small serie about using CSP concepts in Javascript
+
+1. [CSP introduction](/csp-javascript/)
+2. [CSP and async.js](/csp-async/)
+
+An interesting usage of `CSP` concepts and libraries that I saw multiple times missing is about using it as a building block for more complex control flow mechanisms.
+
+Even if I will definitely give some examples about _droppping CSP directly into my code_ I do still still that it's useful to see some internal usage which might be missing at first glance.
+
+The fist and most basic thing that I can show you is to replicate the [async.parallel](https://github.com/caolan/async/blob/master/lib/parallel.js)
+
+I am quite sure you're already familiar with this function, as it literally saved our asses for years in javascript.
+Anyway, for those who're not familiar with (???), here is the signature and the documentation
+
+`parallel(tasks, callback)`
+
+> Run the tasks collection of functions in parallel, without waiting until the previous function has completed. If any of the functions pass an error to its callback, the main callback is immediately called with the value of the error. Once the tasks have completed, the results are passed to the final callback as an array.
+
+Given that, let's try to reimplement the same thing using CSP concepts and [js-csp library](https://github.com/ubolonton/js-csp)
+
+```javascript
+const csp = require('js-csp');
+
+const parallel = (functions = [], cb) => {
+  const ch = csp.chan();
+
+  functions.forEach((fun) => {
+    fun((err, data) => {
+      if (err) {
+        csp.putAsync(err);
+        ch.close();
+      }
+
+      csp.putAsync(ch, data);
+    })
+  });
+
+  csp.go(function*() {
+
+    const data = [];
+
+    for (let i = 0; i < functions.length; i++) {
+      const val = yield csp.take(ch);
+      if (val === csp.CLOSED) {
+        return cb('Something went wrong.')
+      }
+
+      data.push(val);
+    }
+    ch.close();
+    cb(null, data);
+
+  })
+}
+
+module.exports = parallel;
+```
+
+This code is just a simple implementation and it's probably missing a lot of edge cases as well some facilities
+the original library is offering you. The interesting thing, anyway, is how this code is actually not that terrible
+compared to the original one in the async library and it's definitely more easy to reason about.

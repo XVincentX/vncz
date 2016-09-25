@@ -4,6 +4,11 @@ title: Communicating Sequential Processes serie
 date: 2016-09-17 20:51:06.000000000 +02:00
 ---
 
+This is a small serie about using CSP concepts in Javascript
+
+1. [CSP introduction](/csp-javascript/)
+2. [CSP and async.js](/csp-async/)
+
 During the last couple of months I've been working a lot with the concept of CSP,
 which stands for Communicating Sequential Processes.
 
