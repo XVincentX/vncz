@@ -4,6 +4,7 @@ title:            "Vncz's Blog"
 locale:           en_US
 
 baseurl: https://vncz.js.org
+url: https://vncz.js.org
 
 # Jekyll configuration
 
