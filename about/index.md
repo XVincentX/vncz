@@ -52,3 +52,4 @@ Here is the current list:
 2. [Fullstack - Cogenerators and async style](https://skillsmatter.com/skillscasts/7904-from-callback-to-promises-and-beyond)
 3. [Full stack fest - Taming the async problem with CSP](https://www.youtube.com/watch?v=r7yWWxdP_nc)
 4. [O Reilly - Software Architecture Conference](http://conferences.oreilly.com/software-architecture/engineering-business-eu/public/schedule/detail/52634)
+5. API Days 2016 - Topic to be announced
