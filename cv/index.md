@@ -28,12 +28,12 @@ My long-term interest include project management (especially of small teams), pr
 
 ##### Software developer - **Dec 2014 - Present**
 
-1. Full stack software engineer (with strong attitude in FrontEnd), part of the Core Application Team, delivering features to 170k+ users, ranging from Payments infrastructure, Documentation rendering and so on.
+1. Full stack software engineer (with strong attitude in FrontEnd), Team Leader for Documentation Team, delivering features to 170k+ users, ranging from Payments infrastructure, Documentation rendering and so on.
 2. Active in several open source projects
 3. Crafted [Attributes Kit](http://github.com/apiaryio/attributes-kit), a [MSON](https://github.com/apiaryio/MSON) renderer
 4. Local Windows expert
 
-### Nettuno Solutions
+### [Nettuno Solutions](http://www.nettunosolutions.com)
 #### Software division of Fire SPA
 ##### Software developer - **Sept 2013 - Dec 2014**
 
@@ -51,7 +51,7 @@ using a **NodeJS** application (express framework)
 
 The team was about 13 developers, **cloc** says we're about 330k lines of code.
 
-### Webspaces SRL
+### [Webspaces SRL](http://www.webspaces.it)
 #### Software development, Internet Service Provider and Voip Telephony
 ##### Cofounder - **Nov 2013 - May 2014**
 
@@ -72,7 +72,7 @@ replaced with Azure Mobile Services (some with NodeJS, some with .NET backend).
 Now we have less costs, more services, less pollution, less worries...and an empty room.
 
 
-### Miluma SRL
+### [Miluma SRL](http://www.miluma.it)
 #### Automation and telecontrol
 ##### Software developer **Sept 2012 - Sept 2013**
 
@@ -91,7 +91,7 @@ substation and offering a simple gateway to get real time data.
 (open sourced) and IEC870-5-104 protocols
 
 
-### FreeTech
+### [FreeTech](http://www.free-tech.com)
 #### Printer Cartridge Manufacturer
 ##### Software developer - **Apr 2010 - Sept 2012**
 
@@ -105,7 +105,7 @@ substation and offering a simple gateway to get real time data.
 
 - Web Applcation for thirdy party special customers (single page application on MVC3)
 
-### Webspaces SRL
+### [Webspaces SRL](http://www.webspaces.it)
 #### Software development, Internet Service Provider and Voip Telephony
 ##### Cofounder - **Gen 2007 - Feb 2010**
 
