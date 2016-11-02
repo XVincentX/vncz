@@ -123,6 +123,7 @@ substation and offering a simple gateway to get real time data.
 
 - Contributor for **eAthena** project,(open source Ragnarok server emulator) where I made a complete rewriting of memory manager to achieve better performance.
 - Team member for **Mystyle** project, First world server emulator of Rose Online game. It was used as reference for ALL forks and current emulators.
+- [vscode-apielements](https://github.com/XVincentX/vscode-apielements) project, a [VSCode extension](https://marketplace.visualstudio.com/items?itemName=vncz.vscode-apielements) that brings rich editing experience for [Swagger](https://swagger.io) and [API Blueprint](https://apiblueprint.org) into the editor
 - [JsAction](https://github.com/XVincentX/JsAction) Project, an open source route handler for Asp.NET MVC
 - [Open103](https://github.com/XVincentX/Open103/) project, an open source reference implementation of [IEC 870-5-103](http://en.wikipedia.org/wiki/IEC_60870-5) protocol
 - Creator of [SimInfo](https://github.com/XVincentX/SimInfo), a free Windows Phone 8 App to manage credit informations by carrier operators. It has been killed due to Italians carriers coalition against me, and then I open sourced it. [Some builind notes are here](http://vncz.js.org/building-siminfo/)
