@@ -11,7 +11,7 @@ This is a small serie about using CSP concepts in Javascript
 
 An interesting usage of `CSP` concepts and libraries that I saw multiple times missing is about using it as a building block for more complex control flow mechanisms.
 
-Even if I will definitely give some examples about _droppping CSP directly into my code_ I do still still that it's useful to see some internal usage which might be missing at first glance.
+Even if I will definitely give some examples about _dropping CSP directly into my code_ I do still still that it's useful to see some internal usage which might be missing at first glance.
 
 The fist and most basic thing that I can show you is to replicate the [async.parallel](https://github.com/caolan/async/blob/master/lib/parallel.js)
 
