@@ -7,7 +7,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 Hello!
 
 My name is Vincenzo Chianese, I came from Napoli (Italy) and since Dicember 2014 I've relocated in Prague, Czech Republic.
-I am currently working as (front|back) developer at [Apiary](http://apiary.io). I put bugs in the code, making sure that my coworkers have always something to fix.
+I am currently working as (front|back) developer at [Apiary](http://apiary.io) and, in particular, I lead the Documentation team, who's providing you the most used API documentation in the world. I put bugs in the code, making sure that my coworkers have always something to fix.
 
 I am (still) tooking undergraduate degree at the Department of Engineering in Naples University. I feel ashamed because I am getting old and I do not have my title yet; Relocating in Prague did not help at all. For this reason (and a lot of other more), my father thinks I am a good-for-nothing (and perhaps he is totally right)
 
