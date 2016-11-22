@@ -52,4 +52,4 @@ Here is the current list:
 2. [Fullstack - Cogenerators and async style](https://skillsmatter.com/skillscasts/7904-from-callback-to-promises-and-beyond)
 3. [Full stack fest - Taming the async problem with CSP](https://www.youtube.com/watch?v=r7yWWxdP_nc)
 4. [O Reilly Software Architecture Conference - Scalable API Flow](https://www.youtube.com/watch?v=XjVQh2DxFbY&feature=youtu.be)
-5. [API Days 2016 - Scalable API Flow](http://paris.apidays.io/)
+5. [API Days 2016 - Scalable API Flow](http://global.apidays.io/events/paris-2016)
