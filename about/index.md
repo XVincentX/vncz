@@ -56,4 +56,4 @@ Here is the current list:
 6. [JS Dev Days Naples](http://napoli.devday.it/)
 
 ## 2017
-1. [Labda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017)
+1. [Labda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
