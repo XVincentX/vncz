@@ -53,7 +53,7 @@ Here is the current list:
 3. [Full stack fest - Taming the async problem with CSP](https://www.youtube.com/watch?v=r7yWWxdP_nc)
 4. [O Reilly Software Architecture Conference - Scalable API Flow](https://www.youtube.com/watch?v=XjVQh2DxFbY&feature=youtu.be)
 5. [API Days 2016 - Scalable API Flow](http://global.apidays.io/events/paris-2016)
-6. [JS Dev Days Naples](http://napoli.devday.it/)
+6. [DevDay Naples](https://www.eventbrite.com/e/6-devday-gestione-dei-flussi-asincroni-con-csp-tickets-29739171663)
 
 ## 2017
 1. [Labda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
