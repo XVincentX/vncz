@@ -56,4 +56,4 @@ Here is the current list:
 6. [DevDay Naples](https://www.eventbrite.com/e/6-devday-gestione-dei-flussi-asincroni-con-csp-tickets-29739171663)
 
 ## 2017
-1. [Labda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
+1. [Lambda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
