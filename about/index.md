@@ -57,3 +57,5 @@ Here is the current list:
 
 ## 2017
 1. [Lambda Days 2017 - Async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
+2. [CodeMotion 2017]()
+
