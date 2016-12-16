@@ -56,5 +56,5 @@ Here is the current list:
 6. [DevDay Naples - Csp in Javascript](https://www.eventbrite.com/e/6-devday-gestione-dei-flussi-asincroni-con-csp-tickets-29739171663)
 
 ## 2017
-1. [Lambda Days 2017 - Taming the async flows in Javascript](http://www.lambdadays.org/lambdadays2017/#speakers)
+1. [Lambda Days 2017 - Taming the async flows in Javascript](http://www.lambdadays.org/lambdadays2017/vincenzo-chianese)
 2. [CodeMotion 2017 - Taming the async flows in Javascript](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
