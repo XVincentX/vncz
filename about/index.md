@@ -57,6 +57,7 @@ Here is the current list:
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](http://www.lambdadays.org/lambdadays2017/vincenzo-chianese)
-2. [API Days Austrialia]()
-3. [CodeMotion 2017](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
-4. [DevDays 2017 Vilnius]()
+2. [API Days Austrialia](http://au.apidays.io/abstracts.html#cac87ee4)
+3. [Oracle Code New York]()
+4. [CodeMotion 2017](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
+5. [DevDays 2017 Vilnius]()
