@@ -57,7 +57,7 @@ Here is the current list:
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](http://www.lambdadays.org/lambdadays2017/vincenzo-chianese)
-2. [API Days Austrialia](http://au.apidays.io/abstracts.html#cac87ee4)
-3. [Oracle Code New York](https://developer.oracle.com/code/newyork)
-4. [CodeMotion 2017](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
-5. [DevDays 2017 Vilnius](http://devdays.lt/vincenzo-chianese/)
+2. [API Days Austrialia - SCalable API Flow](http://au.apidays.io/abstracts.html#cac87ee4)
+3. [Oracle Code New York - Harmony in API Design](https://developer.oracle.com/code/newyork)
+4. [CodeMotion 2017 - CSP in Javascript](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
+5. [DevDays 2017 Vilnius - Multiple presentations](http://devdays.lt/vincenzo-chianese/)
