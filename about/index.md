@@ -56,7 +56,7 @@ Here is the current list:
 6. [DevDay Naples - Csp in Javascript](https://www.youtube.com/watch?v=hcJM0Ut0bgc&feature=youtu.be)
 
 ## 2017
-1. [Lambda Days 2017 - Taming the async flows in Javascript](http://www.lambdadays.org/lambdadays2017/vincenzo-chianese)
+1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
 2. [API Days Austrialia - SCalable API Flow](http://au.apidays.io/abstracts.html#cac87ee4)
 3. [Oracle Code New York - Harmony in API Design](https://developer.oracle.com/code/newyork)
 4. [CodeMotion 2017 - CSP in Javascript](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
