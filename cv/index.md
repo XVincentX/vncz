@@ -135,7 +135,6 @@ substation and offering a simple gateway to get real time data.
 - [Stack overflow profile](http://careers.stackoverflow.com/xvincentx)
 - [GitHub profile](https://github.com/XVincentX)
 - [LinkedIn profile](http://www.linkedin.com/pub/vincenzo-chianese/3b/75b/3a5)
-- [My travelmap](http://www.tripadvisor.com/TravelMap-a_uid.4DB63840585B7A2E3704FEBCB1373876)
 - Available for relocation
 - I have a degree in classic guitar
 - I speak a good Spanish and I am learning Portuguese.
