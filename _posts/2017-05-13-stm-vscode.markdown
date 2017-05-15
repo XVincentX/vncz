@@ -4,7 +4,7 @@ title: Programming ST devices with Visual Studio Code
 date: 2017-05-13 20:51:06.000000000 +02:00
 ---
 
-![image](image.png)
+![image](https://github.com/XVincentX/vscode-stm32-template/raw/master/image.png)
 
 I've been lately involved into embedded programming (nothing really serious
 and fancy, just basic stuff for an university exam), in particular with ST
