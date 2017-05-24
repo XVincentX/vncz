@@ -1,0 +1,325 @@
+---
+layout: post
+title: New generation tracing technologies for Linux operating system - part 2
+date: 2017-05-25 20:51:06.000000000 +02:00
+---
+
+## Writing eBPF programs
+
+This section is meant to give a quick overview on the various way we can write a BPF program as well some practical examples using the **BCC** open source project.
+
+The most naive way to write an eBPF program is to simply specify the list of pseudo-assembly instructions into an array, directly into the hosting program.
+
+Generally the process to create, load and grab results from an eBPF programs is:
+
+1.  Define an array of pseudo assembly instructions
+2.  Create (eventually) the maps in order to exchange data between the eBPF program and the user space program.
+3.  Load the program, specifying the program type
+4.  Attach the program to the target (socket, Kprobe, Uprobe, static trace points)
+5.  Gather the results.
+
+Unfortunately working directly with pseudo-assembly code can explode in terms of complexity really easily. 
+
+Let's consider, for example, a simple program that it's incrementing an internal counter whenever it's getting called. The resulting pseudo-assembly code would look like the following:
+
+```c
+struct bpf_insn prog[] = {
+
+/* Put 0 (the map key) on the stack */
+
+BPF_ST_MEM(BPF_W, BPF_REG_10, -4, 0),
+
+/* Put frame pointer into R2 */
+
+BPF_MOV64_REG(BPF_REG_2, BPF_REG_10),
+
+/* Decrement pointer by four */
+
+BPF_ALU64_IMM(BPF_ADD, BPF_REG_2, -4),
+
+/* Put map_fd into R1 */
+
+BPF_LD_MAP_FD(BPF_REG_1, map_fd),
+
+/* Load current count from map into R0 */
+
+BPF_RAW_INSN(BPF_JMP | BPF_CALL, 0, 0, 0,
+
+    BPF_FUNC_map_lookup_elem),
+
+/* If returned value NULL, skip two instructions and return */
+
+BPF_JMP_IMM(BPF_JEQ, BPF_REG_0, 0, 2),
+
+/* Put 1 into R1 */
+
+BPF_MOV64_IMM(BPF_REG_1, 1),
+
+/* Increment value by 1 */
+
+BPF_RAW_INSN(BPF_STX | BPF_XADD | BPF_DW, BPF_REG_0, BPF_REG_1, 0, 0),
+
+/* Return from program */
+
+BPF_EXIT_INSN(),
+
+};
+
+```
+
+On the other hand, if we do consider a C program that could perform the same action it's another story:
+
+```c
+int counter = 0;
+
+counter +=1;
+```
+
+It turns out that working directly with pseudo-assembly code it's doable, but it's really easy to mess it up. The possibility to write the code in a higher level language is therefore important as it is easier to reason about it.
+
+Moreover, the API offered from the kernel to deal with eBPF is really verbose and requires a lot of boilerplate code in order to get started with eBPF programs,
+
+Fortunately for us, it's not necessary nor to write plain eBPF instructions nor to deal with the raw API. LLVM provides a backend for BFP program: it means that modules can be written directly in C and leverage functions provided by a higher lever library, as well as  using conventions over function calls in order to instruct the program how to behave and where to attach.
+
+# BCC
+
+BCC (BPF Compiler Collection) is a toolkit meant to make BPF programs easier to write. It hides the long and verbose workflow that you have to follow in order to integrate BPF with your applications, that sometimes can also require to compile directly in a linux source tree.
+
+The toolkit is providing:
+
+1.  A shared library to simplify the eBPF workflow
+2.  Bindings for multiple programming languages (Python, Lua, Go)
+3.  Single and multi purpose tools for tracing a running system (that serve also as an introduction in writing BPF programs)
+4.  A flavoured C backend (powered by LLVM) that translates the code into eBPF assembly instructions
+
+By flavoured basically we mean the insertion of some convention in order to write simpler programs and trying to skip dealing with the real infrastructure as much as possible.
+
+For instance, in order to attach a Kprobe on a particular kernel function, we can simply declare a function with the same target function and the *kprobe__* prefix. In other words, if we want to attach a probe on the *tcp_v4_connect*, all we have to do is to declare a function named *kprobe__tcp_v4_connect* 
+
+The underlying compiler infrastructure will take care of figuring out WHAT to do (attach a Kprobe) and where to do it (*tcp_v4_connect*). The same thing goes with Uprobes, or attaching to trace points and so on.
+
+It is also providing facilities to deal with maps and exchanging the data between the BPF program and the user space.
+
+The whole concept behind the BCC is to make sure the developer can focus on writing the actual BPF program and not having to spend so much time in figuring out how to exchange data with the maps or how to make sure the program is properly loaded in the kernel as well trying to move the first moment of the truth as soon as possible (detecting programs that cannot run and tell it in advance instead of waiting the verifier to refuse it).
+
+It follows now a basic example of a BCC program that traces all IPv4 connection attempts, even if they ultimately fail. It should be really easy for the reader to notice that the program is structured in two parts: the first one is the BPF code itself, written in form of a string, in C. The second one using Python the results collected from the program to show the data to the final user. BCC libraries for Python provide a lot of useful tools to display data and generate statistics out of them.
+
+```python
+from __future__ import print_function
+
+from bcc import BPF
+
+# define BPF program
+
+bpf_text = """
+
+#include <uapi/linux/ptrace.h>
+
+#include <net/sock.h>
+
+#include <bcc/proto.h>
+
+BPF_HASH(currsock, u32, struct sock *);
+
+int kprobe__tcp_v4_connect(struct pt_regs *ctx, struct sock *sk)
+
+{
+
+u32 pid = bpf_get_current_pid_tgid();
+
+currsock.update(&pid, &sk);
+
+return 0;
+
+};
+
+int kretprobe__tcp_v4_connect(struct pt_regs *ctx)
+
+{
+
+int ret = PT_REGS_RC(ctx);
+
+u32 pid = bpf_get_current_pid_tgid();
+
+struct sock **skpp;
+
+skpp = currsock.lookup(&pid);
+
+if (skpp == 0) {
+
+return 0;  // missed entry
+
+}
+
+if (ret != 0) {
+
+// failed to send SYNC packet, may not have populated
+
+// socket __sk_common.{skc_rcv_saddr, ...}
+
+currsock.delete(&pid);
+
+return 0;
+
+}
+
+// pull in details
+
+struct sock *skp = *skpp;
+
+u32 saddr = 0, daddr = 0;
+
+u16 dport = 0;
+
+bpf_probe_read(&saddr, sizeof(saddr), &skp->__sk_common.skc_rcv_saddr);
+
+bpf_probe_read(&daddr, sizeof(daddr), &skp->__sk_common.skc_daddr);
+
+bpf_probe_read(&dport, sizeof(dport), &skp->__sk_common.skc_dport);
+
+// output
+
+bpf_trace_printk("trace_tcp4connect %x %x %d\\n", saddr, daddr, ntohs(dport));
+
+currsock.delete(&pid);
+
+return 0;
+
+}
+
+"""
+
+# initialize BPF
+
+b = BPF(text=bpf_text)
+
+# header
+
+print("%-6s %-12s %-16s %-16s %-4s" % ("PID", "COMM", "SADDR", "DADDR",
+
+    "DPORT"))
+
+def inet_ntoa(addr):
+
+dq = ''
+
+for i in range(0, 4):
+
+dq = dq + str(addr & 0xff)
+
+if (i != 3):
+
+dq = dq + '.'
+
+addr = addr >> 8
+
+return dq
+
+# filter and format output
+
+while 1:
+
+        # Read messages from kernel pipe
+
+        try:
+
+            (task, pid, cpu, flags, ts, msg) = b.trace_fields()
+
+            (_tag, saddr_hs, daddr_hs, dport_s) = msg.split(" ")
+
+        except ValueError:
+
+            # Ignore messages from other tracers
+
+            continue
+
+        # Ignore messages from other tracers
+
+        if _tag != "trace_tcp4connect":
+
+            continue
+
+print("%-6d %-12.12s %-16s %-16s %-4s" % (pid, task,
+
+    inet_ntoa(int(saddr_hs, 16)),
+
+    inet_ntoa(int(daddr_hs, 16)),
+
+    dport_s))
+```
+
+# Use case: hardware offload
+
+eBPF opens up a lot of new possibilities. However the improvements that eBPF got (in particular the ability to be a stateful machine) can be applied and back ported to network usages as well, providing new interesting use cases: among these we'll spend couple of paragraphs on hardware offload.
+
+Originally TCP was designed for unreliable low speed networks but with the growth of the Internet in terms of backbone transmission speeds (using Optical Carrier, Gigabit Ethernet and 10 Gigabit Ethernet links) and faster and more reliable access mechanisms (such as DSL and cable modems) the amount of data to process per second has grown incredibly and will continue to increase. 
+
+Essentially the network has become an application bus although it's not an ideal place to build one. Today's network contain million of endpoints, with IoT that's bringing tons of new devices into the game. The internet is huge and noisy: potentially, on a 10Gb network, 14 million packets can fly per second. That should give us an idea how many milliseconds we have to process a single packet without blocking the network.
+
+Moreover, the intrinsic unreliability of the network is complicating the things even more. TCP is giving us great guarantees about the status of a packet but that feeling of reliability comes with a cost in terms of complexity and overhead. Just to point some things that are happening in the background when we're having a TCP conversation:
+
+1.  3 way handshake connection establishment
+2.  Explicit acknowledgement of the packets
+3.  Checksum and sequence number computation
+4.  Sliding window for congestion control
+5.  Connection termination
+
+It turns out that TCP software implementations on the host systems require extensive computing power. While this is not a problem on the consumer side (it's really unlikely that an end-user will be able to saturate the entire CPU and the memory with its network activity) this is a problem that backbone providers are facing today.
+
+Over the years, there has been a lot of interest, studies as well attempts to create systems capable of an offload packets processing to a separate hardware, actually for two main reasons:
+
+1.  Performance: The increasing amount of packets to process is saturating memory and CPU. There's an urgent need of using dedicated hardware for packets processing.
+2.  Network evolution: Even if we --- as end users --- do not really realise it, networks are constantly evolving. One good example is the **Tcp Fast Open** technology. It was developed by Google and a bunch of other people as an attempt to dramatically reduce the time to fetch a website.
+For most operating system the TCP/IP stack is coupled in the kernel, hence the working group pushed the TFO implementation into the upstream kernel. The problem is to convince all the software and hardware vendors to rebase all their software on the current kernel version, which is something that usually they try to avoid as much as possible given that the amount of breaking changes can be high.
+This coupling between the kernel and the TCP/IP stack might also bring security problems. There's a lot of software running on years old kernel and some of them might even have security problems (like something in the TCP parser) in the TCP/IP stack, making these systems highly vulnerable. This problem is pushing big companies such as Google and Facebook to propose the idea of moving the entire TCP/IP stack in the user space, rather than having in the kernel.
+
+There were previous attempts to promote general networking offload within the Linux kernel --- but the only one that were successful had a very limited scope.
+
+A first attempt was the **TOE** (TCP offload engine) --- a proposal that, using a kernel patch, allowed the system to offload parts of the TCP processing (in particular the headers) to a dedicated hardware. However kernel developers are opposed to this technology for several reasons, including:
+
+1.  Limitations of the hardware: At the times, even if the packet processing was speed up by the dedicated hardware, actually the PCI bus was not that fast as today, resulting in a new bottleneck that was frustrating the efforts
+2.  Security: a bug in the dedicated hardware might compromise the entire system, and also it's breaking the assumption that the kernel has access to all the resources for all the time
+3.  Complexity: some important services provided by the kernel (such as Quality Of Service) do not work when this technology is enabled
+4.  Proprietary: In order to enable this engine, there's still need of a custom network driver that's coupled with the hardware vendor and most of the time is closed source.
+
+**eBPF** brings a new possibility on the table, providing a standard and unified framework to provide a general offload mechanism to the kernel, for multiple reasons; in particular, among those:
+
+1.  It's a well defined language and machine, with constrained resources, register and instructions set. Its features are known ahead of the time so there's a way to standardise it.
+2.  It is the building block of different tools in the packet processing (such as **tf** and **XDP** that are exactly the points in the system where we might want to offload the processing)
+3.  **eBPF** is meant to run in parallel
+
+The programming model almost follows the same path as a normal BFP program through the verifier, the only thing that's changing is the JIT, as the compiled code should fit the device that will be executing it.
+
+A lot of the verifier infrastructure is usually reutilised in the translation process; this reason motivated the idea of exposing the internal verifier data structures to be used for external analysers. Given that the kernel is open source, it is easy to find the commit SHA where this separation happened.
+
+However, most of the times the built-in verifier is not enough, as you might need to make custom verification, such as verifying that the current network card is able to execute the code, for example. For this time, vendors usually extend the verifier, gathering data from the network card (this process is called **caps reading**) and check the supported instruction set as well as the maximum image size that can be loaded into.
+
+If, for some reason, the network card is not able to process the particular BPF program, the best thing is to fallback to regular software processing on the CPU. 
+
+The range of operations and actions you can perform on a packet is spread and it is card dependant but the unification is in process. The most common include
+
+1.  ALU instructions
+2.  Packet modification (on metadata fields, header and payload)
+3.  Redirection/Drop/Pass
+4.  Basic maps (for statistic and informations collection)
+5.  Combination of all the operations listed above.
+
+**References**
+
+[Brendan Gregg - eBPF webpage](http://www.brendangregg.com/ebpf.html)
+
+[Brendan Gregg - DTrace webpage](http://www.brendangregg.com/dtrace.html)
+
+[Sasha Goldstein - Moden Linux Tracing Landscape](https://www.dropbox.com/s/x59pz8o8crsbvm2/Modern-Linux-tracing-landscape.pptx?dl=0)
+
+[Jakub Kicinski, Nicolaas Viljoen - eBPF Hardware Offload to SmartNIC](https://netdevconf.org/1.2/papers/eBPF_HW_OFFLOAD.pdf)
+
+[Brendan Gregg - BPF: Tracing and more](https://www.youtube.com/watch?v=JRFNIKUROPE)
+
+[Elena Zannoni - New developments in Linux Tracing](https://events.linuxfoundation.org/sites/events/files/slides/tracing-linux-ezannoni-linuxcon-ja-2015_0.pdf)
+
+[The BCC project](https://github.com/iovisor/bcc)
+
+[BPF internal structure exposition](https://github.com/torvalds/linux/commit/58e2af8b3a6b587e4ac8414343581da4349d3c0f)
+
+[MySQL Trace point reference](https://dev.mysql.com/doc/refman/5.7/en/dba-dtrace-mysqld-ref.html)

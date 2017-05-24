@@ -1,0 +1,206 @@
+---
+layout: post
+title: New generation tracing technologies for Linux operating system - part 1
+date: 2017-05-25 20:51:06.000000000 +02:00
+---
+
+My bachelor thesys, open sourced for you.
+
+# Introduction
+
+In software engineering, **Tracing** is the ability to inspect and record information about a software's execution by attaching a program to various probing points in the system under control and collect informations. This information is typically used by software developers for debugging purposes as well from system administrators to keep control of the system itself.
+
+There are many **probing points** that exist on different levels of the system: they can be function executions where we can inspect, for instance, the arguments that a certain function is being called with; they can be placed in the kernel where we can inspect, for instance, network packets coming in and being processed by the system; we can inspect processes being created/paused/killed; but they could also be application level events like invocations of the garbage collector (if provided by the runtime environment), method invocations and runtime-dependant events (like an http request for **NodeJS**).
+
+Regardless of the source, whenever one of the above interesting events occur **Tracing tools** allow us to perform certain useful operations like printing a message on the console, examine the context of the event, collect some statistics (how long does it take the system to process a network packet or to run the garbage collector) so that we can have a clear idea about what is going.
+
+One of the most important requirements for all the tracing tools is low overhead impact on the system. If a tracing tool is slowing down the system, if the measuring tool is slowing down the measured process, then the metrics obtained can be misleading. Moreover, tracing tools are meant to be run continuously in both production and development mode  --- thus there's nothing to question, we need tools with a really low overhead on the system.
+
+Over the years, a lot of tracing tools and technologies for have been developed for Linux. Some are better than others in terms of added overhead, ease of use, level of information they're able to extract as well as the offered features and, above all, limitations; so --- before getting to **eBPF** (and understand why another tracing technology was needed)it's beneficial to have a high level overview of the tracing landscape in Linux.
+
+# Kernel level tracing technologies overview
+
+**Tracing** is generally made possible thanks to some kernel technologies. On top of this, we have some user space tracing tools which use the above as building blocks to extract informations from the system and collect useful data.
+
+## Trace points
+
+There's a mechanism in the Linux kernel that has been in it for at least 10 years called **Static Trace Points**. A Trace Point is a static placeholder residing in kernel code that the developer of that particular part of the kernel has deemed useful to offer as a point for debugging the code and to be able to hook into.
+
+**Static** refers to the fact it is a fixed point. The number of Trace Points and their positions    actually depends on the kernel version and more importantly on how opinionated the kernel developer is on that particular area. As of today, current kernel version has more than 700 trace points and, of course, all of these are no-op (that is --- no operation is being performed) by default.
+
+Trace Points are really varied, ranging from stuff like scheduler events (new process creation, process switch, process forking), network events (packet coming in, packet going out), to stuff like file system and blocking IO events (read, write). There are even trace points for each kernel system calls (that is the programmatic way in which a program requests services from the kernel, forming the essential interface between the process and the operating system). All kernel versions have a list of available trace points in their documentation.
+
+The kernel offers an API (through a set of header files) to facilitate the usage of these trace points. These headers contain a set of macros that can be used to set up the kernel module in order to react to particular events. It is also possible to define an event class (basically a group of events) according to our need and specify a unique handler (a function that will be executed) for the entire class.
+
+Almost all tracing tools available today can use **Trace Points** to attach to the required events, collect information and perform useful statistics and analysis.
+
+Furthermore, the **Trace Point** concept landed on higher level part of systems as well. Various runtime environments implemented detailed trace points that we can attach to and collect information from. In NodeJS for example, you can trace when the garbage collector is invoked, or when a function is getting called, or when a class object is created, or whenever an IO blocking operation is happening.
+
+The popularity and ease of use of static trace points leaded to them being placed in many common server applications, including also databases such as MySQL and PostgreSQL where you can inspect, for instance, query execution time using *query__start* and *query__done* trace points.
+
+The biggest limitation of Trace Points is, as the name says, their static nature. If we are interested to trace particular areas of a software that original developers didn't really considering during trace point placement, our only possibility is to fork the source code, place the required trace points and run the fork to collect the data. Hopefully it should be possible to contribute back to the main branch, but it can be a long process.
+
+If the software is closed source, our possibilities are even less: the only way is to contact the vendor and start a deal to get a custom build of the software, or wait for an update.
+
+## Dynamic Probes
+
+**Kprobes** and **Uprobes** are another mechanism built into the kernel. These have been around for a while and can be used to probe the system dynamically.
+
+Instead of the placing static hook points into the kernel or in programming language runtime environments or in server applications, **Kprobes** and **Uprobes** allow us to pick any function we want without any preparation or pre placed code in the software during its development and attach a handler program to it. It can be both a user space function (**Uprobes**) or a kernel module function (**Kprobes**).
+
+The way it works is really similar to debugger breakpoints: whenever a probe is encountered, an exception is thrown; a special exception handler will catch the exception and execute the actions associated with the probe we attached. 
+
+There is an alternative implementation of the above which is way more efficient: instead of throwing an exception causing a context switch from kernel space to user space (if talking about a **Kprobe**) the probe is simply replaced with a jump instruction to the provided handler.
+
+**Kprobes** and **Uprobes** share a lot of the infrastructure and features set. However there are some small differences simply due to the fact they work in user or kernel space:
+
+1.  While **Kprobes** are global, **Uprobes** are local. An Uprobe is attached exclusively on the process that is being created and does not influence other running processes. On the other hand **Kprobes** are global, because they are attached directly on the kernel functions where, usually, there's no guarantee of getting a process handle.
+2.  **Uprobes** support conditional execution of actions and filtering --- moreover, attaching multiple probes on user space is a contemplated scenario.
+
+# User Level Tracing Tools
+
+As both trace points and probes are a kernel-level technology, leveraging these requires to write a kernel module that will be attached to the selected events and exporting those somehow to the final user application --- or eventually collecting the data in the module itself.
+
+Obviously, writing kernel modules is usually not a great idea and it must be taken seriously: even a minimal mistake can lead to a kernel panic (which means the system is halted) and, moreover, dealing with kernel modules means that most of the isolation guarantees provided by the process model might not be available.
+
+Because of that, when you're writing a kernel module all the tracing information you get is not limited to your current process or shell: instead you will get events for processes and subsystem you might not be interested in. 
+
+Moreover, the kernel tracing path is global: if another program is initiating a tracing process using one of the kernel technology listed above, it could eventually override your tracing routines.
+
+ Fortunately this kernel level technology was not meant to be used directly by a user. It's definitely possible, but the purpose behind this was to provide building blocks to create more precise and sophisticated generic tools able to collect information from the system without having to write any code and retaining the possibility to work completely from the user space.
+
+We'll have a quick look at two most famous ones but, as you might have noticed from the previous image, the panorama of tracing tools is definitely bigger and more complicated.
+
+## perf
+
+**perf** is the main tracing tool for Linux users. Its source is in the Linux kernel, hence you get it with the basic installation. It was originally conceived as a simple tool to gather information from the system performance counters, but little by little its feature set increased and become a general purpose tracing tool. It dumps all the collected data to a file (*perf.data*) in a relative efficient way that can eventually post processed later.
+
+It misses some advanced features (it can't do function-flow walking for example and is a bit less hackable as it has better safety/error checking). Still it can do profiling (sampling), CPU performance counters, user-level stack translation, and it can consume *debuginfo* for line tracing with local variables. It also supports multiple concurrent users.
+
+## ftrace
+
+**ftrace** is a kernel tracer that allows you to monitor a lot of different areas and activities of the kernel. Even though it's shipped with the kernel, it is developed independently and its release cycle is way faster than the kernel itself. Indeed every two or three cycles the new version gets pulled into the kernel tree.
+
+This tool reads the data from a special file system that resides in /sys/kernel/debug/tracing.This directory contains multiple files that are representing the parts of the system we want to trace. Reading the contents of that file is all we need to inspect the system and figure out what is going on.
+
+There's also a higher level tool, **trace-cmd**  that opens the output files of ftrace for you and finds out interesting events we can query using command line arguments.
+
+### Performance limitations
+
+Both these tools (but also others) are based on the concept of writing the collected information directly into a file. In order to extract the information we need, we have to load all these files into a post-process application (or eventually stream these), parse the current row, update the statistic and then moving to the next line. Unfortunately if the required statistic is very specific, you might need to write our own post process application.
+
+As long as the post processing is happening on a separate machine it is doable (not on production preferably --- or at least in a separate process), but if we want to gather real time data it can be really inefficient, so totally not applicable for real time scenarios.
+
+# eBPF
+
+**eBPF** (stands for extended Berkley Packet Filters) is a relatively recent kernel technology (it's officially part of the kernel since 3.15 but most of its features were introduced in following kernel versions) aiming to provide a unified tracing solution as well as overcoming all the problems and limitations with current tracing tools.
+
+## History: cBPF
+
+**BPF** stands for Berkley Packet Filtering - the original technology from which eBPF was born and it has been around for more time than the linux kernel itself.
+
+The idea behind BPF is to offer a way to analyse and filter network packets for monitoring purposes through simple stateless expressions provided from a user space program. This expression, once attached to the target socket, would make sure that each packet passing through that socket would be tested against it.
+
+ According to the (boolean) value returned from the expression evaluation, multiple actions could be executed: drop the packet, record that packets or let the packet continue the processing pipeline.
+
+Different tools can consume BPF expression directly (**tcpdump**, **wireshark**), but of course any user program could potentially attach a custom BPF program using the socket API. Thanks to this mechanism, it was really easy to develop, for example, a per-application firewall eliminating the packets before the final application could even see them.
+
+The original BFP distribution came in the form of a user space library, but it was quickly decided to move it into the kernel for performance reasons: network packet processing must be really efficient. 
+
+When network traffic is high, there's a lot of potential performance gain in filtering away unwanted packets before they find their way into user space: moving a generic data structure (which is not limited to a socket, it could also be a file descriptor or memory handle) from the kernel space to the user space isn't just matter of copying some memory areas around. It also requires pruning useless/unaccessible informations from the data structure itself, update the  process's resources reference counters as well make the resource go through the whole operating system security pipeline. Dropping a packet while it's in the kernel space (generally speaking, avoiding sending things to the user space), especially when the stakes in game are high, can lead to dramatic performance improvements.
+
+Obviously it is also really important that BPF programs would run really quickly, as every overhead could hit the performance a lot during high traffic situations.
+
+Thanks to this "movement" BPF is now used also internally within the kernel in multiple areas (internal packet filtering, packet classifier for traffic control and so on).
+
+Fortunately BPF was defined as virtual machine which was almost a Turing complete and compatible, with just two registers: an accumulator and an index. The machine also has a small memory area that implicitly includes the packet that's being processed, and a limited instructions set.
+
+This means that every BPF instruction can be easily mapped to an x86 instruction sequence and the two register can be mapped directly on CPU registers --- suggesting the idea that, instead of parsing the expression and evaluating it at runtime, generate native machine instructions from a BPF program was a viable way.
+
+Indeed, that thing happened. Over the years, kernel maintainers fomented the thought that compiling the filtering expression into a highly optimised machine code for the most popular architectures (X86, X64, ARM, PowerPC) instead of parsing and executing them at runtime was a good idea: BFP would become essentially little native programs that would be loaded into the kernel and executed at machine speed.
+
+This required the development of a JIT compiler that landed ultimately as a kernel patch during 2011, and it was initially working only for x86-64 architectures. (to be fair, this was not a particular revolution, as FreeBSD has been using a JIT for BPF programs since 2005)
+
+Back to the tracing tools: while these continued to evolve considerably, the kernel was still lacking for a scriptable dynamic tracing system, that was instead present on other systems: **DTrace** (a scriptable tracing tool) was the most envied one, and it was available on Solaris, MacOS, NetBSD and FreeBSD. It allowed systemic analysis of such a scope and precision unequalled in the industry and a tremendous amount of instrumentation providers.
+
+Despite the fact it was released by Oracle under a permissive license, porting DTrace to Linux was and is still problematic:
+
+1.  Technical issues: DTrace has some features that live in the kernel, in particular the  code to deal with invalid memory accesses and some basic instrumentation providers. According to the original author, it is less than 1500 lines of code, but the deep differences between Linux and the UNIX-like operating systems family made the thing non trivial and hardly insurmountable, but doable anyway.
+2.  Licensing issues: Although DTrace is released under CCDL license, Oracle still own the software. The CDDL has some restrictions not present in the GPL: therefore combining GPL code (the Linux kernel) with CDDL code (DTrace) will result in a work that is under an inconsistent license and cannot legally be distributed.
+Oracle wanted to make DTrace available for Linux , but integrating it directly into the kernel would obviously cause legal issues and eventual patches would have been rejected, so they implemented it as a doubled-layered kernel module.
+Unfortunately, the copyright of kernel modules is somewhat unclear.
+The GPL covers derivative works, but the definition of derivative works is still personal and not well defined. Making use of explicitly exported API may not be sufficient to constitute a derivative work --- on the other hand, it might.
+Oracle appear to believe that they're legitimate, and so have added just enough in-kernel code (and released it under GPL terms) to support DTrace, while keeping the CCDL core of DTrace separate. The kernel actually has two levels of exposed (non-userspace) API - those exported via EXPORT_SYMBOL() and those exported via EXPORT_SYMBOL_GPL(). Symbols exported via EXPORT_SYMBOL_GPL() may only be used by modules that claim to be GPLed, with the kernel refusing to load them otherwise.
+Of course, as copyright holders of DTrace, Oracle could solve the problem by dual-licensing DTrace under the GPL as well as the CDDL. The fact that they haven't implies that they think there's enough value in keeping it under an incompatible license.
+
+While some developers were considering the idea of adding a LUA interpreter and a virtual machine to the kernel, things went in a different direction.The 3.15 kernel version brought the first version of what became **eBPF.** Basically the language was split into two variants, *classic* BPF, and *internal* BPF. The latter was an improved and extended version of the existing infrastructure, expanding the number of register from 2 to 10, giving a limited access to kernel functions and adding instructions that were really close to real one provided by a real CPU and more importantly --- easier to produce using a compiler toolchain like GCC and LLVM.
+
+Originally the internal BPF, as the name claims, was not exposed as the developers were worried that this implementation would change over the time, so they preferred to make an internal translation from classic BPF programs to internal BPF instructions, at least initially.
+
+After 3.16 BPF, when classic BPF proved to be stable and all the concerns about the implementation changes vanished, it was decided to rename it to extended BPF and expose it for general usage.
+
+Tracing was one of the first uses cases to be tested with eBPF, because at first glance it appeared to be able to solve different pain points, among these the lack of a scriptable system as well having fast probes processing.
+
+Within the tracing subsystem (independently from the tracing tool), the given filter expression is usually parsed and represented as a simple tree with each internal node representing one of the operators. Every time that the trace point is encountered, that tree will be walked to evaluate each operation with the specific data values present at the time; should the result be true at the top of the tree, the trace point fires and the relevant information is emitted. In other words, most of the tracing tools contain a small parser and interpreter of its own, used for this one specific purpose.
+
+Using the extended BPF, on the other head, left the parser in place, but removes the interpreter using the JIT compiler. The results were impressive, suggesting that was worth keep digging in that way.
+
+For the records, the use cases for eBPF exploded once developers decided to expose and improve the internal BPF to the user space. Instead of just filtering packets, with eBPF you can create a virtual networking, routing packets according to your preferences, you can allow or disallow particular system calls for particular processes but more importantly dramatically improve the current tracing subsystem. eBPF opens up new possibilities in tracing in terms of features (overcoming the limitations of static trace points or simplifying data collection from **U/Kprobes**) and performance (it's a programmable kernel technology which runs at machine speed).
+
+Also, regardless of the technological and performance improvements, the ability to have a scriptable tracing environment changed an important fact: so far metrics were vendor chosen, closed source and incomplete. This forced all the system engineers to develop the art of inference which is --- combine sources and data from multiple tools to try to figure out what was going on in the system. With BPF it was finally possible to write a program that would be able to exactly collect the informations you're looking for.
+
+## eBPF anatomy
+
+### Verifier
+
+A BPF program is loaded and executed directly into the kernel. This means that it's skipping a lot of security checks made automatically by the system when being in the user space. For instance, an error in a BPF program will likely result in a kernel panic (which can potentially halt the whole system), or a loop situation will freeze the entire system (the scheduler cannot stop the program, because we're not in the process abstraction we have in the user space). 
+
+Therefore it's absolutely critical to ensure that the loaded program is "safe". This check is fulfilled by the verifier --- a software that's performing a 2-stage static code analysis on the byte code being loaded. In particular:
+
+1.  **No more than 4096 instructions per program are loaded:** **eBPF** can potentially deal with high volumes of data, so is important that the loaded programs are small and do not become a bottleneck for the system.
+2.  **Check for loops and cyclic flows:** These are not allowed because they are unpredictable and can explode in term of computation time and become a bottleneck for the system.
+3.  **Unreachable instructions:** This is to make sure BPF programs are small, thous fast to load and fast to execute. A BPF program should have just what's strictly necessary to run.
+4.  **Bad jumps:** The verifier is ensuring that the jumps are happening within the program boundaries, and not to any arbitrary memory location. This is fundamental, because BPF programs should not be able to harm the system, moving the control flow or writing memory belonging to other processes
+5.  **Path and flow evaluation:** The verifier is walking through the program and keeping tracks of register and stack statuses. If there's any chance to have a stack overflow, or a registry overflow/underflow, the verifier will refuse to execute the code. Again, this is to ensure that BPF program does not harm the system.
+6.  **Argument validity:** This is making sure that a program is trying to write in a read only register, or write a chunk of data into a smaller register, accessing a register that does not exist, calling unauthorised kernel functions.
+
+These set of checks, as well as many other not listed here, it's giving us a great guarantee about any BPF program: it's sandboxed. It cannot nor harm nor slow down the system. That means that's also production safe.
+
+If you're a software vendor and you'd like to propose your software to a big company saying "Please run this instrumentation software on your machines" or you're a security company and again --- you want the client to install particular kernel modules on their production machine, the company's security policies and concerns can slow down the time to first run. 
+
+Usually if you're a company and you have to install a thirty party kernel module it's a risk you have to take. You might need to analyse, break down, probably even manually checking the source code in order to make sure the module it's not sniffing data or running malicious code on your system.
+
+ BPF is changing the rule. If you're providing a BPF program that's able to achieve the same thing, I have now a set of guarantees given by the verifier, because is a sandboxed program with a limited set of instructions and, by default, it can't harm the system. This is one of the points why BPF programs are gaining a lot of tractions.
+
+### Maps
+
+BPF programs are run in the kernel, but they still have to communicate somehow with the user space program in order to send back the collected informations as well eventual accumulated data over the time. Maps serve this purpose.
+
+Maps are generic memory areas allocated (to be precise it's declared as an opaque data structure) that can be used to transfer data from user space to kernel and viceversa --- as well serve as shared memory area among multiple BPF programs. It initially conceived as a hash table but with successive kernel versions array maps and other data structures are supported as well.
+
+This might just seem like a small addition (it's really nothing more than a read/write memory area), but it's changing the tracing scenario, especially in the real time use cases, dramatically.
+
+As we explored previously, all the tracing tools we mentioned have one particular limitation they've been suffering for ages: the collected data had to be written on the disk in a tool-dependant format and then, in order to gather the required statistics, we had to load the file again in our application, parse it and extract the required informations.
+
+On the other hand, with Maps there's no need to store of the data and there's no need to parse the data back for post processing: you can simply return your own structure directly from the BPF program to the user application in the way you prefer that is easily consumable for your purposes, and eventually collect statistics directly from the BPF program (like incrementing a counter).
+
+
+**References**
+
+[Brendan Gregg - eBPF webpage](http://www.brendangregg.com/ebpf.html)
+
+[Brendan Gregg - DTrace webpage](http://www.brendangregg.com/dtrace.html)
+
+[Sasha Goldstein - Moden Linux Tracing Landscape](https://www.dropbox.com/s/x59pz8o8crsbvm2/Modern-Linux-tracing-landscape.pptx?dl=0)
+
+[Jakub Kicinski, Nicolaas Viljoen - eBPF Hardware Offload to SmartNIC](https://netdevconf.org/1.2/papers/eBPF_HW_OFFLOAD.pdf)
+
+[Brendan Gregg - BPF: Tracing and more](https://www.youtube.com/watch?v=JRFNIKUROPE)
+
+[Elena Zannoni - New developments in Linux Tracing](https://events.linuxfoundation.org/sites/events/files/slides/tracing-linux-ezannoni-linuxcon-ja-2015_0.pdf)
+
+[The BCC project](https://github.com/iovisor/bcc)
+
+[BPF internal structure exposition](https://github.com/torvalds/linux/commit/58e2af8b3a6b587e4ac8414343581da4349d3c0f)
+
+[MySQL Trace point reference](https://dev.mysql.com/doc/refman/5.7/en/dba-dtrace-mysqld-ref.html)
