@@ -20,20 +20,22 @@ The easy way consists, basically, to attach a global event handler to the docume
 Basically the code would be something like
 
 ```javascript
-componentDidMount: function () {
-  document.body.addEventListener('click', this.handleBodyClick);
-},
+class Component extends React.Component {
+  componentDidMount: function () {
+    document.body.addEventListener('click', this.handleBodyClick);
+  }
 
-componentWillUnmount: function () {
-  document.body.removeEventListener('click', this.handleBodyClick);
-},
+  componentWillUnmount: function () {
+    document.body.removeEventListener('click', this.handleBodyClick);
+  }
 
-handleClick: function (e) {
-  e.preventPropagation();
-},
+  handleClick: function (e) {
+    e.preventPropagation();
+  }
 
-handleBodyClick: function () {
-  // do something
+  handleBodyClick: function () {
+    // do something
+  }
 }
 ```
 
@@ -65,7 +67,7 @@ I uploaded an [example on codepen](http://codepen.io/XVincentX/pen/Rrjrqj/). Let
           <ul>
             <li><a href="#">Stripe</a></li>
             <li><a href="#">GitHub</a></li>
-            <li><a href="#">BeStunning</a></li>          
+            <li><a href="#">BeStunning</a></li>
           </ul>
         </li>
       </ul>

@@ -52,7 +52,7 @@ In order to write the most generic client possible, we may try to arrange the bu
     <a  class="btn"
         href
         ng-repeat="link in ctrl.polls.links track by link.rel[0]"
-        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
+        ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
 ```
 
 Simple, easy. Thous, the result will be something like this:
@@ -87,7 +87,7 @@ We definitely need a more robust approach to handle this thing, and the only way
     <a  ng-class="[btn, {first: link.name === 'first', last: link.name ==='last'}]"
         href
         ng-repeat="link in ctrl.polls.links track by link.rel[0]"
-        ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
+        ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
 ```
 
 And, of course, our css must be modified to have new ´first ´ and ´last´ classes, to handle those exceptions.

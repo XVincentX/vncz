@@ -20,7 +20,7 @@ We are now aware that, in order to support "hypermedia scenarios", we have to ad
 Of course, each one could try to create its own proprietary format: for example, I could create a new _metadata_ field, and fill that with a _link_ object.
 
 ```json
-`{
+{
     metadata:
     {
         link:
@@ -35,7 +35,6 @@ Of course, each one could try to create its own proprietary format: for example,
         description: "Toothpaste"
     }
 }
-`
 ```
 
 But on the otherside, another company may think that maybe we could have a _links_ array, and not in a container object (metadata).

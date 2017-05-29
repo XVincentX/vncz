@@ -3,22 +3,20 @@ layout: post
 title: Making of SimInfo
 date: 2014-09-02 23:17:53.000000000 +02:00
 ---
-[SimInfo](http://www.windowsphone.com/it-it/store/app/siminfo/c0caf670-5488-4aef-9010-f8427de82b37) is a free Windows Phone 8  application that will manage for you all necessary data about your credit on a tiles with auto update feature that will notify you when you're going under the numbers you will set.
+[SimInfo](http://www.windowsphone.com/it-it/store/app/siminfo/c0caf670-5488-4aef-9010-f8427de82b37) was a free Windows Phone 8  application that will manage for you all necessary data about your credit on a tiles with auto update feature that will notify you when you're going under the numbers you will set.
 
 In this post I want to share you considerations, code snippets and issues during its building. Keep in mind that this application was:
 
 * First Windows Phone application
 * First Xaml experience
 
-##Why
+## Why
 The application was born as a sign of objection against [Wind](http://www.wind.it) operator that, at November 2013, had got no Windows Phone 8 application. Since I was a bit tired to check up the site every time, I deciced to try out the SDK and see if I could improve my situation.
 
-##First steps
+## First steps
 When project started, I had got no ambition/presumption. So I just set up a minimalistic UI and a simple [HttpClient](https://www.nuget.org/packages/Microsoft.Net.Http/) querying for the data directly from website, parsing the returned html page (with login simulated).
 
-<img alt="First application version" style="height:25%;width:25%;" src="https://scontent-a-ams.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1911899_232584326865292_519104781_n.png?oh=a092ce6a0f4178c77e18f9804cb03872&oe=547C43D3"></img>
-
-##Beta problems
+## Beta problems
 The very early beta version of application had got this things to keep in mind
 
 * All was done on the phone. Html page login, Html page download, parsing, data retrieving and tile rendering.
@@ -30,7 +28,7 @@ Scratching data from html pages directly from the phone was not a great idea. Fo
 
 Few days later, I discovered a JSON endpoint to get the same data. I was so giving up with Server Side processing. However the endpoint was under https but with a self signed certificate, and Windows Phone 8 does not allow you to make request to https invalid endpoints. The server side was unevitable.
 
-##Moving to server side
+## Moving to server side
 Since the application was going to be free, free had to be the hosting too :)
 After a first (and disastrous) start with [somee](https://somee.com/FreeAspNetHosting.aspx), I landend on [AppHarbor](http://www.appharbor.com).
 AppHarbor is just amazing: Git repository as application storage, integrated build and test execution environment, very nice dashboard, a lot of free addons, and a free ssl endpoint too. Just what I was looking for.
@@ -71,10 +69,7 @@ Initially I had got a single implementation, today I can praise to support
 
 and new ones are added when a comprensible pool of users start to ask about it.
 
-##Stats
-![Daily Request](/content/images/2014/Sep/Capture.PNG)
-![CPULoadTime](/content/images/2014/Sep/Capture-1.PNG)
-![Application downloads](/content/images/2014/Sep/Capture-2.PNG)
+## Stats
 
 The interesting thing is that, to serve 108k daily requests, the CPU is always averaged in 0.10-0.19. I've never seen CPU load beyond 0.25
 This really good ratio is due to Async Controller nature. 90% of time is just waiting data from carrier server. Only a small amount of time is spent for manipulation. This assumption, united with **async/await** pattern, makes me serve a lot of request with a minimal CPU load.
@@ -83,7 +78,7 @@ Beyond this load (due to background agent periodic downloads) there is another g
 Everyday 2000 push notifications (tiles and toast ones) are sent.
 
 
-##Regrets and lessons learned
+## Regrets and lessons learned
 A lot of thing to be proud of, but a lot of things of shame.
 At first, I really underestimated the project. Since all was born as a playground and no public application was planned, the client side code is a bit tricky.
 

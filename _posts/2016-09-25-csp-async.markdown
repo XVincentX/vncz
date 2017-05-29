@@ -18,7 +18,11 @@ The fist and most basic thing that I can show you is to replicate the [async.par
 I am quite sure you're already familiar with this function, as it literally saved our asses for years in javascript.
 Anyway, for those who're not familiar with (???), here is the signature and the documentation
 
-`parallel(tasks, callback)`
+```javascript
+function parallel(tasks, callback) {
+  /* code */
+}
+```
 
 > Run the tasks collection of functions in parallel, without waiting until the previous function has completed. If any of the functions pass an error to its callback, the main callback is immediately called with the value of the error. Once the tasks have completed, the results are passed to the final callback as an array.
 

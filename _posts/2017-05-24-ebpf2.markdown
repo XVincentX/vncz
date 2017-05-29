@@ -43,9 +43,7 @@ BPF_LD_MAP_FD(BPF_REG_1, map_fd),
 
 /* Load current count from map into R0 */
 
-BPF_RAW_INSN(BPF_JMP | BPF_CALL, 0, 0, 0,
-
-    BPF_FUNC_map_lookup_elem),
+BPF_RAW_INSN(BPF_JMP | BPF_CALL, 0, 0, 0, BPF_FUNC_map_lookup_elem),
 
 /* If returned value NULL, skip two instructions and return */
 
@@ -195,9 +193,7 @@ b = BPF(text=bpf_text)
 
 # header
 
-print("%-6s %-12s %-16s %-16s %-4s" % ("PID", "COMM", "SADDR", "DADDR",
-
-    "DPORT"))
+print("%-6s %-12s %-16s %-16s %-4s" % ("PID", "COMM", "SADDR", "DADDR","DPORT"))
 
 def inet_ntoa(addr):
 
@@ -239,13 +235,8 @@ while 1:
 
             continue
 
-print("%-6d %-12.12s %-16s %-16s %-4s" % (pid, task,
+print("%-6d %-12.12s %-16s %-16s %-4s" % (pid, task, inet_ntoa(int(saddr_hs, 16)), inet_ntoa(int(daddr_hs, 16)), dport_s))
 
-    inet_ntoa(int(saddr_hs, 16)),
-
-    inet_ntoa(int(daddr_hs, 16)),
-
-    dport_s))
 ```
 
 # Use case: hardware offload
