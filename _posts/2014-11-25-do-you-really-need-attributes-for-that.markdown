@@ -15,18 +15,18 @@ Based on this claims, do you think you're using attributes in the **right way**?
 Let's consider this piece of code:
 
 ```csharp
-    public class SequenceAttribute : Attribute
+public class SequenceAttribute : Attribute
+{
+    public SequenceAttribute(string sequenceName)
     {
-        public SequenceAttribute(string sequenceName)
-        {
-            SequenceName = sequenceName;
-        }
-        public SequenceAttribute(string sequenceName, string dateReferencePropertyName)
-            : this(sequenceName)
-        {
-            ReferenceDatePropertyName = dateReferencePropertyName;
-        }
-	}
+        SequenceName = sequenceName;
+    }
+    public SequenceAttribute(string sequenceName, string dateReferencePropertyName)
+        : this(sequenceName)
+    {
+        ReferenceDatePropertyName = dateReferencePropertyName;
+    }
+}
 ```
 
 And let's see its usage here:
@@ -41,33 +41,33 @@ I consider this kind of code an antipattern: we're defining some kind of **contr
 Let's refactor this code extracting an interface for that:
 
 ```csharp
-    public interface IEntityWithBusinessSequence
-    {
-        public string ReferenceDate { get; }
-        public string Key { get; set; }
-    }
+public interface IEntityWithBusinessSequence
+{
+    public string ReferenceDate { get; }
+    public string Key { get; set; }
+}
 ```
 
 And then, instead of this
 ```csharp
-    public class File
-    {
-        [BusinessSequence("FileDate")]
-        public int FileCode {get; set;}
+public class File
+{
+    [BusinessSequence("FileDate")]
+    public int FileCode {get; set;}
 
-        public DateTime FileDate { get; set; }
-    }
-
-
-    public class File : IEntityWithBusinessSequence
-    {
-        public int FileCode {get; set;}
-        public DateTime FileDate { get; set; }
+    public DateTime FileDate { get; set; }
+}
 
 
-        public string ReferenceDate { get { return FileDate; } }
-        public string Key { get { return FileCode; } set { FileCode = value; } }
-    }
+public class File : IEntityWithBusinessSequence
+{
+    public int FileCode {get; set;}
+    public DateTime FileDate { get; set; }
+
+
+    public string ReferenceDate { get { return FileDate; } }
+    public string Key { get { return FileCode; } set { FileCode = value; } }
+}
 ```
 This simple example show us how it is possible, in the most part of cases, replace attributes with a **REAL** contract, that is an interface. We infact have
 
@@ -78,7 +78,7 @@ This simple example show us how it is possible, in the most part of cases, repla
 
 This is, of course, just one example that I found during my current job, but there are a lot of other examples that can follow the same reasonment.
 
-###A real example: EntityFramework
+### A real example: EntityFramework
 Beside the [EntityTypeConfiguration class](http://msdn.microsoft.com/en-us/library/gg696117(v=vs.113).aspx), that is the right way to describe your entity, it offers you the possibility to decorate your class with attributes.
 
 Given that, in my opinion, this is a wrong approach (you're really polluting your DomainModel with Ef specific attributes), it can be mitigated using [MetadataTypeAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.metadatatypeattribute(v=vs.110).aspx) that acts as a _proxy_ to read your metadata.
