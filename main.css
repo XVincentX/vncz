@@ -68,40 +68,6 @@ article img {
     margin: 0
 }
 
-a.github {
-    position: fixed;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0
-}
-
-.date {
-    font-size: small;
-    margin-top: 5px;
-    color: #ccc
-}
-
-.detail div {
-    display: inline;
-    margin-right: 10px;
-    padding-left: 20px;
-    background-size: 14px
-}
-
-.detail ul {
-    list-style: none;
-    list-style-image: none;
-    margin: 0;
-    padding: 0;
-    display: inline
-}
-
-.detail ul li {
-    display: inline;
-    padding-right: 10px
-}
-
 .detail .time {
     background: url('../images/glyphicons_054_clock.png') no-repeat 0 0;
     background-position: 0 1px
@@ -271,11 +237,17 @@ header {
     background-position: center center;
     background-size: cover;
     padding: 100px;
-    background-image: url(../images/headings/desk.jpg)
+    background-image: url(../images/desk.jpg)
 }
 
 body#talks header {
-    background-image: url(../images/headings/talks.jpg)
+    background-image: url(../images/talks.jpg)
+}
+
+.header-button {
+  padding: 2rem;
+  display: inline-block;
+  background-color: white;
 }
 
 header h1 {
