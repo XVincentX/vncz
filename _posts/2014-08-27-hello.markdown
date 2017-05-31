@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello!
-date: 2014-08-31 21:47:11.000000000 +02:00
+date: 2014-08-27 21:47:11.000000000 +02:00
 ---
 Hello!
 My name is Vincenzo Chianese and I am a developer. After a lot of time finally I decided to open up this little blog and share my experiences with you.
