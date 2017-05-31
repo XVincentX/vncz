@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include _head.html %}
-  <body>
-    <header>
-        <div class"all-posts">
+  <body id="{{ page.title | downcase }}">
+    <header class="header-column">
+        <div class="header-button">
           <a href="/">Back to the home page</a>
         </div>
         <h1>{{ page.title }}</h1>

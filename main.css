@@ -244,23 +244,33 @@ body#talks header {
     background-image: url(../images/talks.jpg)
 }
 
-.header-button {
-  padding: 2rem;
-  display: inline-block;
-  background-color: white;
-}
-
 header h1 {
     color: #000;
     background: #fff;
     font-size: 4rem;
     padding: 2rem;
     line-height: 1.25;
-    display: inline-block;
+    display: inline;
     margin: .67em 0;
     font-weight: bold;
     font-family: avenir next,avenir,sans-serif;
-    margin: auto
+}
+
+header div.header-button {
+    color: #000;
+    background: #fff;
+    font-size: 1em;
+    padding: 1rem;
+    line-height: 1.25;
+    display: inline;
+    margin: .67em 0;
+    font-family: avenir next,avenir,sans-serif;
+}
+
+.header-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 header h1 a {
