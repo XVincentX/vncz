@@ -63,9 +63,10 @@ article {
     margin-bottom: 50px
 }
 
-article img {
+article img, p img {
     padding: 0;
-    margin: 0
+    margin: 0;
+    max-width: 100%;
 }
 
 .detail .time {
@@ -188,26 +189,26 @@ body#index #talks li {
     font-size: .8em
 }
 
-body#index footer {
+body footer {
     text-align: center
 }
 
-body#index footer a {
+body footer a {
     font-size: .6em;
     transition: .1s;
     transition-property: font-size color;
     transition-timing-function: ease-in-out
 }
 
-body#index footer a:hover {
+body footer a:hover {
     font-size: .65em
 }
 
-body#index footer a span {
+body footer a span {
     color: rgba(150,150,150,1)
 }
 
-body#index footer a:hover span {
+body footer a:hover span {
     color: #323232
 }
 
