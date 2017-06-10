@@ -137,7 +137,7 @@ body#index ul.hero li:first-child {
     display: block
 }
 
-body#index a {
+body#index a, .email {
     border: 0;
     color: black
 }
