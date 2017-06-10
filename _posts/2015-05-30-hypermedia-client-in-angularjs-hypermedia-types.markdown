@@ -21,18 +21,18 @@ Of course, each one could try to create its own proprietary format: for example,
 
 ```json
 {
-    metadata:
+    "metadata":
     {
-        link:
+        "link":
         {
-            rel: "self",
-            href: "/products/10"
+            "rel": "self",
+            "href": "/products/10"
         }
     },
-    data:
+    "data":
     {
-        id: 10
-        description: "Toothpaste"
+        "id": 10,
+        "description": "Toothpaste"
     }
 }
 ```

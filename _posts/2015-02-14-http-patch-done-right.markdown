@@ -30,12 +30,12 @@ public static void ConfigureApis(HttpConfiguration config)
 
 Declare your Api method claiming you're going to receive a **JsonPatchDocument** class instance
 ```csharp
-    public void Patch(Guid id, JsonPatchDocument<SomeDto> patchData)
-    {
-        var objectToUpdate = repository.GetById(id);
-        patchData.ApplyUpdatesTo(objectToUpdate);
-        repository.Save(objectToUpdate);
-    }
+public void Patch(Guid id, JsonPatchDocument<SomeDto> patchData)
+{
+    var objectToUpdate = repository.GetById(id);
+    patchData.ApplyUpdatesTo(objectToUpdate);
+    repository.Save(objectToUpdate);
+}
 ```
 
 Update your data, and you're done.

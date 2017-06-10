@@ -35,10 +35,10 @@ AppHarbor is just amazing: Git repository as application storage, integrated bui
 
 The code on server side is relatively simple. It is just one WebApi2 controller with a single main action: GetData
 ```csharp
-	public async Task<IHttpActionResult> GetData([FromBody]Q_X d1, [FromUri]Q_X d2)
-    {
+public async Task<IHttpActionResult> GetData([FromBody]Q_X d1, [FromUri]Q_X d2)
+  {
 
-    }
+  }
 ```
 The presence of same parameters, one **FromBody** and one **FromUri** is due to compatibility. First client versions used to send data over queryString, the subsequent ones in body. So the two arguments are merged to get a real data.
 
@@ -49,11 +49,11 @@ The presence of same parameters, one **FromBody** and one **FromUri** is due to 
 The controller is very very simple. It saves some data into a SqlDatabase and calls a method from an injected (inferred from query string) interface:
 
 ```csharp
-    public interface ICreditInfoRetr : ICloneable
-    {
-        Task<CreditInfo> Get(string username, string type, Guid dev_id);
-        string Type { get; }
-    }
+public interface ICreditInfoRetr : ICloneable
+{
+    Task<CreditInfo> Get(string username, string type, Guid dev_id);
+    string Type { get; }
+}
 ```
 
 Since the querystring is a runtime parameter and I hate to expose my container into actions, I used a [delegate factory](https://github.com/autofac/Autofac/wiki/Delegate-Factories) to construct object implementation.

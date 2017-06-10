@@ -1,0 +1,17 @@
+---
+layout: post
+title: Hello!
+date: 2014-08-27 21:47:11.000000000 +02:00
+---
+Hello!
+My name is Vincenzo Chianese and I am a developer. After a lot of time finally I decided to open up this little blog and share my experiences with you.
+
+Have fun.
+
+Previous writings:
+
+- [Integrating NodeJS tools in Visual Studio](http://www.dotnet-programming.com/post/2014/07/11/Integrate-NodeJS-tools-in-Visual-StudioTFS.aspx)
+- [Calling MVC Action from Javascript](http://www.dotnet-programming.com/post/2012/04/02/Calling-MVC-Action-from-Javascript.aspx)
+- [Shadow Mapping using Direct3D 10 features Note: not in english](http://www.notjustcode.it/public/FanGames/shadowMappingDX10.pdf)
+- [Instanced Fur Rendering using Direct3D 10 Note: not in english](http://www.notjustcode.it/dblog/articolo.asp?articolo=253)
+- [Shadow volume rendering using Direct3D 10 geometry shader Note: not in english](http://www.notjustcode.it/public/FanGames/shadowvolume.pdf)

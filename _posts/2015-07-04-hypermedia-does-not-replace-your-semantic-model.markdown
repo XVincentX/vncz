@@ -49,10 +49,10 @@ As you can see, our [reference implementation](https://github.com/apiaryio/polls
 In order to write the most generic client possible, we may try to arrange the button bar on bottom with this code
 
 ```html
-    <a  class="btn"
-        href
-        ng-repeat="link in ctrl.polls.links track by link.rel[0]"
-        ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
+<a  class="btn"
+    href
+    ng-repeat="link in ctrl.polls.links track by link.rel[0]"
+    ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
 ```
 
 Simple, easy. Thous, the result will be something like this:
@@ -60,15 +60,15 @@ Simple, easy. Thous, the result will be something like this:
 Too simple, perhaps. Let's try to personalize the buttons with some fancy css:
 
 ```stylus
-    .pollsList a:last-of-type:after
-    {
-       content: '  \00bb'
-    }
+.pollsList a:last-of-type:after
+{
+    content: '  \00bb'
+}
 
-    .pollsList a:first-of-type:before
-    {
-       content: '\00ab  '
-    }
+.pollsList a:first-of-type:before
+{
+    content: '\00ab  '
+}
 ```
 
 This simple css snippet will add a **<<** on the first button, and a **>>** to the last one. The plan is quite simple: First and Last button should have got an arrow after their name.
@@ -84,10 +84,10 @@ We can find a lot of troubles like that. For example, it would be enough to chan
 We definitely need a more robust approach to handle this thing, and the only way is to apply some kind of styles only when some particular actions are avaiable; this means, in term of code:
 
 ```html
-    <a  ng-class="[btn, {first: link.name === 'first', last: link.name ==='last'}]"
-        href
-        ng-repeat="link in ctrl.polls.links track by link.rel[0]"
-        ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
+<a  ng-class="[btn, {first: link.name === 'first', last: link.name ==='last'}]"
+    href
+    ng-repeat="link in ctrl.polls.links track by link.rel[0]"
+    ng-click="ctrl.followLink(link)">\{\{::link.rel[0]\}\}</a>
 ```
 
 And, of course, our css must be modified to have new ´first ´ and ´last´ classes, to handle those exceptions.
@@ -95,9 +95,9 @@ And, of course, our css must be modified to have new ´first ´ and ´last´ cla
 Another way to handle it, is to avoit the `ng-repeat` directive and output the buttons by yourself directly.
 
 ```html
-    <a class = "btn first" ng-show="ctrl.hasLink('first')"
-        href
-        ng-click="ctrl.followLink('first')"> << First </a>
+<a class = "btn first" ng-show="ctrl.hasLink('first')"
+    href
+    ng-click="ctrl.followLink('first')"> << First </a>
 ```
 
 ...and so on for next, last, prev
