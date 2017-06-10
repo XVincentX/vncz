@@ -4,8 +4,6 @@ title: New generation tracing technologies for Linux operating system - part 1
 date: 2017-05-25 20:51:06.000000000 +02:00
 ---
 
-My bachelor thesys, open sourced for you.
-
 # Introduction
 
 In software engineering, **Tracing** is the ability to inspect and record information about a software's execution by attaching a program to various probing points in the system under control and collect informations. This information is typically used by software developers for debugging purposes as well from system administrators to keep control of the system itself.
@@ -184,6 +182,7 @@ As we explored previously, all the tracing tools we mentioned have one particula
 
 On the other hand, with Maps there's no need to store of the data and there's no need to parse the data back for post processing: you can simply return your own structure directly from the BPF program to the user application in the way you prefer that is easily consumable for your purposes, and eventually collect statistics directly from the BPF program (like incrementing a counter).
 
+You can read the part 2 [here](/ebpf2)
 
 **References**
 

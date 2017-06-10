@@ -4,6 +4,8 @@ title: New generation tracing technologies for Linux operating system - part 2
 date: 2017-05-25 20:51:06.000000000 +02:00
 ---
 
+You can read the part 1 [here](/ebpf)
+
 ## Writing eBPF programs
 
 This section is meant to give a quick overview on the various way we can write a BPF program as well some practical examples using the **BCC** open source project.
