@@ -32,7 +32,8 @@ public class SequenceAttribute : Attribute
 And let's see its usage here:
 
 ```csharp
-DateTime? referenceDate = String.IsNullOrEmpty(bsAttrib.ReferenceDatePropertyName) ? null : (DateTime?)instance.GetType().GetProperty(bsAttrib.ReferenceDatePropertyName).GetValue(instance, null);
+DateTime? referenceDate = String.IsNullOrEmpty(bsAttrib.ReferenceDatePropertyName) ? null :
+   (DateTime?)instance.GetType().GetProperty(bsAttrib.ReferenceDatePropertyName).GetValue(instance, null);
 ```
 
 Do not focus too much on code, but on the _intention_: we're getting back metadata from attributes throught reflection. In particular case, the metadata is telling me what property value should I get and continue my computations.
