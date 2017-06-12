@@ -35,6 +35,7 @@ as well as create totally new ones for our purposes. One example would be the
 [Attributes Kit](https://github.com/apiaryio/attributes-kit).
 
 While most of the code was **CoffeScript**, we slowly moved to **ES6** for all new libraries.
+While most of frontend code is still a **Backbone** application, we're slowly moving to React.
 
 <hr>
 
