@@ -5,7 +5,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 ---
 # Vincenzo Chianese
 
-### (Back)Front-End & Back-End Developer
+### (Back|Front)end Developer
 [vincenz.chianese@icloud.com](mailto:vincenz.chianese@icloud.com)
 
 [@d3dvincent](http://twitter.com/D3DVincent)
@@ -24,15 +24,19 @@ My long-term interest include project management (especially of small teams), pr
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Jul 2017**
 
-I've been working as a full stack software engineer (with strong attitude in Frontend), Team Leader for Documentation Team, delivering features to 200k+ users.
+I've been working as a full stack software engineer (with strong attitude in Frontend) and as
+Team Leader for Documentation Team, delivering features to 200k+ users.
 
-Initially I've been involved in multiple parts of the application (**payment infrastructure**, **team
+I've been as well involved in multiple parts of the application (**payment infrastructure**, **team
 management**, as well part of the team that crafted the first **microservice**) - then my focus has been
 entirely on the generated **Documentation pages**.
 
-During the journey, I had my chances to contribute multiple times back in severarl open source projects,
-as well as create totally new ones for our purposes. One example would be the
-[Attributes Kit](https://github.com/apiaryio/attributes-kit).
+During the journey, I had my chances to contribute multiple times back in several open source projects,
+as well as create totally new ones for our purposes, among these: **create-react-app**, **Visual Studio Code**,
+**Emscritpen** and so on.
+
+I've kicked off and created multiple key features for the product, such as the [Attributes Kit](https://github.com/apiaryio/attributes-kit) as well as the [Console Proxy](https://github.com/apiaryio/console-proxy).
+I'm also author of some [documentation pages](https://help.apiary.io/tools/browser-jsagent/) for the product.
 
 While most of the code was **CoffeScript**, we slowly moved to **ES6** for all new libraries.
 While most of frontend code is still a **Backbone** application, we're slowly moving to React.
