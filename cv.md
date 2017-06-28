@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: An updated CV
+title: Resume
 modified: 2014-08-08T20:53:07.573882-04:00
 ---
 # Vincenzo Chianese
@@ -12,22 +12,31 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 ## Summary
 
-I have done mostly (web) application development for past few years, mainly in C# and NodeJS (as it suited best for my tasks). Some of them were part of larger application I helped to design.
+I have done mostly (web) application development for past few years, mainly in C# and NodeJS (as it
+suited best for my tasks). Some of them were part of larger application I helped to design.
 
-Given that, I decided to move to the front end dark side as well, wishing (and succeeding) to become a full stack developer, focusing on what I call the backend of the frontend, and modern CSS methodologies.
+Given that, I decided to move to the front end dark side as well, wishing (and succeeding) to become
+a full stack developer, focusing on what I call the backend of the frontend. I'm particularly
+interested in **user interfaces**
 
-My long-term interest include project management (especially of small teams), pragmatic programming, distributed software environments, collaborative editing, publishing.
+My long-term interest include project management (especially of small teams), pragmatic programming,
+distributed software environments, collaborative editing, publishing.
 
 ## Work Experience
+
+### [Bucmi.com](https://www.bucmi.com)
+#### Nasino
+##### To be defined - **Sep 2017**
 
 ### [Apiary.io](http://apiary.io)
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Jul 2017**
 
-I've been working as a full stack software engineer (with strong attitude in Frontend) and as
-Team Leader for Documentation Team, delivering features to 200k+ users.
+I've been working as a full stack software engineer (with strong Frontend attitude) and, for a while,
+as Team Leader for Documentation Team (basically the squad behind the generated documentations, such
+as [this one](http://docs.onenote.apiary.io))
 
-I've been as well involved in multiple parts of the application (**payment infrastructure**, **team
+I've been as well involved in multiple parts of the application (such as **payment infrastructure**, **team
 management**, as well part of the team that crafted the first **microservice**) - then my focus has been
 entirely on the generated **Documentation pages**.
 
@@ -40,6 +49,9 @@ I'm also author of some [documentation pages](https://help.apiary.io/tools/brows
 
 While most of the code was **CoffeScript**, we slowly moved to **ES6** for all new libraries.
 While most of frontend code is still a **Backbone** application, we're slowly moving to React.
+
+During the journey, I gained a good experience in the whole NodeJS applications ecosystem and the
+SaaS product.
 
 <hr>
 
@@ -136,7 +148,7 @@ substation and offering a simple gateway to get real time data.
 ### Other activities
 
 I've been contributing to other open source projects back in the time when Github wasn't main stream
-yet. Unfortunately this work is hard to track; anyway I do recall:
+yet. Unfortunately this work is hard to track; some worth recalling are:
 
 - Contributor for **eAthena** project, (open source Ragnarok server emulator) where I made a complete rewriting of memory manager to achieve better performance.
 
@@ -146,12 +158,12 @@ yet. Unfortunately this work is hard to track; anyway I do recall:
 
 - [TextCompress](https://github.com/XVincentX/TextCompress), compression alghoritm suited for plain text compression
 
-
 ### Other informations
-- [My blog](http://vncz.js.org)
+- [My blog](https://vncz.js.org)
 - [Stack overflow profile](http://careers.stackoverflow.com/xvincentx)
 - [GitHub profile](https://github.com/XVincentX)
 - [LinkedIn profile](http://www.linkedin.com/pub/vincenzo-chianese/3b/75b/3a5)
 - I have a degree in classic guitar.
 - I speak a good Spanish and I am learning Portuguese.
+- I have a bachelor's degree in Computer Engineering
 - I am really interested in having a work experience in US (3 - 6 months)
