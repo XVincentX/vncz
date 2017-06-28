@@ -24,6 +24,10 @@ distributed software environments, collaborative editing, publishing.
 
 ## Work Experience
 
+### [Bucmi.com](https://www.bucmi.com)
+#### Nasino
+##### To be defined - **Sep 2017**
+
 ### [Apiary.io](http://apiary.io)
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Current**
