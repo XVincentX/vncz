@@ -24,13 +24,9 @@ distributed software environments, collaborative editing, publishing.
 
 ## Work Experience
 
-### [Bucmi.com](https://www.bucmi.com)
-#### Nasino
-##### To be defined - **Sep 2017**
-
 ### [Apiary.io](http://apiary.io)
 #### API Design Stack as Service
-##### Software developer - **Oct 2014 - Jul 2017**
+##### Software developer - **Oct 2014 - Current**
 
 I've been working as a full stack software engineer (with strong Frontend attitude) and, for a while,
 as Team Leader for Documentation Team (basically the squad behind the generated documentations, such
