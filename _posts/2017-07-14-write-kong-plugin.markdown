@@ -96,14 +96,15 @@ Given we have the data, it's just matter to check the domain once we got the inf
 userinfo endpoing:
 
 ```lua
-  if conf.hosted_domain ~= "" then
-    if not pl_stringx.endswith(json[conf.email_key], conf.hosted_domain) then
-      ngx.status = 401
-      ngx.say("Hosted domain is not matching")
-      ngx.exit(ngx.HTTP_OK)
-      return
-    end
+if conf.hosted_domain ~= "" and conf.email_key ~= "" then
+  if not pl_stringx.endswith(json[conf.email_key], conf.hosted_domain) then
+    ngx.status = 401
+    ngx.say("Hosted domain is not matching")
+    ngx.exit(ngx.HTTP_OK)
+    return
   end
+end
+
 ```
 
 ### Step 3: Validate the email, for real
