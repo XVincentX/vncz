@@ -24,10 +24,6 @@ distributed software environments, collaborative editing, publishing.
 
 ## Work Experience
 
-### [Bucmi.com](https://www.bucmi.com)
-#### Nasino
-##### To be defined - **Sep 2017**
-
 ### [Apiary.io](http://apiary.io)
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Current**
@@ -44,7 +40,7 @@ During the journey, I had my chances to contribute multiple times back in severa
 as well as create totally new ones for our purposes, among these: **create-react-app**, **Visual Studio Code**,
 **Emscritpen** and so on.
 
-I've kicked off and created multiple key features for the product, such as the [Attributes Kit](https://github.com/apiaryio/attributes-kit) as well as the [Console Proxy](https://github.com/apiaryio/console-proxy).
+I've kicked off and created multiple key features for the product, such as the **MSON** rendering via the [Attributes Kit](https://github.com/apiaryio/attributes-kit) as well as the [Console Proxy](https://github.com/apiaryio/console-proxy).
 I'm also author of some [documentation pages](https://help.apiary.io/tools/browser-jsagent/) for the product.
 
 While most of the code was **CoffeScript**, we slowly moved to **ES6** for all new libraries.
