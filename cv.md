@@ -49,6 +49,8 @@ While most of frontend code is still a **Backbone** application, we're slowly mo
 During the journey, I gained a good experience in the whole NodeJS applications ecosystem and the
 SaaS product.
 
+Fun fact: According to Github, I've been the third most prolific contributor to the codebase of all the times, although I just joined in **Oct 2014**. If we count the contributions since the time I joined, I'm the number one.
+
 <hr>
 
 ### [Nettuno Solutions](http://www.nettunosolutions.com)
