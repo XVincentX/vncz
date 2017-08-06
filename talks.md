@@ -19,7 +19,7 @@ Here is the current list:
 1. [FerraraJS - Callback, promises and beyond](https://twitter.com/universaljsday/status/721279119925907456)
 2. [Fullstack - Cogenerators and async style](https://skillsmatter.com/skillscasts/7904-from-callback-to-promises-and-beyond)
 3. [Full stack fest - Taming the async problem with CSP](https://www.youtube.com/watch?v=r7yWWxdP_nc)
-4. [O Reilly Software Architecture Conference - Scalable API Flow](https://www.youtube.com/watch?v=XjVQh2DxFbY&feature=youtu.be)
+4. [O Reilly Software Architecture Conference - Scalable API Flow](https://youtu.be/Rz0mFDSu0RY)
 5. [API Days 2016 - Scalable API Flow](http://global.apidays.io/events/paris-2016)
 6. [DevDay Naples - Csp in Javascript](https://www.youtube.com/watch?v=hcJM0Ut0bgc&feature=youtu.be)
 
