@@ -15,9 +15,9 @@ modified: 2014-08-08T20:53:07.573882-04:00
 I have done mostly (web) application development for past few years, mainly in C# and NodeJS (as it
 suited best for my tasks). Some of them were part of larger application I helped to design.
 
-Given that, I decided to move to the front end dark side as well, wishing (and succeeding) to become
+Successively I decided to move to the front end dark side as well, wishing (and succeeding) to become
 a full stack developer, focusing on what I call the backend of the frontend. I'm particularly
-interested in **user interfaces**
+interested in **user interfaces** and **Web APIs**
 
 My long-term interest include project management (especially of small teams), pragmatic programming,
 distributed software environments, collaborative editing, publishing.
@@ -28,17 +28,21 @@ distributed software environments, collaborative editing, publishing.
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Current**
 
-I've been working as a full stack software engineer (with strong Frontend attitude) and, for a while,
-as Team Leader for Documentation Team (basically the squad behind the generated documentations, such
+I've been working as a Full Stack software engineer (with a strong Frontend attitude) and leading
+the Documentation Team (basically the squad behind the generated documentations, such
 as [this one](http://docs.onenote.apiary.io))
 
-I've been as well involved in multiple parts of the application (such as **payment infrastructure**, **team
-management**, as well part of the team that crafted the first **microservice**) - then my focus has been
-entirely on the generated **Documentation pages**.
+I've been as well involved in multiple parts of the application, including **payment infrastructure**, **team
+management**, as well as part of the team that crafted the first **microservice** and the initial 
+[Swagger support in Apiary](https://blog.apiary.io/2016/01/18/We-ve-got-Swagger) - then my focus has been
+entirely on the **Documentation** application
 
 During the journey, I had my chances to contribute multiple times back in several open source projects,
 as well as create totally new ones for our purposes, among these: **create-react-app**, **Visual Studio Code**,
 **Emscritpen** and so on.
+
+I've developed a [Visual Studio Code Extension](https://github.com/XVincentX/vscode-apielements) that's been claimed
+as the best editor experience for API Blueprint and Swagger.
 
 I've kicked off and created multiple key features for the product, such as the **MSON** rendering via the [Attributes Kit](https://github.com/apiaryio/attributes-kit) as well as the [Console Proxy](https://github.com/apiaryio/console-proxy).
 I'm also author of some [documentation pages](https://help.apiary.io/tools/browser-jsagent/) for the product.
