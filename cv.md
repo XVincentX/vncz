@@ -162,7 +162,7 @@ yet. Unfortunately this work is hard to track; some worth recalling are:
 
 ### Other informations
 - [My blog](https://vncz.js.org)
-- [Stack overflow profile](http://careers.stackoverflow.com/xvincentx)
+- [Stack overflow profile](https://stackoverflow.com/users/1044264/vincenzo)
 - [GitHub profile](https://github.com/XVincentX)
 - [LinkedIn profile](http://www.linkedin.com/pub/vincenzo-chianese/3b/75b/3a5)
 - I have a degree in classic guitar.
