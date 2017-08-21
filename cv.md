@@ -24,9 +24,9 @@ distributed software environments, collaborative editing, publishing and [speaki
 
 ## Work Experience
 
-### [Apiary.io](http://apiary.io)
+### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
-##### Software developer - **Oct 2014 - Current**
+##### Software developer - **Oct 2014 - Jul 2017**
 
 I've been working as a Full Stack software engineer (with a strong Frontend attitude) and leading
 the Documentation Team (basically the squad behind the generated documentations, such
