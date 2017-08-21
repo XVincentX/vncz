@@ -20,7 +20,7 @@ a full stack developer, focusing on what I call the backend of the frontend. I'm
 interested in **user interfaces** and **Web APIs**
 
 My long-term interest include project management (especially of small teams), pragmatic programming,
-distributed software environments, collaborative editing, publishing.
+distributed software environments, collaborative editing, publishing and [speaking](/talks).
 
 ## Work Experience
 
