@@ -6,7 +6,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Bucmi](https://bucmi.com) as lead of front end development.
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [LunchBadger](https://lunchbadger.com) as a full stack developer.
 
 Historically I've always been a **.NET** developer, and still I am. However actually I am programming in **JavaScript** on daily basis.
 
