@@ -28,7 +28,7 @@ distributed software environments, collaborative editing, publishing and [speaki
 #### Complete API Lifecycle, Orchestration and Optimization
 ##### Software developer - **Oct 2017 - Current**
 
-Working on [Express Gateway](https://express-gateway.io] project
+Working on [Express Gateway](https://express-gateway.io) project
 
 ### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
