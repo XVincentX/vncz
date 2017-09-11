@@ -24,7 +24,7 @@ distributed software environments, collaborative editing, publishing and [speaki
 
 ## Work Experience
 
-### [LunchBadger.io](https://lunchbadger.com)
+### [LunchBadger](https://lunchbadger.com)
 #### Complete API Lifecycle, Orchestration and Optimization
 ##### Software developer - **Oct 2017 - Current**
 
