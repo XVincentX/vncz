@@ -24,6 +24,12 @@ distributed software environments, collaborative editing, publishing and [speaki
 
 ## Work Experience
 
+### [LunchBadger.io](https://lunchbadger.com)
+#### Complete API Lifecycle, Orchestration and Optimization
+##### Software developer - **Oct 2017 - Current**
+
+Working on [Express Gateway](https://express-gateway.io] project
+
 ### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
 ##### Software developer - **Oct 2014 - Jul 2017**
