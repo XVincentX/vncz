@@ -10,21 +10,21 @@ some time ago.
 
 ## Background
 
-Back in the days I came across a Twitter profile of an employee claiming they were looking for a frontend developer.
+Back in the days I came across a **Twitter** profile of an employee claiming they were looking for a frontend developer.
 
 I usually do not apply for big companies, for a number of reasons. They usually do not respond to your application and
-frankly it's hard to be noted when they have that many applications, and my CV does not look that appealing anyway.
+frankly it's hard to be noted when they have that **many** applications, and my CV does not look that appealing anyway.
 
-If we sum up this with the fact that some of these are using Taleo (oh boy...), my default action is to run away.
+If we sum up this with the fact that some of these are using **Taleo** (oh boy...), my default action is to run away.
 
-However, if you see an employee, a developer, publicly shouting they're hiring for their team, things are different.
+However, if you see an employee, a **developer**, publicly shouting they're hiring for their team, things are different.
 
-1. It usually means they're looking for people, for real. I've seen a lot of times companies putting dozens of job
+1. It usually means **they're looking for people, for real**. I've seen a lot of times companies putting dozens of job
 offers even though they're not hiring. It's a marketing strategy tipically used to scary the competition showing
 you're growing that fast you need a lot of people - but at the end of the day, it's not true. On the opposite, you might
 be on the way of closing the company (I've been there).
 
-2. It's very likely you're going to speak and chat directly with the target team - therefore you know in advance if
+2. It's very likely you're going to speak and chat directly with the **target team** - therefore you know in advance if
 you like the people, the position, what they've been working on lately and - more importantly - you skip the hiring call
 where these folks sell things about the company you're not really interested at that stage.
 
@@ -44,7 +44,7 @@ and, given the great followups I received, the idea of joining in such company w
 
 ## Code challenge
 
-Next step was the code challenge - whose solution has been put [here](https://codepen.io/XVincentX/details/QMjWNe/)
+Next step was the **code challenge** - whose solution has been put [here](https://codepen.io/XVincentX/details/QMjWNe/)
 
 I took some time and solved the whole thing - then I submitted the
 [solution](https://codepen.io/XVincentX/details/QMjWNe/) and then I wrote a follow up email to the guys
@@ -126,10 +126,10 @@ I was sure I made it.
 
 ## The followup
 
-After a couple of weeks I received an email announcing they didn't want to move further with me.
+After a couple of weeks I received an email announcing **they didn't want** to move further with me.
 
 I rechecked the things multiple times, I even asked some friends to have a look into the solution to see if I made
-any stupid mistakes - but nobody pointed out something really valuable. I was confused.
+any stupid mistakes - but nobody pointed out something really **valuable**. I was confused.
 
 Therefore I replied and I asked for a feedback. If I had been missing something so basic - I wanted to know.
 
@@ -165,9 +165,9 @@ Unfortunately, I didn't get any reply and they vanished.
 
 ## So what?
 
-Fundamentally I was surprised at first, and disappointed later. Surprised, because I genuinely thought the point of the
+Fundamentally I was surprised at first, and disappointed later. Surprised, because I **genuinely** thought the point of the
 interview was to make sure I had an idea of what I was doing in terms of solving a bug and as well as reason about
-using the right API for the job; disappointed because I hoped to have a detailed feedback to improve.
+using the right API for the job; disappointed because I hoped to have a detailed **feedback** to improve.
 
 Instead I got silence.
 

@@ -13,6 +13,11 @@ body {
     text-rendering: optimizeLegibility
 }
 
+blockquote {
+  padding-left: 15px;
+  border-left: 5px solid rgb(186, 184, 176);
+}
+
 ::selection {
     background: #245d85;
     color: #fff;
