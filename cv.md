@@ -26,9 +26,10 @@ distributed software environments, collaborative editing, publishing and [speaki
 
 ### [LunchBadger](https://lunchbadger.com)
 #### Complete API Lifecycle, Orchestration and Optimization
-##### Software developer - **Oct 2017 - Current**
+##### Software developer - **Sep 2017 - Current**
 
-Working on [Express Gateway](https://express-gateway.io) project
+In charge of the [Express Gateway](https://express-gateway.io) project, the first
+and only API Gateway written in Javascript running on NodeJS.
 
 ### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
