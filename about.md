@@ -6,9 +6,9 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [LunchBadger](https://lunchbadger.com) as a full stack developer.
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [LunchBadger](https://lunchbadger.com) as a full stack developer. At the moment, I'm leading the [Express-Gateway](https://express-gateway.io) project, the first API Gateway written in Javascript and running on NodeJS
 
-Historically I've always been a **.NET** developer, and still I am. However actually I am programming in **JavaScript** on daily basis.
+Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat, which is where I still am at the moment.
 
 In my working hours I spend time trying solving problems using the appropriate technologies based on the projects' requirements (failing every single time). During my spare time, I try to develop [open source software](https://github.com/XVincentX), writing articles on topics I'm interested in, working out and partying hard.
 
@@ -22,9 +22,11 @@ I own a great Bernabé M-10, built in 2006
 
 ![](http://i.imgur.com/JAyjOTu.jpg)
 
-I love Spanish language. One time I was in Spain and I liked so much that language that decided to buy a book for babies entirely in Spanish: [El Principito](https://es.wikipedia.org/wiki/El_principito). When I felt that was enough proficient in Spanish, I started to stop persons on the street when I was able to detect that they were talking in Spanish, and asked for small conversation. Furthermore, in order to became even more fluent, I decided to move in an shared house with 1 Spanish girl, 1 Spanish Guy, a Mexican girl and a Cuban boy, that is where I actually live. On the other side, I consider my English terrible (orroroso, por ser preciso).
+I love Spanish language. One time I was in Spain and I liked so much that language that I decided to buy a book for babies entirely in Spanish: [El Principito](https://es.wikipedia.org/wiki/El_principito). When I felt that was enough proficient in Spanish, I started to stop persons on the street when I was able to detect that they were talking in Spanish, and asked for small conversation. 
+
+Moreover, in order to became even more fluent, I decided to move in an shared house with 1 Spanish girl, 1 Spanish Guy, a Mexican girl and a Cuban boy, that is where I've been living for almost two years. On the other side, I consider my English terrible (orroroso, por ser preciso).
 
 During July 2015 I was in Lisbon, and I liked the language so much and decided that probably learning
-Portoguese would have been a good idea, so...
+Portoguese would have been a good idea. I still can't manage it properly, but I'm not that terrible.
 
-Eu falo o idioma Portuges tambem!
+Once Apiary was acquired by Oracle and I figured out what they had next to us, I decided to leave the Czech Republic after 3 years and relocate in Madrid, which is where I am living right now.
