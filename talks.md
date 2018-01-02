@@ -7,6 +7,12 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 
 Here is the current list:
 
+## 2018
+1. RomaJS - Building resilient microservices WebAPI with REST and API Gateways
+2. NapoliJS - Building resilient microservices WebAPI with REST and API Gateways
+3. MilanoJS - Building resilient microservices WebAPI with REST and API Gateways
+4. BolognaJS - Building resilient microservices WebAPI with REST and API Gateways
+
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
 2. [API Days Austrialia - Scalable API Flow](https://www.infoq.com/presentations/api-development-workflow)
