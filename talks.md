@@ -11,7 +11,7 @@ Here is the current list:
 1. RomaJS - Building resilient microservices WebAPI with REST and API Gateways
 2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.com/e/15-devday-napoli-building-resilient-microservice-apis-with-rest-and-api-gateway-tickets-41797346990)
 3. MilanoJS - Building resilient microservices WebAPI with REST and API Gateways
-4. BolognaJS - Building resilient microservices WebAPI with REST and API Gateways
+4. [BolognaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.meetup.com/Bologna-JS-Meetup/events/246442616/)
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
