@@ -11,8 +11,10 @@ Here is the current list:
 #### Auth0 Express-Gateway Tour
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-microservice-apis-with-rest-and-api-gateway-romajs-aperitech-41385268452)
 2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.com/e/15-devday-napoli-building-resilient-microservice-apis-with-rest-and-api-gateway-tickets-41797346990)
-3. MilanoJS - Building resilient microservices WebAPI with REST and API Gateways
+3. [MilanoJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-milano-js-42126073219)
 4. [BolognaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.meetup.com/Bologna-JS-Meetup/events/246442616/)
+
+#### Other events
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
 
 ## 2017
