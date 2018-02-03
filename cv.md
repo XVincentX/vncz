@@ -28,8 +28,8 @@ distributed software environments, collaborative editing, publishing and [speaki
 #### Complete API Lifecycle, Orchestration and Optimization
 ##### Software developer - **Sep 2017 - Current**
 
-In charge of the [Express Gateway](https://express-gateway.io) project, the first
-and only API Gateway written in Javascript running on NodeJS.
+Mainteiner and contributor of [Express Gateway](https://express-gateway.io) project, the first
+API Gateway written in Javascript running on NodeJS.
 
 ### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
