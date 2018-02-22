@@ -8,14 +8,15 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 Here is the current list:
 
 ## 2018
-#### Auth0 Express-Gateway Tour
+#### Express-Gateway Tour
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
 2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/devdayit/status/954415874605281280)
 3. [MilanoJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-milano-js-42126073219)
 4. [BolognaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.meetup.com/Bologna-JS-Meetup/events/246442616/)
-
-#### Other events
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
+6. [MadridJS — API Gateway: the microservice superglue](https://t.co/elT8rEBbn4)
+7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
+8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://t.co/elT8rEBbn4)
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
