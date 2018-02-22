@@ -16,7 +16,7 @@ Here is the current list:
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
 6. [MadridJS — API Gateway: the microservice superglue](https://t.co/elT8rEBbn4)
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
-8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://t.co/elT8rEBbn4)
+8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
