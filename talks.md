@@ -26,7 +26,7 @@ Here is the current list:
 5. [DevDays 2017 Vilnius - Multiple presentations](http://devdays.lt/vincenzo-chianese/) - [Aftermovie interview](https://www.youtube.com/watch?v=eZcgt0XaDfI&feature=youtu.be)
 6. [API Days Paris 2016 - REST, for real!](http://www.apidays.io/events/logistics-transports-2017#speakers)
 7. [CodeMotion Milan 2017 - REST, for real!](https://www.youtube.com/watch?v=hgqqPaVEZpk)
-8. [CodeEurope PL - Resilient API with REST and Gateways](https://www.codeeurope.pl/en/speakers/vincenzo-chianese)
+8. [CodeEurope PL - Resilient API with REST and Gateways](https://2017autumn.codeeurope.pl/en/speakers/vincenzo-chianese)
 
 ## 2016
 1. [FerraraJS - Callback, promises and beyond](https://twitter.com/universaljsday/status/721279119925907456)
