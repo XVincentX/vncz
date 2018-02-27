@@ -18,6 +18,8 @@ Here is the current list:
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
 8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
 
+Note: I know I've been milking this presentation. Honestly when I was proposing it around I didn't expect to be accepted almost everywhere. Usually it's the other way around. Life, I guess.
+
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
 2. [API Days Austrialia - Scalable API Flow](https://www.infoq.com/presentations/api-development-workflow)
