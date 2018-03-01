@@ -14,7 +14,7 @@ Here is the current list:
 3. [MilanoJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-milano-js-42126073219)
 4. [BolognaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.meetup.com/Bologna-JS-Meetup/events/246442616/)
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
-6. [MadridJS — API Gateway: the microservice superglue](https://t.co/elT8rEBbn4)
+6. [MadridJS — API Gateway: the microservice superglue](https://t.co/nlLaOaB8Gv)
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
 8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
 
