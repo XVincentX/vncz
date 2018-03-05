@@ -20,6 +20,8 @@ Here is the current list:
 
 Note: I know I've been milking this presentation. Honestly when I was proposing it around I didn't expect to be accepted almost everywhere. Usually it's the other way around. Life, I guess.
 
+9. [FreeCodeCamp — Interview with a developer](https://www.youtube.com/watch?v=QE6ue9D5Tig)
+
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
 2. [API Days Austrialia - Scalable API Flow](https://www.infoq.com/presentations/api-development-workflow)
