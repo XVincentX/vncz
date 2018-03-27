@@ -28,8 +28,15 @@ distributed software environments, collaborative editing, publishing and [speaki
 #### Complete API Lifecycle, Orchestration and Optimization
 ##### Software developer - **Sep 2017 - Current**
 
-Mainteiner and contributor of [Express Gateway](https://express-gateway.io) project, the first
-API Gateway written in Javascript running on NodeJS.
+- Mainteiner and contributor of [Express Gateway](https://express-gateway.io) project, the first
+API Gateway written in Javascript running on NodeJS. In particular I've been working on the its code,
+its promotion by [writing](https://auth0.com/blog/apigateway-microservices-superglue/)
+[articles](https://auth0.com/blog/application-metrics-with-express-gateway/), spreading the people to use it
+and providing support on multiple channels (Gitter, Google Groups). I've also spoke at multiple conference
+about the project itself.
+
+- I've also been working on LunchBadger product itself. This includes the general architecture, integrating
+Express Gateway in the solution. I gained a good knowledge of the Kubernetes platform thanks to that.
 
 ### [Apiary.io - Acquired by Oracle](http://apiary.io)
 #### API Design Stack as Service
