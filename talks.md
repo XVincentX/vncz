@@ -17,12 +17,12 @@ Here is the current list:
 6. [MadridJS — API Gateway: the microservice superglue](https://t.co/nlLaOaB8Gv)
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
 8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
-9. [NodeSummit San Francisco — TBA]()
 
 Note: I know I've been milking this presentation. Honestly when I was proposing it around I didn't expect to be accepted almost everywhere. Usually it's the other way around. Life, I guess.
 
 9. [FreeCodeCamp — Interview with a developer](https://www.youtube.com/watch?v=QE6ue9D5Tig)
 10. [Oracle Code Chicago — Lite Interview](https://twitter.com/OracleDevs/status/976203904235925504)
+11. [NodeSummit San Francisco — TBA]()
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
