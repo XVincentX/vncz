@@ -17,6 +17,7 @@ Here is the current list:
 6. [MadridJS — API Gateway: the microservice superglue](https://t.co/nlLaOaB8Gv)
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
 8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
+9. [NodeSummit San Francisco — TBA]()
 
 Note: I know I've been milking this presentation. Honestly when I was proposing it around I didn't expect to be accepted almost everywhere. Usually it's the other way around. Life, I guess.
 
