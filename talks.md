@@ -10,7 +10,7 @@ Here is the current list:
 ## 2018
 #### Express-Gateway Tour
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
-2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/devdayit/status/954415874605281280)
+2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.youtube.com/watch?v=aD8JDPJ1a54)
 3. [MilanoJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-milano-js-42126073219)
 4. [BolognaJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.meetup.com/Bologna-JS-Meetup/events/246442616/)
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
