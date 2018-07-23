@@ -23,7 +23,7 @@ Note: I know I've been milking this presentation. Honestly when I was proposing 
 9. [FreeCodeCamp — Interview with a developer](https://www.youtube.com/watch?v=QE6ue9D5Tig)
 10. [Oracle Code Chicago — Lite Interview](https://twitter.com/OracleDevs/status/976203904235925504)
 11. [NodeSummit San Francisco — Express Gateway training session](http://www.nodesummit.com/training-days/)
-12. [API City Seattle](https://apicity.io/)
+12. [API City Seattle](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
