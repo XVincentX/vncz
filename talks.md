@@ -16,13 +16,12 @@ Here is the current list:
 5. [API Days 2018 Paris — API Gateway: the microservice superglue](http://www.apidays.io/events/paris-2017#home)
 6. [MadridJS — API Gateway: the microservice superglue](https://t.co/nlLaOaB8Gv)
 7. [Booster 2018 Bergain](https://2018.boosterconf.no/talks/1086)
-8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago)
+8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago) with a [live interview](https://twitter.com/OracleDevs/status/976203904235925504)
 9. [FreeCodeCamp — Interview with a developer](https://www.youtube.com/watch?v=QE6ue9D5Tig)
-10. [Oracle Code Chicago — Lite Interview](https://twitter.com/OracleDevs/status/976203904235925504)
-11. [NodeSummit San Francisco — Express Gateway training session](http://www.nodesummit.com/training-days/)
-12. [The Ironhack Madrid](https://www.meetup.com/ironhack-madrid/events/254348036)
-13. [API City Seattle](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
-14. [BarcelonaJS]()
+10. [NodeSummit San Francisco — Express Gateway training session](http://www.nodesummit.com/training-days/)
+11. [The Ironhack Madrid](https://www.meetup.com/ironhack-madrid/events/254348036)
+12. [API City Seattle](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
+13. [BarcelonaJS]()
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
