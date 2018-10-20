@@ -24,9 +24,15 @@ distributed software environments, collaborative editing, publishing and [speaki
 
 ## Work Experience
 
+### [StopLight](https://stoplight.io)
+#### API Design, Docs, Mocking, and Testing
+##### Software developer - **Oct 2018 - Current**
+
+- Software developer. I'll write more when I'll be a little bit more into the role itself :)
+
 ### [LunchBadger](https://lunchbadger.com)
 #### Complete API Lifecycle, Orchestration and Optimization
-##### Software developer - **Sep 2017 - Current**
+##### Software developer - **Sep 2017 - Sep 2018**
 
 - Mainteiner and contributor of [Express Gateway](https://express-gateway.io) project, the first
 API Gateway written in Javascript running on NodeJS. In particular I've been working on the its code,
