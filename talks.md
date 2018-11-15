@@ -8,7 +8,6 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 Here is the current list:
 
 ## 2018
-#### Express-Gateway Tour
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
 2. [NapoliJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.youtube.com/watch?v=aD8JDPJ1a54)
 3. [MilanoJS - Building resilient microservices WebAPI with REST and API Gateways](https://www.eventbrite.it/e/biglietti-milano-js-42126073219)
@@ -19,9 +18,10 @@ Here is the current list:
 8. [Oracle Code Chicago — API Gateway: the microservice superglue](https://developer.oracle.com/code/chicago) with a [live interview](https://twitter.com/OracleDevs/status/976203904235925504)
 9. [FreeCodeCamp — Interview with a developer](https://www.youtube.com/watch?v=QE6ue9D5Tig)
 10. [NodeSummit San Francisco — Express Gateway training session](http://www.nodesummit.com/training-days/)
-11. [The Ironhack Madrid](https://www.meetup.com/ironhack-madrid/events/254348036)
-12. [API City Seattle](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
-13. [BarcelonaJS]()
+11. [The Ironhack Madrid- API Gateway: the microservice superglue](https://www.meetup.com/ironhack-madrid/events/254348036)
+12. [API City Seattle - API Gateway: the microservice superglue](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
+13. [BarcelonaJS - API Gateway: the microservice superglue](https://twitter.com/joppyme/status/1054419683825344513)
+14. [API Days 2018 — Topic to be announced]()
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
