@@ -1,0 +1,22 @@
+{
+  "name": "Vincenzo Chianese",
+  "handle": "vncz",
+  "items": [
+    {
+      "label": "Work",
+      "content": "Software Developer @ Stoplight"
+    },
+    {
+      "label": "Twitter",
+      "content": "https://twitter.com/D3DVincent"
+    },
+    {
+      "label": "GitHub",
+      "content": "https://github.com/XVincentX"
+    },
+    {
+      "label": "Web",
+      "content": "https://vncz.js.org"
+    }
+  ]
+}
