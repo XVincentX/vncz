@@ -21,7 +21,7 @@ Here is the current list:
 11. [The Ironhack Madrid- API Gateway: the microservice superglue](https://www.meetup.com/ironhack-madrid/events/254348036)
 12. [API City Seattle - API Gateway: the microservice superglue](https://apicity.io/component/eventschedulepro/session/microservice%20api-gateway?Itemid=)
 13. [BarcelonaJS - API Gateway: the microservice superglue](https://twitter.com/joppyme/status/1054419683825344513)
-14. [API Days 2018 — OpenAPI for devOps]()
+14. [API Days 2018 — OpenAPI for devOps](https://www.youtube.com/watch?v=_bt1r_SHfaU)
 
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
