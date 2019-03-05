@@ -8,10 +8,10 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 Here is the current list:
 
 ## 2019
-1. [Oracle Code Rome 2019](https://developer.oracle.com/code/rome-april-2019)
-2. [API Meetup Barcelona](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
-3. [API Days Singapore 2019](http://apidays.co/barcelona)
-4. [API Summit Austin 2019](https://nordicapis.com/speakers/vincenzo-chianese/)
+1. [Oracle Code Rome 2019 — Bring OpenAPI to your devOps](https://developer.oracle.com/code/rome-april-2019)
+2. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
+3. [API Days Singapore 2019 — Bring OpenAPI to your devOps](http://apidays.co/barcelona)
+4. [API Summit Austin 2019 — Closing Keynote](https://nordicapis.com/speakers/vincenzo-chianese/)
 
 ## 2018
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
