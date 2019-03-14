@@ -7,6 +7,10 @@ Whenever is possible, I love to talk at conferences about interesting topics I'v
 
 Here is the current list:
 
+## 2020
+
+1. [Node Atlanta](https://node-atl.org)
+
 ## 2019
 1. [Oracle Code Rome 2019 — Bring OpenAPI to your devOps](https://developer.oracle.com/code/rome-april-2019)
 2. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
