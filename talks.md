@@ -13,7 +13,7 @@ Here is the current list:
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
-2. [Oracle Code Rome 2019 — Bring OpenAPI to your devOps](https://developer.oracle.com/code/rome-april-2019) with a [live Interview](https://twitter.com/OracleDevs/status/1113742389548421121)
+2. [Oracle Code Rome 2019 — Bring OpenAPI to your devOps](https://youtu.be/IkfhudP2v7U?t=7532) with a [live Interview](https://twitter.com/OracleDevs/status/1113742389548421121)
 3. [API Days Singapore 2019 — Bring OpenAPI to your devOps](http://apidays.co/barcelona)
 4. [API Summit Austin 2019 — Closing Keynote](https://nordicapis.com/speakers/vincenzo-chianese/)
 
