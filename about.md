@@ -6,7 +6,9 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [LunchBadger](https://lunchbadger.com) as a full stack developer. At the moment, I'm leading the [Express-Gateway](https://express-gateway.io) project, the first API Gateway written in Javascript and running on NodeJS
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer.
+
+Moreover, I'm leading the [Express-Gateway](https://express-gateway.io) project, the first API Gateway written in Javascript and running on NodeJS
 
 Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat, which is where I still am at the moment.
 
