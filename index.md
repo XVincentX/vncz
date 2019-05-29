@@ -5,7 +5,14 @@ layout: home
 Hi, I'm **Vincenzo Chianese**.<br>
 Good to see you here!
 
-### [Blog](/posts)
-### [Talks](/talks)
-### [About](/about)
+<nav>
+  ### [Blog](/posts)
+</nav>
 
+<nav>
+  ### [Talks](/talks)
+</nav>
+
+<nav>
+  ### [About](/about)
+</nav>
