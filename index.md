@@ -6,13 +6,13 @@ Hi, I'm **Vincenzo Chianese**.<br>
 Good to see you here!
 
 <nav>
-  ### [Blog](/posts)
+  <h3><a href="/posts">Blog</a></h3>
 </nav>
 
 <nav>
-  ### [Talks](/talks)
+  <h3><a href="/talks">Talks</a></h3>
 </nav>
 
 <nav>
-  ### [About](/about)
+  <h3><a href="/about">About</a></h3>
 </nav>
