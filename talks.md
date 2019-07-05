@@ -13,10 +13,11 @@ Here is the current list:
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
-2. [Oracle Code Rome 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=3rC4NrvkLKg) with a [live Interview](https://www.youtube.com/watch?v=7j52hQ3uVoY&list=PLPIzp-E1msrY5d6fKJnWBC4EupNk7UPXh&index=10&t=0s)
-3. [API Days Singapore 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=_Dj7nbiBCqg)
-4. [API Summit Austin 2019 — Closing Keynote](https://www.youtube.com/watch?v=rAn87yHyNPE)
-5. [JavaScript and Friends Columbus](https://www.javascriptandfriends.com/speakers)
+2. [Oracle Code Rome April 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=3rC4NrvkLKg) with a [live Interview](https://www.youtube.com/watch?v=7j52hQ3uVoY&list=PLPIzp-E1msrY5d6fKJnWBC4EupNk7UPXh&index=10&t=0s)
+3. [API Days Singapore April 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=_Dj7nbiBCqg)
+4. [API Summit Austin May 2019 — Closing Keynote](https://www.youtube.com/watch?v=rAn87yHyNPE)
+5. [JavaScript and Friends Columbus August 2019 — Functional Domain Driven Design in TypeScript](https://www.javascriptandfriends.com/speakers)
+6. [API Days Barcelona](https://apidays.co/barcelona)
 
 ## 2018
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
