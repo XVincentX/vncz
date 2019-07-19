@@ -10,7 +10,7 @@ Not so long ago, I was working to a sort of _UI Kit_ for [Apiary](https://apiary
 
 To clarify, this is a FlipSwitch.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="AxFbl" data-default-tab="result" data-user="goiblas" class='codepen'>See the Pen <a href='http://codepen.io/goiblas/pen/AxFbl/'> Simple flip switch css:checked</a> by goiblas (<a href='http://codepen.io/goiblas'>@goiblas</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="0" data-slug-hash="AxFbl" data-default-tab="result" data-user="goiblas" class='codepen'>See the Pen <a href='https://codepen.io/goiblas/pen/AxFbl/'> Simple flip switch css:checked</a> by goiblas (<a href='https://codepen.io/goiblas'>@goiblas</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Pretty simple, right? I am quite sure that every designer/css ninja will find code this a newbie task, but it may give some problems to backend developers and so on.
@@ -218,5 +218,5 @@ The switch will behave correctly for each `width`
 People from [Webucator](https://www.webucator.com/webdesign/css.cfm) found my blog post and they thought it was be a good idea to create a video from that. So, they made it, and I published it. You might be interested to their courses!
 
 <iframe id="ytplayer" type="text/html" width="640" height="390"
-  src="http://www.youtube.com/embed/AKK3wulnpNo"
+  src="https://www.youtube.com/embed/AKK3wulnpNo"
   frameborder="0"/>
