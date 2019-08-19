@@ -17,7 +17,8 @@ Here is the current list:
 3. [API Days Singapore April 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=_Dj7nbiBCqg)
 4. [API Summit Austin May 2019 — Closing Keynote](https://www.youtube.com/watch?v=rAn87yHyNPE)
 5. [JavaScript and Friends Columbus August 2019 — Functional Domain Driven Design in TypeScript](https://www.javascriptandfriends.com/speakers)
-6. [API Days Barcelona](https://apidays.co/barcelona)
+6. [API Meetup Austin — New OSS tools for API Development](https://twitter.com/stoplightio/status/1162148904491790345)
+7. [API Days Barcelona](https://apidays.co/barcelona)
 
 ## 2018
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
