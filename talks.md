@@ -9,7 +9,7 @@ Here is the current list:
 
 ## 2020
 
-1. [Node Atlanta](https://node-atl.org)
+1. [Node Atlanta](https://node-atl.org/speaker-info/vincenzo-chianese)
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
