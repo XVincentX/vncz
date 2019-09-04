@@ -28,7 +28,7 @@ distributed software environments, collaborative editing, publishing and [speaki
 #### API Design, Docs, Mocking, and Testing
 ##### Software developer - **Oct 2018 - Current**
 
-- Software developer. I'll write more when I'll be a little bit more into the role itself :)
+- In charge of [Prism](https://stoplight.io/prism), an Open Source and feature complete OAS2/3 mock server
 
 ### [LunchBadger](https://lunchbadger.com)
 #### Complete API Lifecycle, Orchestration and Optimization
