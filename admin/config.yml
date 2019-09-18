@@ -10,6 +10,7 @@ collections:
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    extension: markdown
     editor:
       preview: false
     fields:
