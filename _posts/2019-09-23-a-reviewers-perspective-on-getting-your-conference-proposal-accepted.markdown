@@ -75,7 +75,7 @@ The point is that for some companies there's always going to be a good story to 
 
 For this event I've been able to get very good presentations from some big companies that initially were off of the track; I proactively reached out to them, but more importantly, their willingness to work with me to find a good topic was the key to get them accepted.
 
-I also had the opposite experience; some big companies didn't respond at all (even though they sent in a proposal); some wanted to stick with their original presentation no matter what; others indicated they didn't come up with anything interesting.
+I had the opposite experience as well; some big companies didn't respond at all (even though they sent in a proposal); some wanted to stick with their original presentation no matter what; others indicated they didn't come up with anything interesting.
 
 Ultimately, we had to reject many of these proposals.
 
@@ -97,13 +97,13 @@ No matter how good your presentation is — if it is not in line with the confer
 
 ## Sponsors
 
-This is kind of a delicate topic. Sponsors are an important for every event. They make the conference possible and help keep the tickets prices reasonable; but they will likely expect something back from you, and usually a speaking slot is among these perks.
+This is kind of a delicate topic. Sponsors are an important for every event. They make the conference possible and help keep the tickets prices reasonable; but they will likely expect something back from you, and usually a speaking slot is one of these perks.
 
 Some of the proposed talks might be good; in that case — **BINGO!**, go get a beer.
 
 I also had  sponsors saying to me that being a sponsor didn't really change anything for them and they wanted to go through the "regular" process. I've really appreciated that.
 
-Unfortunately, chances are that the proposed presentation is something not in line with the conference. In the worstworse case, you might get a sales pitch.
+Unfortunately, chances are that the proposed presentation is something not in line with the conference. In the worst case, you might get a sales pitch.
 
 In certain cases you might be able to work with the sponsors' speaker and get them back on track and deliver something valuable for the audience. Sometimes they won't change their idea and either:
 
