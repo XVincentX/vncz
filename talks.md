@@ -19,7 +19,10 @@ Here is the current list:
 5. [JavaScript and Friends Columbus August 2019 — Functional Domain Driven Design in TypeScript](https://www.javascriptandfriends.com/speakers)
 6. [API Meetup Austin — New OSS tools for API Development](https://www.youtube.com/watch?v=CyBb6nNWwqM)
 7. [API Days Barcelona — Opening Keynote](https://apidays.co/barcelona)
-7. [API Days Paris — The Rocky Road of the OpenAPI AST](https://apidays.co/paris)
+8. [RomaJS — When an error is not an exception]()
+9. [DevDaysNP — When an error is not an exception](https://www.meetup.com/it-IT/DevDays/events/265310480/)
+10. [BolognaJS — When an error is not an exception](https://www.meetup.com/Bologna-JS-Meetup/events/265309661/)
+11. [API Days Paris — The Rocky Road of the OpenAPI AST](https://apidays.co/paris)
 
 ## 2018
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
