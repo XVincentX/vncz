@@ -1,0 +1,5 @@
+[build]
+  command = "jekyll build && netlify-lambda build ./.functions --config webpack.functions.js"
+  functions = "functions-built"
+[context.production]
+  environment = { AWS_LAMBDA_JS_RUNTIME = "10.x" }

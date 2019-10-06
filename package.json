@@ -1,0 +1,33 @@
+{
+  "name": "vncz",
+  "version": "1.0.0",
+  "description": "My personal blog. Visit it [here](http://vncz.js.org)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XVincentX/vncz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XVincentX/vncz/issues"
+  },
+  "homepage": "https://github.com/XVincentX/vncz#readme",
+  "dependencies": {
+    "@stoplight/http-spec": "^2.2.3",
+    "@stoplight/json-ref-resolver": "^2.3.0",
+    "@stoplight/prism-http": "^3.2.0-alpha.0",
+    "@stoplight/types": "^11.1.1",
+    "@stoplight/yaml": "^3.3.1",
+    "axios": "^0.19.0",
+    "pino": "^5.13.4",
+    "pino-pretty": "^3.2.1"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3"
+  }
+}
