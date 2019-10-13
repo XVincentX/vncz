@@ -2,3 +2,5 @@ title: "Vncz's Blog"
 url: https://vncz.js.org
 permalink: /:categories/:title/
 repository: XVincentX/vncz 
+include:
+  - _redirects
