@@ -24,7 +24,7 @@
     "@stoplight/types": "^11.1.1",
     "@stoplight/yaml": "^3.3.1",
     "axios": "^0.19.0",
-    "pino": "^5.13.4",
+    "pino": "^5.13.5",
     "pino-pretty": "^3.2.1"
   },
   "devDependencies": {
