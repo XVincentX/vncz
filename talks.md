@@ -9,7 +9,7 @@ Here is the current list:
 
 ## 2020
 
-1. [Node Atlanta — Functional Domain Driven Design in TypeScript](https://node-atl.org/speaker-info/vincenzo-chianese)
+1. [Node Atlanta — When an error is not an exception](https://node-atl.org/speaker-info/vincenzo-chianese)
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
@@ -19,9 +19,9 @@ Here is the current list:
 5. [JavaScript and Friends Columbus August 2019 — Functional Domain Driven Design in TypeScript](https://www.javascriptandfriends.com/speakers)
 6. [API Meetup Austin — New OSS tools for API Development](https://www.youtube.com/watch?v=CyBb6nNWwqM)
 7. [API Days Barcelona — Opening Keynote](https://apidays.co/barcelona)
-8. [Google LaunchPad for Startups — Setting an API Strategy]()
-9. [Google LaunchPad for Startups — Microservices and containers might not make sense]()
-10. [Google LaunchPad for Startups — What I wish I'd have known about fundraising]()
+8. [Google LaunchPad for Startups — Setting an API Strategy](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
+9. [Google LaunchPad for Startups — Microservices and containers might not make sense](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
+10. [Google LaunchPad for Startups — What I wish I'd have known about fundraising](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 11. [RomaJS — When an error is not an exception]()
 12. [DevDaysNP — When an error is not an exception](https://www.meetup.com/it-IT/DevDays/events/265310480/)
 13. [BolognaJS — When an error is not an exception](https://www.meetup.com/Bologna-JS-Meetup/events/265309661/)
