@@ -22,9 +22,9 @@ Here is the current list:
 8. [Google LaunchPad for Startups — Setting an API Strategy](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 9. [Google LaunchPad for Startups — Microservices and containers might not make sense](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 10. [Google LaunchPad for Startups — What I wish I'd have known about fundraising](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
-11. [RomaJS — When an error is not an exception]()
-12. [DevDaysNP — When an error is not an exception](https://www.meetup.com/it-IT/DevDays/events/265310480/)
-13. [BolognaJS — When an error is not an exception](https://www.meetup.com/Bologna-JS-Meetup/events/265309661/)
+11. [RomaJS — Functional Domain Driven Design in TypeScript]()
+12. [DevDaysNP — Functional Domain Driven Design in TypeScript](https://www.meetup.com/it-IT/DevDays/events/265310480/)
+13. [BolognaJS — Functional Domain Driven Design in TypeScript](https://www.meetup.com/Bologna-JS-Meetup/events/265309661/)
 14. [API Days Paris — The Rocky Road of the OpenAPI AST](https://apidays.co/paris)
 
 ## 2018
