@@ -33,6 +33,7 @@ h1 {
 h1 a {
     color: #57565e;
     border-bottom: 0px;
+    line-height: 35px
 }
 
 h1 a:hover {
