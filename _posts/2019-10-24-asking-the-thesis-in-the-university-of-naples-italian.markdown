@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asking the thesis in the University of Naples (Italian)
+title: Asking the thesis in the University of Naples (Post in Italian)
 date: 2019-10-24T09:36:53.450Z
 ---
 # What's up?
@@ -9,9 +9,11 @@ I usually write all my posts in English.
 
 However, back in the time [I wrote a post in Italian](https://www.ingegnerinforma.it/forum/threads/guida-alla-richiesta-tesi-ingegneria-informatica-unina.3601/) explaining how painful getting an agreement to write your thesis in my university in Naples (Federico II) was that became kind of viral.
 
-I think it's worth keeping this somewhere for records, so here's the post.
+I think it's worth keeping this somewhere for records, so here's the post. You can safely skip this post.
 
 - - -
+
+
 
 Ciao ragazzi,
 
