@@ -1,1 +1,1 @@
-/prism https://hosted-prism.herokuapp.com
+/prism/*  https://hosted-prism.herokuapp.com/:splat  200
