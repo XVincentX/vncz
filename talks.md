@@ -10,6 +10,7 @@ Here is the current list:
 ## 2020
 
 1. [Node Atlanta — When an error is not an exception](https://node-atl.org/speaker-info/vincenzo-chianese)
+1. [Node Tlv — When an error is not an exception]()
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
