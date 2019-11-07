@@ -14,7 +14,7 @@ Here is the current list:
 3. [API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)
 
 ## 2019
-1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.meetup.com/API-Meetup-Barcelona/events/258461375/)
+1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.youtube.com/watch?v=39zpCVkRkL4)
 2. [Oracle Code Rome April 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=3rC4NrvkLKg) with a [live Interview](https://www.youtube.com/watch?v=7j52hQ3uVoY&list=PLPIzp-E1msrY5d6fKJnWBC4EupNk7UPXh&index=10&t=0s)
 3. [API Days Singapore April 2019 — Bring OpenAPI to your devOps](https://www.youtube.com/watch?v=_Dj7nbiBCqg)
 4. [API Summit Austin May 2019 — Closing Keynote](https://www.youtube.com/watch?v=rAn87yHyNPE)
