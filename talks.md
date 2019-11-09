@@ -20,7 +20,7 @@ Here is the current list:
 4. [API Summit Austin May 2019 — Closing Keynote](https://www.youtube.com/watch?v=rAn87yHyNPE)
 5. [JavaScript and Friends Columbus August 2019 — Functional Domain Driven Design in TypeScript](https://www.javascriptandfriends.com/speakers)
 6. [API Meetup Austin — New OSS tools for API Development](https://www.youtube.com/watch?v=CyBb6nNWwqM)
-7. [API Days Barcelona — Appareance in the aftermovie as an organizer](https://www.youtube.com/watch?v=SSdgdNKFelg)
+7. [API Days Barcelona Opening Keynote](https://youtu.be/6NLXKhpv8I8?t=330) and [Appareance in the aftermovie as an organizer](https://www.youtube.com/watch?v=SSdgdNKFelg)
 8. [Google LaunchPad Malaga — Setting an API Strategy](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 9. [Google LaunchPad Malaga — Microservices and containers might not make sense](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 10. [Google LaunchPad Malaga — What I wish I'd have known about fundraising](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
