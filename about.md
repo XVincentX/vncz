@@ -6,11 +6,9 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer.
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer. I'm currently leading the development of [Prism](https://stoplight.io/prism)
 
-Moreover, I'm leading the [Express-Gateway](https://express-gateway.io) project, the first API Gateway written in Javascript and running on NodeJS
-
-Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat, which is where I still am at the moment.
+Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat. When I joined Stoplight, I moved to **TypeScript**, which is where I still am at the moment.
 
 In my working hours I spend time trying solving problems using the appropriate technologies based on the projects' requirements (failing every single time). During my spare time, I try to develop [open source software](https://github.com/XVincentX), writing articles on topics I'm interested in, working out and partying hard.
 
@@ -32,3 +30,5 @@ During July 2015 I was in Lisbon, and I liked the language so much and decided t
 Portoguese would have been a good idea. I still can't manage it properly, but I'm not that terrible.
 
 Once Apiary was acquired by Oracle and I figured out what they had next to us, I decided to leave the Czech Republic after 3 years and relocate in Madrid, which is where I am living right now.
+
+In 2019 I decided that staying in United States for a while would be a good idea, and so as of January 2020 I moved in Austin, TX.
