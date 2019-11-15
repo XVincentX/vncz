@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/XVincentX/vncz#readme",
   "dependencies": {
-    "@stoplight/json-ref-resolver": "^3.0.1",
+    "@stoplight/json-ref-resolver": "^3.0.2",
     "@stoplight/prism-http": "3.2.0-beta.11",
     "@stoplight/types": "^11.1.1",
     "@stoplight/yaml": "^3.3.1"
