@@ -12,6 +12,7 @@ Here is the current list:
 1. [Node Atlanta — When an error is not an exception](https://node-atl.org/speaker-info/vincenzo-chianese)
 2. [Node Tlv — When an error is not an exception](https://nodetlv.com)
 3. [API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)
+4. [API Conference 2020](https://apiconference.net)
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.youtube.com/watch?v=39zpCVkRkL4)
@@ -26,7 +27,7 @@ Here is the current list:
 10. [Google LaunchPad Malaga — What I wish I'd have known about fundraising](https://twitter.com/jessi_dick/status/1185228811908067328/photo/2)
 11. [RomaJS — Functional Domain Driven Design in TypeScript](https://www.facebook.com/romajs.org/videos/575771186517100/?__tn__=%2Cd%2CP-R&eid=ARBjVcbEw3049m36skPRtbNnpGIay7dbsxSaT-dzvU1mYmXcRfcbzojKzVW_ICBvUkLgUP0WP2G1jMHu)
 12. [DevDaysNP — Functional Domain Driven Design in TypeScript](https://www.meetup.com/it-IT/DevDays/events/265310480/)
-13. [BolognaJS — Functional Domain Driven Design in TypeScript](https://www.meetup.com/Bologna-JS-Meetup/events/265309661/)
+13. [BolognaJS — Functional Domain Driven Design in TypeScript](https://twitter.com/BolognaJS/status/1199763682198200327)
 14. [API Days Paris — The Rocky Road of the OpenAPI AST](https://apidays.co/paris)
 
 ## 2018
