@@ -10,10 +10,9 @@ Here is the current list:
 ## 2020
 
 1. [Node Atlanta — When an error is not an exception](https://node-atl.org/speaker-info/vincenzo-chianese)
-2. [Node Tlv — When an error is not an exception](https://nodetlv.com)
 3. [API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)
-4. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net)
-5. [API Conference 2020 — When an error is not an exception](https://apiconference.net)
+4. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net/api-development/the-rocky-road-of-the-openapi-ast/)
+5. [API Conference 2020 — When an error is not an exception](https://apiconference.net/api-development/when-an-error-is-not-an-exception/)
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.youtube.com/watch?v=39zpCVkRkL4)
