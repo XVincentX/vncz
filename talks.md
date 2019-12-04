@@ -5,6 +5,8 @@ title: Talks
 
 Whenever is possible, I love to talk at conferences about interesting topics I've worked/working on.
 
+Some talks are linked to the recording, if avaiable, otherwise the event page.
+
 Here is the current list:
 
 ## 2020
