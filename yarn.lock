@@ -750,27 +750,27 @@
   resolved "https://registry.yarnpkg.com/@stoplight/path/-/path-1.3.0.tgz#da2282352a4eb23c09d5106b9d1650d30a9ca2ad"
   integrity sha512-t74/MHMgmFVMQhdQ/2Q766GryNTIW8McH8+vB25oeoBhYKTOrJ/wPDt+OCxIWHPUlcSi2fTWa4FKQ8qgmP2jVA==
 
-"@stoplight/prism-core@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@stoplight/prism-core/-/prism-core-3.2.1.tgz#58515ddb5825192f27770095961b7fa4ce6397ad"
-  integrity sha512-5v2Yu8+oxYnrgce3+6dbRLM7XP16PlbKS9cV8y4IbCoXsZF5bHvFU3ROSLIIP9oc8lqJ/UQunVn28NpSxn/74A==
+"@stoplight/prism-core@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@stoplight/prism-core/-/prism-core-3.2.2.tgz#e6862008c347c7b96fc8d6c25d6648d17dd6a9eb"
+  integrity sha512-OyTBk4gLAj7idGWiPDphbF/WIlSalS2X8wS9XBIdv9Fif/ZCiGRi7nYaapPxXbn4IjH4kRWuSZJLbFmTtUrAoA==
   dependencies:
     lodash "^4.17.15"
     pino "^5.13.2"
     tslib "^1.10.0"
 
-"@stoplight/prism-http@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.2.1.tgz#0871eef794fcb254fa2b774f45fbfdc47f70918c"
-  integrity sha512-jjGP7R9AxY+z5qXJb0ChMLa9llMDZVUbOnOp2yyU0oOMj45jMR1QLxD3X8dOZL7YNrFGTT/XIDf3NhI/FYzHbg==
+"@stoplight/prism-http@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.2.2.tgz#5afa18f5071c9acbe4c9430ae86044c7c209bdae"
+  integrity sha512-yW8WTIL8irO5pdhH+vx49ri0K/hLgxchFf5GtLlmOmvGAVdORfZrQAgk5MUN7l88NFCUiUaOVNkYK2doVI4XoA==
   dependencies:
     "@stoplight/http-spec" "^2.2.3"
     "@stoplight/json" "^3.1.2"
     "@stoplight/json-ref-readers" "^1.1.1"
     "@stoplight/json-ref-resolver" "^3.0.1"
-    "@stoplight/prism-core" "^3.2.1"
+    "@stoplight/prism-core" "^3.2.2"
     "@stoplight/yaml" "^3.0.2"
-    abstract-logging "^1.0.0"
+    abstract-logging "^2.0.0"
     accepts "^1.3.7"
     ajv "^6.10.2"
     ajv-oai "^1.0.0"
@@ -1005,10 +1005,10 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-abstract-logging@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/abstract-logging/-/abstract-logging-1.0.0.tgz#8b7deafd310559bc28f77724dd1bb30177278c1b"
-  integrity sha1-i33q/TEFWbwo93ck3RuzAXcnjBs=
+abstract-logging@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/abstract-logging/-/abstract-logging-2.0.0.tgz#08a85814946c98ef06f4256ad470aba1886d4490"
+  integrity sha512-/oA9z7JszpIioo6J6dB79LVUgJ3eD3cxkAmdCkvWWS+Y9tPtALs1rLqOekLUXUbYqM2fB9TTK0ibAyZJJOP/CA==
 
 accepts@^1.3.7, accepts@~1.3.7:
   version "1.3.7"
