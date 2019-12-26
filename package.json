@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/XVincentX/vncz#readme",
   "dependencies": {
-    "@stoplight/json-ref-resolver": "^3.0.6",
-    "@stoplight/prism-http": "3.2.3",
-    "@stoplight/yaml": "^3.5.0"
+    "@stoplight/prism-http": "3.2.3"
   },
   "devDependencies": {
     "netlify-lambda": "^1.6.3"
