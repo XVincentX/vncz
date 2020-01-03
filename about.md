@@ -6,7 +6,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer. I'm currently leading the development of [Prism](https://stoplight.io/prism)
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer. I'm currently leading the development of [Prism](https://stoplight.io/prism), the open source mock server for OpenAPI 2 and 3 Documents.
 
 Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat. When I joined Stoplight, I moved to **TypeScript**, which is where I still am at the moment.
 
@@ -16,9 +16,9 @@ Despite that, I did not work always on a chair and with a laptop. In my career I
 
 ![](https://i.imgur.com/BmGT3uE.jpg)
 
-I play the classic guitar since I was 15 years old and, like [Fernando Sor](https://en.wikipedia.org/wiki/Fernando_Sor) and [Francisco Tarrega](https://en.wikipedia.org/wiki/Francisco_T%C3%A1rrega), I do not have nails on right hand. That brought me a lot of problems with my teachers while studying at National Conservatory, but I was always able to win the battle.
+I've played the classic guitar since I was 15 years old and, like [Fernando Sor](https://en.wikipedia.org/wiki/Fernando_Sor) and [Francisco Tarrega](https://en.wikipedia.org/wiki/Francisco_T%C3%A1rrega), I've never had nails on right hand. That brought me a lot of problems with my teachers while studying at National Conservatory, but I was always able to win the battle. I graudated in late 2014.
 
-I own a great Bernabé M-10, built in 2006
+I own a great Bernabé M-10, built in 2006. Unfortunately I do not use it anymore.
 
 ![](https://i.imgur.com/JAyjOTu.jpg)
 
@@ -29,6 +29,7 @@ Moreover, in order to became even more fluent, I decided to move in an shared ho
 During July 2015 I was in Lisbon, and I liked the language so much and decided that probably learning
 Portoguese would have been a good idea. I still can't manage it properly, but I'm not that terrible.
 
-Once Apiary was acquired by Oracle and I figured out what they had next to us, I decided to leave the Czech Republic after 3 years and relocate in Madrid, which is where I am living right now.
+Once Apiary was acquired by Oracle and I figured out what they had next to us, I decided to leave the Czech Republic after 3 years and relocate in Madrid, which is where I've been living from Sep 2017 to Feb 2020.
 
-In 2019 I decided that staying in United States for a while would be a good idea, and so as of January 2020 I moved in Austin, TX.
+In 2019 I decided that staying in United States for a while would be a good idea, and so as of February 2020 I moved in Austin, TX. I'm still not settled down, but the idea would be to understand whether Austin is a good place. If not, I'll go back in Spain.
+
