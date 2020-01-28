@@ -4,8 +4,6 @@ const client = prism.createClientFromOperations(resources, { mock: { dynamic: tr
 
 const baseUrl = "/.netlify/functions/prism";
 
-// Stuff
-
 exports.handler = async function (event, context, callback) {
   const response = await client.request(event.path.replace(baseUrl, ""), {
     method: event.httpMethod,
