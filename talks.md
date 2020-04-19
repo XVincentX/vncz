@@ -35,7 +35,7 @@ Here is the current list:
 11. [RomaJS — Functional Domain Driven Design in TypeScript](https://www.facebook.com/romajs.org/videos/575771186517100/?__tn__=%2Cd%2CP-R&eid=ARBjVcbEw3049m36skPRtbNnpGIay7dbsxSaT-dzvU1mYmXcRfcbzojKzVW_ICBvUkLgUP0WP2G1jMHu)
 12. [DevDaysNP — Functional Domain Driven Design in TypeScript](https://www.meetup.com/it-IT/DevDays/events/265310480/)
 13. [BolognaJS — Functional Domain Driven Design in TypeScript](https://twitter.com/BolognaJS/status/1199763682198200327)
-14. [API Days Paris — The Rocky Road of the OpenAPI AST](https://apidays.co/paris)
+14. [API Days Paris — The Rocky Road of the OpenAPI AST](https://www.youtube.com/watch?v=jn_1lJr-DLY)
 
 ## 2018
 1. [RomaJS - Building resilient microservices WebAPI with REST and API Gateways](https://twitter.com/dej611/status/953695055579148288)
