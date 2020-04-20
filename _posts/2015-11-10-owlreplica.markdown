@@ -60,7 +60,7 @@ Nothing of really serious is happening here: dimensions are set and thanks to `p
 
 So far, the result should be something like this:
 
-![owl](/images/owl1.png)
+![owl](/images/owl1.webp)
 
 Well, with less then 25 lines of css we have done more than 50% of our job.
 
@@ -95,7 +95,7 @@ Beside the usual `absolute` positioning, the clever trick is in setting the `top
 
 This means that we are in this situation:
 
-![owlarms](/images/owl2.png)
+![owlarms](/images/owl2.webp)
 
 The image shows clearly that, while the `arms` div is positioned at eyes level, the arms are moved (using `top` property) below the div heigth. And, give that we've set `overflow:hidden` property, they won't be shown unless they are in the visible area. Amazing trick, to be honest.
 

@@ -76,17 +76,17 @@ article img, p img {
 }
 
 .detail .time {
-    background: url('../images/glyphicons_054_clock.png') no-repeat 0 0;
+    background: url('../images/glyphicons_054_clock.webp') no-repeat 0 0;
     background-position: 0 1px
 }
 
 .detail .category {
-    background: url('../images/glyphicons_049_star.png') no-repeat 0 0;
+    background: url('../images/glyphicons_049_star.webp') no-repeat 0 0;
     background-position: 0 1px
 }
 
 .detail .tags {
-    background: url('../images/glyphicons_065_tag.png') no-repeat 0 0;
+    background: url('../images/glyphicons_065_tag.webp') no-repeat 0 0;
     background-position: 0 1px
 }
 
@@ -244,11 +244,11 @@ header {
     background-position: center center;
     background-size: cover;
     padding: 100px;
-    background-image: url(../images/desk.jpg)
+    background-image: url(../images/desk.webp)
 }
 
 body#talks header {
-    background-image: url(../images/talks.jpg)
+    background-image: url(../images/talks.webp)
 }
 
 header h1 {

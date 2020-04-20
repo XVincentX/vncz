@@ -75,7 +75,7 @@ This simple css snippet will add a **<<** on the first button, and a **>>** to t
 
 Running again the application, the button bar looks definitely better. But let's try to see how it reacts to server changes. Let's say we just have two polls, so no **Next**,**Prev**, and **Last** button. Just **First**.
 
-![First](/images/First.png)
+![First](/images/First.webp)
 
 As you can see, we're having a visual inconsistency. That button is the first and the last one in the same time, so both the styles are applied, and it does not work as we want.
 

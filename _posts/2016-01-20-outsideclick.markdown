@@ -8,7 +8,7 @@ Today I would like to talk (and, hopefully, help you to solve) one of the proble
 
 Let's say you have a drop down menu which will show its internal items when you click on it, and it has to be opened until an outside click has been detected. For a sample of this, check out [https://www.apiary.io](https://www.apiary.io) application header:
 
-![applicationHeader](/images/applicationHeaderApiary.gif)
+![applicationHeader](/images/applicationHeaderApiary.webp)
 
 As you can see from the gif, the dropdown menu stays in opened position until the users clicks on something else outside from the dropdown. How do we reach this result?
 
