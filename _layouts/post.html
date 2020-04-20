@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include _head.html %}
-  <body>
-    <header class="header-column">
-        <div class="header-button">
-          <a href="/posts">View all posts</a>
-        </div>
-        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-    </header>
-    <section>
-      <article>
-        {{ content }}
-      </article>
-    </section>
-    {% include _footer.html %}
-  </body>
+{% include _head.html %}
+
+<body>
+  <header class="header-column">
+    <div class="header-button">
+      <a href="/posts">View all posts</a>
+    </div>
+    <h1><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+  </header>
+  <section>
+    <article>
+      {{ content }}
+    </article>
+  </section>
+  {% include _footer.html %}
+</body>
+
 </html>
