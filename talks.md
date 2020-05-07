@@ -18,7 +18,7 @@ Here is the current list:
 4. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net/api-development/the-rocky-road-of-the-openapi-ast/)
 5. [API Conference 2020 — When an error is not an exception](https://apiconference.net/api-development/when-an-error-is-not-an-exception/)
 6. [API Summit Austin 2020 — Opening Keynote — The rocky road of the OpenAPI AST](https://nordicapis.com/?post_type=events&p=11283)
-6. [Modern Web Bay Area Meetup — When an error is not an exception](https://youtu.be/Ztva_XSPmqY)
+6. [Modern Web Bay Area Meetup — When an error is not an exception](https://www.youtube.com/watchv=Ztva_XSPmqY&feature=youtu.be)
 7. ~~[PHP Wales 2020 — When an error is not an exception](https://www.phpwales.co.uk/speakers/)~~
 
 ## 2019
