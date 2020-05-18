@@ -14,12 +14,12 @@ Here is the current list:
 #### Due to the CoronaVirus situation, different conferences I was supposed to speak have been canceled. I'll try to keep this updated as I know more about it.
 
 1. [DevNexus 2020 — When an error is not an exception](https://devnexus.com)
-3. ~~[API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)~~
-4. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net/api-development/the-rocky-road-of-the-openapi-ast/)
-5. [API Conference 2020 — When an error is not an exception](https://apiconference.net/api-development/when-an-error-is-not-an-exception/)
-6. [API Summit Austin 2020 — Opening Keynote — The rocky road of the OpenAPI AST](https://nordicapis.com/?post_type=events&p=11283)
-6. [Modern Web Bay Area Meetup — When an error is not an exception](https://www.youtube.com/watch?v=Ztva_XSPmqY)
-7. ~~[PHP Wales 2020 — When an error is not an exception](https://www.phpwales.co.uk/speakers/)~~
+2. ~~[API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)~~
+3. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net/api-development/the-rocky-road-of-the-openapi-ast/)
+4. [API Conference 2020 — When an error is not an exception](https://apiconference.net/api-development/when-an-error-is-not-an-exception/)
+5. [Modern Web Bay Area Meetup — When an error is not an exception](https://www.youtube.com/watch?v=Ztva_XSPmqY)
+6. ~~[PHP Wales 2020 — When an error is not an exception](https://www.phpwales.co.uk/speakers/)~~
+7. [API Summit Austin 2020 — Opening Keynote — The rocky road of the OpenAPI AST](https://nordicapis.com/?post_type=events&p=11283)
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.youtube.com/watch?v=39zpCVkRkL4)
