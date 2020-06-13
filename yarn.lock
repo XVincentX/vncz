@@ -772,10 +772,10 @@
     pino "^6.2.1"
     tslib "^1.10.0"
 
-"@stoplight/prism-http@3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.3.4.tgz#9baa2abcf6b49dd91deca7286c187e7d34a567d2"
-  integrity sha512-Q3eHnAt73pfApEfLX6I5pNWc0xeV6cnuyfpXSx+OfFXNspruF24qDaCLJf56bdAPknnEQKuFnolxRqy+obXCVA==
+"@stoplight/prism-http@3.3.5":
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.3.5.tgz#0a9dd02b6aaa8b7ea563d7391cff1bff7b08eadc"
+  integrity sha512-vb8fc5o8xJRXhpiOTdNR5yVz1RpdTiKDWKBeG13B7W8WyNpHe1pmrQSFavijbKvCQU9K9bmYckMmS77RsWH0Tg==
   dependencies:
     "@stoplight/http-spec" "2.11.0"
     "@stoplight/json" "^3.1.2"
@@ -789,6 +789,7 @@
     ajv "^6.10.2"
     ajv-oai "^1.0.0"
     caseless "^0.12.0"
+    content-type "^1.0.4"
     faker "^4.1.0"
     fp-ts "^2.5.3"
     fp-ts-contrib "^0.1.15"
@@ -799,7 +800,7 @@
     pino "^6.2.1"
     tslib "^1.10.0"
     type-is "^1.6.18"
-    uri-template-lite "^19.4.0"
+    uri-template-lite "^20.5.0"
 
 "@stoplight/types@^11.1.1", "@stoplight/types@^11.4.0", "@stoplight/types@^11.5.0", "@stoplight/types@^11.6.0":
   version "11.6.0"
@@ -1650,7 +1651,7 @@ content-disposition@0.5.3:
   dependencies:
     safe-buffer "5.1.2"
 
-content-type@~1.0.4:
+content-type@^1.0.4, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
@@ -4785,10 +4786,10 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-uri-template-lite@^19.4.0:
-  version "19.4.0"
-  resolved "https://registry.yarnpkg.com/uri-template-lite/-/uri-template-lite-19.4.0.tgz#cbc2c072cf4931428a2f9d3aea36b8254a33cce5"
-  integrity sha512-VY8dgwyMwnCztkzhq0cA/YhNmO+YZqow//5FdmgE2fZU/JPi+U0rPL7MRDi0F+Ch4vJ7nYidWzeWAeY7uywe9g==
+uri-template-lite@^20.5.0:
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/uri-template-lite/-/uri-template-lite-20.5.0.tgz#6904cb90006d3c4d93423d1e37bde76260d6b8b3"
+  integrity sha512-RL6Pnz0DO4XH9WZhZTX6u0SP6afNM9z+u7lXYHO+RkVGzpNcgKc1Y2tcAX/KVIEi2ctfzf+iLcofkwKoYiGH4Q==
 
 urijs@~1.19.1, urijs@~1.19.2:
   version "1.19.2"
