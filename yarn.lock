@@ -762,26 +762,26 @@
   resolved "https://registry.yarnpkg.com/@stoplight/path/-/path-1.3.0.tgz#da2282352a4eb23c09d5106b9d1650d30a9ca2ad"
   integrity sha512-t74/MHMgmFVMQhdQ/2Q766GryNTIW8McH8+vB25oeoBhYKTOrJ/wPDt+OCxIWHPUlcSi2fTWa4FKQ8qgmP2jVA==
 
-"@stoplight/prism-core@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@stoplight/prism-core/-/prism-core-3.3.4.tgz#c3e756c7326f4381c2c1cb54f0f8fd59dfbe55ee"
-  integrity sha512-8Hcp+EIV5tNEEtiEbYP6i8GZJK//a67XFcNZYhGj8Uq3Lzfr+LvrS/P+CGPxFROCKCy9zPqTvqAqK4lkGzrpTA==
+"@stoplight/prism-core@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@stoplight/prism-core/-/prism-core-3.3.6.tgz#aeb52f12e55c726ab4185fed35bc497cdd875a17"
+  integrity sha512-Mgd/rV/LoLGQvLNmdt7k2t4wbOWrTB7Vmv8p27Xa0QOIp6SBXvGz47HF9S5b66zj65hvsmVbqyaqYEck+4KxRA==
   dependencies:
     fp-ts "^2.5.3"
-    lodash "^4.17.15"
+    lodash "4.17.15"
     pino "^6.2.1"
     tslib "^1.10.0"
 
-"@stoplight/prism-http@3.3.5":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.3.5.tgz#0a9dd02b6aaa8b7ea563d7391cff1bff7b08eadc"
-  integrity sha512-vb8fc5o8xJRXhpiOTdNR5yVz1RpdTiKDWKBeG13B7W8WyNpHe1pmrQSFavijbKvCQU9K9bmYckMmS77RsWH0Tg==
+"@stoplight/prism-http@3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@stoplight/prism-http/-/prism-http-3.3.6.tgz#8ae57b60b83676c0c4bec8e67ab89565412725ea"
+  integrity sha512-YxFW+MsmxqluSEcrnEDhyCJdjoaIRY0WnBEp1bEHz2SXNw5CDj6Wx2inD5WlQioHBacH6u0WBW1Sa6ebGUKiLA==
   dependencies:
     "@stoplight/http-spec" "2.11.0"
     "@stoplight/json" "^3.1.2"
     "@stoplight/json-ref-readers" "^1.1.1"
     "@stoplight/json-ref-resolver" "^3.0.1"
-    "@stoplight/prism-core" "^3.3.4"
+    "@stoplight/prism-core" "^3.3.6"
     "@stoplight/types" "^11.6.0"
     "@stoplight/yaml" "^3.0.2"
     abstract-logging "^2.0.0"
@@ -794,7 +794,7 @@
     fp-ts "^2.5.3"
     fp-ts-contrib "^0.1.15"
     json-schema-faker "0.5.0-rc23"
-    lodash "^4.17.15"
+    lodash "4.17.15"
     node-fetch "^2.6.0"
     openapi-sampler "^1.0.0-beta.15"
     pino "^6.2.1"
