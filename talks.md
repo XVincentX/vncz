@@ -19,7 +19,7 @@ Here is the current list:
 4. ~~[PHP Wales 2020 — When an error is not an exception](https://www.phpwales.co.uk/speakers/)~~
 5. [API Conference 2020 — The rocky road of the OpenAPI AST](https://apiconference.net/api-development/the-rocky-road-of-the-openapi-ast/)
 6. [API Conference 2020 — When an error is not an exception](https://apiconference.net/api-development/when-an-error-is-not-an-exception/)
-7. [API Summit Austin 2020 — Opening Keynote — The rocky road of the OpenAPI AST](https://nordicapis.com/?post_type=events&p=11283)
+7. ~~[API Summit Austin 2020 — Opening Keynote — The rocky road of the OpenAPI AST](https://nordicapis.com/?post_type=events&p=11283)~~
 
 ## 2019
 1. [API Meetup Barcelona February Edition — Opening and Closing Remarks](https://www.youtube.com/watch?v=39zpCVkRkL4)
