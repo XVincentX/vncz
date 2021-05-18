@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@stoplight/prism-http"
+    versions:
+    - 4.1.2
+    - 4.1.3
+    - 4.2.0
+  - dependency-name: netlify-lambda
+    versions:
+    - 2.0.3
+    - 2.0.4
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: urijs
+    versions:
+    - 1.19.5
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  allow:
+  - dependency-type: direct
+  - dependency-type: indirect
