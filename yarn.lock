@@ -3320,10 +3320,10 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-netlify-lambda@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-2.0.6.tgz#0b3b8dc753136010ce32db0f8bd6c724bc366498"
-  integrity sha512-NTMKi3t8ORZQMeBunjbjjR5uFXPBiin4takSolkAqN2jUb6KNQF+BRar9jKRB6CzSR+AX5tTFL4bTyU0kPZR5A==
+netlify-lambda@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-2.0.9.tgz#0eb0c6ebb5769e440fd737b5cc948297717cd943"
+  integrity sha512-cLLehqkGuNhFMwNVt32l7qXsv/bY2JUoDs7TxDjJIAnGn6mfFa1XAMYpW5dCes5vIuwSnu1kHIzZ8wWgW+LG+w==
   dependencies:
     "@babel/core" "^7.10.4"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
@@ -3721,6 +3721,48 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postcss@^7.0.5:
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
+
+postman-collection@^3.5.5, postman-collection@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/postman-collection/-/postman-collection-3.6.0.tgz#e739e80dce1d78cb6b44d1c942895d6aa0c5c9b7"
+  integrity sha512-B+oAJb0ILsXBj7fJzFmFaZBghLnqwBUetHi7xUjDWzJ668gKdW5sNEBmC/Sojzo7dLgIZjVMnsCnmYtorJv0Kg==
+  dependencies:
+    escape-html "1.0.3"
+    faker "4.1.0"
+    file-type "3.9.0"
+    http-reasons "0.1.0"
+    iconv-lite "0.5.1"
+    liquid-json "0.3.1"
+    lodash "4.17.15"
+    marked "0.8.0"
+    mime-format "2.0.0"
+    mime-types "2.1.26"
+    postman-url-encoder "2.0.0"
+    sanitize-html "1.20.1"
+    semver "7.1.3"
+    uuid "3.4.0"
+
+postman-url-encoder@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postman-url-encoder/-/postman-url-encoder-2.0.0.tgz#ca0430f7a10e879665225bd8b9c8c4c7cd0aa914"
+  integrity sha512-0In7oCszae5bFTc9WsC9YlfVtp7X1TzVvy6Rp7fO1J0/aMdB5kN1b6lZ1b/v2ZMBlQkT42xiVnm5p0rl8eFZzg==
+  dependencies:
+    postman-collection "^3.5.5"
+    punycode "^2.1.1"
+
+pretty-data@^0.40.0:
+  version "0.40.0"
+  resolved "https://registry.yarnpkg.com/pretty-data/-/pretty-data-0.40.0.tgz#572aa8ea23467467ab94b6b5266a6fd9c8fddd72"
+  integrity sha1-Vyqo6iNGdGerlLa1Jmpv2cj93XI=
 
 process-nextick-args@~2.0.0:
   version "2.0.1"

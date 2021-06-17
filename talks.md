@@ -56,7 +56,7 @@ Here is the current list:
 ## 2017
 1. [Lambda Days 2017 - Taming the async flows in Javascript](https://www.youtube.com/watch?v=Kw0w9w-3y4w&feature=youtu.be)
 2. [API Days Austrialia - Scalable API Flow](https://www.infoq.com/presentations/api-development-workflow)
-3. [Oracle Code New York - Keynote & Harmony in API Design](https://www.youtube.com/watch?v=bcccAx6s03s&feature=youtu.be&t=1h21m8s)
+3. [Oracle Code New York - Keynote & Harmony in API Design](https://youtu.be/j7MbmRKsQh4?t=4871)
 4. [CodeMotion Rome 2017 - CSP in Javascript](http://rome2017.codemotionworld.com/talk-detail/?detail=4700)
 5. [DevDays 2017 Vilnius - Multiple presentations](http://devdays.lt/vincenzo-chianese/) - [Aftermovie interview](https://www.youtube.com/watch?v=eZcgt0XaDfI&feature=youtu.be)
 6. [API Days Paris 2016 - REST, for real!](http://www.apidays.io/events/logistics-transports-2017#speakers)
