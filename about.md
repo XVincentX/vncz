@@ -6,9 +6,9 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Stoplight](https://stoplight.io) as a full stack developer. I'm currently leading the development of [Prism](https://stoplight.io/prism), the open source mock server for OpenAPI 2 and 3 Documents.
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [SentinelOne](https://sentinelone.com) as a Team Leader. I'm currently leading the development of the Singularity Marketplace
 
-Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat. When I joined Stoplight, I moved to **TypeScript**, which is where I still am at the moment.
+Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat. When I joined Stoplight, I moved to **TypeScript**, but now I mostly code in [Clojure](https://clojure.org).
 
 In my working hours I spend time trying solving problems using the appropriate technologies based on the projects' requirements (failing every single time). During my spare time, I try to develop [open source software](https://github.com/XVincentX), writing articles on topics I'm interested in, working out and partying hard.
 
