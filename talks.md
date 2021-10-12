@@ -9,9 +9,13 @@ Some talks are linked to the recording, if avaiable, otherwise the event page.
 
 Here is the current list:
 
+## 2021
+
+#### I took the decision of not participating in any online conference. That (unpopular) decision brought my engagements to basically 0. Hope for the best in 2022.
+
 ## 2020
 
-#### Due to the CoronaVirus situation, different conferences I was supposed to speak have been canceled. I'll try to keep this updated as I know more about it.
+#### Due to the CoronaVirus situation, different conferences I was supposed to speak have been canceled.
 
 1. [DevNexus 2020 — When an error is not an exception](https://devnexus.com)
 2. ~~[API Days Singapore 2020 — The rocky road of the OpenAPI AST](https://apidays.co/singapore)~~
