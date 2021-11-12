@@ -11,7 +11,7 @@ Here is the current list:
 
 ## 2022
 
-1. [API Conference 2022 — Horror Stories From Other People's APIs](https://apiconference.net/thehague/program-thehague/)
+1. [API Conference 2022 — Horror Stories From Other People's APIs](https://apiconference.net/api-design/horror-stories-from-other-people-apis/)
 2. [API Conference 2022 — Caching your API, once and forever](https://apiconference.net/thehague/program-thehague/)
 3. [Lamda Days 2022 — When an error is not an exception](https://www.lambdadays.org/lambdadays2022/vincenzo-chianese)
 
