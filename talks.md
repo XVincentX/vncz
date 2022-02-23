@@ -14,8 +14,7 @@ Here is the current list:
 1. [API Conference 2022 — Horror Stories From Other People's APIs](https://apiconference.net/api-design/horror-stories-from-other-people-apis/)
 2. [API Conference 2022 — Caching your API, once and forever](https://apiconference.net/thehague/program-thehague/)
 3. [LamdaDays 2022 — When an error is not an exception](https://www.lambdadays.org/lambdadays2022/vincenzo-chianese)
-4. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org)
-5. [JFokus 2022](https://www.codestock.org)
+4. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org/schedule)
 
 
 ## 2021
