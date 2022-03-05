@@ -6,7 +6,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 
 Hello!
 
-My name is Vincenzo Chianese, I am an Italian Software developer currently working for [SentinelOne](https://sentinelone.com) as a Team Leader. I'm currently leading the development of the Singularity Marketplace
+My name is Vincenzo Chianese, I am an Italian Software developer currently working for [Microsoft](https://microsoft.com) as a Senior Program Manager & API Architect. I help the Graph API moving forward.
 
 Historically I've been a **.NET** developer, although I stopped once I joined [Apiary](https://apiary.io) to jump on the **JavaScript** boat. When I joined Stoplight, I moved to **TypeScript**, but now I mostly code in [Clojure](https://clojure.org).
 
