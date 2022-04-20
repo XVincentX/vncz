@@ -13,8 +13,8 @@ Here is the current list:
 
 1. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org/schedule)
 2. [LamdaDays 2022 — When an error is not an exception](https://www.lambdadays.org/lambdadays2022/vincenzo-chianese)
-3. [API Days New York — Horror Stories From Other People's APIs]()
-4. [API Days Paris — Horror Stories From Other People's APIs]()
+3. [API Days New York — Horror Stories From Other People's APIs](https://www.apidays.global/new-york/)
+4. [API Days Paris — Horror Stories From Other People's APIs](https://www.apidays.global/paris/)
 
 
 
