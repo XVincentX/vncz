@@ -9,6 +9,9 @@ Some talks are linked to the recording, if avaiable, otherwise the event page.
 
 Here is the current list:
 
+## 2023
+1. [API Denver Meetup — API Stories From The Trenches](https://www.meetup.com/denver-apis-meetup-group/events/292226559)
+
 ## 2022
 
 1. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org/schedule)
