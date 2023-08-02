@@ -33,3 +33,4 @@ Once Apiary was acquired by Oracle and I figured out what they had next to us, I
 
 In 2019 I decided that staying in United States for a while would be a good idea, and so as of February 2020 I moved in Austin, TX. I'm still not settled down, but the idea would be to understand whether Austin is a good place. If not, I'll go back in Spain.
 
+As of August of 2022 I relocated in Denver, CO and there is no way I am going back to Europe.
