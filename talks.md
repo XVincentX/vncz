@@ -11,7 +11,7 @@ Here is the current list:
 
 ## 2023
 1. [API Denver Meetup — API Stories From The Trenches](https://www.meetup.com/denver-apis-meetup-group/events/292226559)
-
+2. [Oktane — API Stories From The Trenches](https://okta.com/oktane)
 ## 2022
 
 1. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org/schedule)
@@ -19,8 +19,6 @@ Here is the current list:
 3. [API Days New York — Horror Stories From Other People's APIs](https://www.youtube.com/watch?v=pPupPaxre5c)
 4. [APIWorld 2022 — Horror Stories From Other People's APIs](https://apiworld.co/conference/speakers/)
 5. [API Days Paris — Horror Stories From Other People's APIs](https://www.apidays.global/paris/)
-
-
 
 ## 2021
 
