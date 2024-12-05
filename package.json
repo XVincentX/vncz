@@ -21,6 +21,6 @@
     "@stoplight/prism-http": "^4.8.0"
   },
   "devDependencies": {
-    "netlify-lambda": "^2.0.15"
+    "netlify-lambda": "^2.0.16"
   }
 }
