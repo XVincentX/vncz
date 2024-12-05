@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/XVincentX/vncz#readme",
   "dependencies": {
-    "@stoplight/prism-http": "^4.8.0"
+    "@stoplight/prism-http": "^4.11.1"
   },
   "devDependencies": {
     "netlify-lambda": "^2.0.15"
