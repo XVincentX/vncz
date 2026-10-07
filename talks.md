@@ -9,11 +9,16 @@ Some talks are linked to the recording, if avaiable, otherwise the event page.
 
 Here is the current list:
 
+## 2026
+
+1. [Making your APIs work for Agents - Stripe Meetup New York](https://www.meetup.com/stripe-new-york/events/316293021)
+1. [Making your APIs work for Agents - Stripe Meetup Seattle](https://www.meetup.com/stripe-seattle/events/315925375/)
+
 ## 2023
 1. [API Denver Meetup — API Stories From The Trenches](https://www.meetup.com/denver-apis-meetup-group/events/292226559)
 2. [Oktane — API Stories From The Trenches](https://okta.com/oktane)
-## 2022
 
+## 2022
 1. [CodeStock 2022 — Horror Stories From Other People's APIs](https://www.codestock.org/schedule)
 2. [LamdaDays 2022 — When an error is not an exception](https://www.lambdadays.org/lambdadays2022/vincenzo-chianese)
 3. [API Days New York — Horror Stories From Other People's APIs](https://www.youtube.com/watch?v=pPupPaxre5c)
