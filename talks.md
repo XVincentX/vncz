@@ -11,7 +11,7 @@ Here is the current list:
 
 ## 2026
 
-1. [Making your APIs work for Agents - Stripe Meetup New York](https://www.meetup.com/stripe-new-york/events/316293021)
+1. [Making your APIs work for Agents - Stripe Meetup New York](https://www.youtube.com/watch?v=9ebdbOLm5xs)
 1. [Making your APIs work for Agents - Stripe Meetup Seattle](https://www.meetup.com/stripe-seattle/events/315925375/)
 
 ## 2023
